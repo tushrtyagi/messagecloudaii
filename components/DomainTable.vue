@@ -12,10 +12,12 @@
               type="text"
               placeholder="eg. sub.domain.com"
             />
-            <router-link :to="{ path: '/verifydomain', query: { heading: heading } }">
+            <!-- <router-link :to="{ path: '/verifydomain', query: { heading: heading } }">
               <button class="login_btn  bg-aliceblue ms-5 text-white ">+ ADD</button>
-            </router-link>        
-           
+            </router-link>         -->
+            <NuxtLink to ="/verifydomain">
+              <button class="login_btn  bg-aliceblue ms-5 text-white ">+ ADD</button>
+            </NuxtLink>
           </div>
         </div>
       </div>
@@ -40,9 +42,9 @@
             </select>
           </div>
           <div class="d-inline-block ms-5 ">
-            <h2>Sort By</h2>
-            <!-- <div class="sort ">
-            <DatePickerModal timeStamp @getDate="getDate" label="Select a date range" size="lg" class="mt-8" /> -->
+            <!-- <h2>Sort By</h2> -->
+            <!-- <div class="sort "> -->
+            <!-- <DatePickerModal timeStamp @getDate="getDate" label="Select a date range" size="lg" class="mt-8" /> --> 
               <!-- <DatePickerModal/> -->
             <!-- </div>  -->
               
