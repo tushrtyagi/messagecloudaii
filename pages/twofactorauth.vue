@@ -23,26 +23,7 @@
                 <div class="form__row">
                   <form @submit.prevent="sendVerificationCode">
                     <div class="row justify-content-center">
-                      <div class="col-sm-12 col-md-12 col-lg-10 row_input" v-if="!showVerification">
-                        <label class="d-flex align-items-center text-customblack" for="phone">
-                          Phone Number<sup class="text-maximumred  mendratory_sign">*</sup>
-                        </label>
-                        <input
-                          placeholder="Phone Number"
-                          class="input w-100 bg-white"
-                          autocomplete="off"
-                          type="tel"
-                          v-model="phoneNumber"
-                          id="phone"
-                          name="phoneNumber"
-                          required
-                        />
-                      </div>
-                      <div class="col-sm-12 col-md-12 col-lg-10 pt-4 text-center" v-if="!showVerification">
-                        <button type="submit" class="text-white bg-darkcerulean login_btn w-100">
-                          Send Verification Code
-                        </button>
-                      </div>
+                     
                       <div class="col-sm-12 col-md-12 col-lg-10 pt-4 row_input" v-if="showVerification">
                         <label class="d-flex align-items-center text-customblack" for="verificationCode">
                           Verification Code<sup class="text-maximumred  mendratory_sign">*</sup>

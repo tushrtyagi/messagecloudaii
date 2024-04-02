@@ -57,7 +57,7 @@ Verify ownership of a single email address to use as a sender
                   <div class="btn_conatiner d-flex">
                   <NuxtLink to="/senderverify">
 
-                    <button class="sending_doc_btn bg-aliceblue text-white ms-4">
+                    <button class="sending_doc_btn bg-aliceblue text-white ms-4 mt-2">
                       Verify Sender
                     </button>
                   </NuxtLink>
@@ -132,7 +132,7 @@ export default {
       border-radius: 7px;
       border: 1px solid #7e7e7e;
       box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.19);
-      padding: 0px 13px;
+      padding: 0px 8px;
       img {
         object-fit: contain;
         padding: 0 10px 0 0;

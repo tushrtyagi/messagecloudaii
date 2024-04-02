@@ -89,6 +89,9 @@ export default defineComponent({
         font-size:27px;
         
       }
+      p{
+        padding :1px 141px;
+      }
       button.login_btn {
         font-weight: 400;
         box-shadow: unset;

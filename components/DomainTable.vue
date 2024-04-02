@@ -3,7 +3,7 @@
     <div class="row">
       <div class="domain-field bg-darkgrey mt-5 mb-4 mx-3 px-4">
         <div class="col-lg-12">
-          <h4 class="mt-4 pl-3 text-customblack mb-4">Adding {{ heading }}</h4>
+          <h4 class="mt-4 pl-3 text-customblack mb-4">Adding your {{ heading }}</h4>
         </div>
         <div class="col-lg-12 mb-3 ">
           <div class="create_domain mt-4 my-3 p-0 pr-4">
@@ -115,21 +115,21 @@ export default {
           "Verified Domain": "Verified",
           "Date":"Feb 26,2024"
         },
-        {
-          "Domain": "codalien.com",
-          "Verified Domain": "Unverified",
-          "Date":"Feb 26,2024"
-        },
-        {
-          'Domain': "codalien.com",
-          "Verified Domain": "Verified",
-          "Date":"Feb 26,2024"
-        },
-        {
-          'Domain': "codalien.com",
-          "Verified Domain": "Unverified",
-          "Date":"Feb 26,2024"
-        },
+        // {
+        //   "Domain": "codalien.com",
+        //   "Verified Domain": "Unverified",
+        //   "Date":"Feb 26,2024"
+        // },
+        // {
+        //   'Domain': "codalien.com",
+        //   "Verified Domain": "Verified",
+        //   "Date":"Feb 26,2024"
+        // },
+        // {
+        //   'Domain': "codalien.com",
+        //   "Verified Domain": "Unverified",
+        //   "Date":"Feb 26,2024"
+        // },
       ],
     };
   },
