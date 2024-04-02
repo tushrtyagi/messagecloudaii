@@ -83,7 +83,7 @@ export default {
           </ol>
         </li>
         <li>
-          <NuxtLink class="text-customblack" to="/">
+          <NuxtLink class="text-customblack" to="/stats">
             <span class="icon-wrapper"   @click="togglemenu"><img
                
                 src="../assets/image/nimbus_stats.svg"
