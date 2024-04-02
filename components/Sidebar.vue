@@ -71,7 +71,7 @@ export default {
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink class="text-customblack" to="/userapi" @click.stop>
+              <NuxtLink class="text-customblack" to="/apiKey" @click.stop>
                 <label>API Key</label>
               </NuxtLink>
             </li>

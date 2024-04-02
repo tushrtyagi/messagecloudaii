@@ -41,7 +41,7 @@
         </div>
       </div>
     </div>
-    <div class="api-tab-content" v-for="(ele, idx) in arr" :key="idx">
+    <div class="api-tab-content " v-for="(ele, idx) in arr" :key="idx">
       <div v-if="activeTab === idx" class="pills_content">
       <div class="row">
       <div class="col-lg-4 col-md-6 col-sm-12 col-12">

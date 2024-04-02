@@ -20,6 +20,41 @@
               </div>
 
               <div class="right_panel_global_section">
+                <div class="row mb-5">
+                  <div class="col-lg-12">
+                    <div class="user_api d-flex align-items-center justify-content-between bg-white">
+                      <h3 class="text-customblack mb-4">Your API Keys</h3>
+                    </div>
+                    <p class="text-customblack">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the <br />
+                      printing and typesetting industry.
+                    </p>
+                    <div class="table_data mt-4 bg-white">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Version</th>
+                            <th>API key</th>
+                            <th>Name</th>
+                            <th>Created on</th>
+                          
+                            <th>Delete</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr v-for="(item, index) in items" :key="index">
+                            <td>{{ item.Domain }}</td>
+                            <td>{{ item['Verified Domain'] }}</td>
+                            <td>{{ item.Label }}</td>
+                            <td>{{ item['API key'] }}</td>
+                       
+                            <td><img src="../assets/image/delete.svg" alt="Delete Icon" @click="deleteItem(index)" /></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
                 <div class="row top-box bg-darkgrey ml-5">
                   <div class="col-lg-8 ">
                     <div
@@ -67,10 +102,11 @@
 </template>
 
 <script>
-import {store} from "../stores/store"
-import { CButton } from "@coreui/vue";
+import { store } from "../stores/store";
+// import Delete from "../assets/image/delete.svg";
+import {CButton} from "@coreui/vue";
 export default defineComponent({
-  components: {CButton},
+  components:{CButton},
   setup() {
     const expanded = useExpanded();
     return {
@@ -80,20 +116,88 @@ export default defineComponent({
   },
   data() {
     return {
-      visibleLiveDemo:false,
+      visibleLiveDemo: false,
+      items: [
+        {
+          Domain: "rhecenter.com",
+          "Verified Domain": "Owner name",
+          Label: "Not Set",
+          "API key": 2337846347274975,
+      
+          Remove: "",
+        },
+        {
+          Domain: "rhecenter.com",
+          "Verified Domain": "Owner name",
+          Label: "Not Set",
+          "API key": 2337846347274975,
+    
+          Remove: "",
+        },
+        {
+          Domain: "rhecenter.com",
+          "Verified Domain": "Owner name",
+          Label: "Not Set",
+          "API key": 2337846347274975,
+       
+          Remove: "",
+        },
+        {
+          Domain: "rhecenter.com",
+          "Verified Domain": "Owner name",
+          Label: "Not Set",
+          "API key": 2337846347274975,
+          Status: "",
+          Remove: "",
+        },
+      ],
     };
   },
+
   methods: {
-    closemodal() {
-      this.visibleLiveDemo = false;
+    deleteItem(index) {
+      
+      console.log("Delete item at index", index);
     },
-  },
+    closemodal(value) {
+      this.visibleLiveDemo = value;
+    },
+  }
 });
 </script>
 
 <style lang="scss">
 @import "../assets/scss/colors.scss";
 @import "../assets/scss/style.scss";
+
+.right_panel {
+  width: calc(100% - 60px);
+  margin-left: 60px;
+}
+.shrink_screen.right_panel {
+  width: calc(100% - 12rem);
+  margin-left: 12rem;
+}
+.user_api {
+  width: 90%;
+  .top-box{
+    padding:40px;
+  }
+  button {
+    font-weight: 400;
+    font-size: 1.063rem;
+    border-radius: 7px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.27);
+  }
+  button.sending_doc_btn {
+    background-color: $aliceblue;
+    border: 1px solid #02487B;
+  }
+}
+.api_documentation {
+  border-radius: 7px;
+  border: 1px solid #D9D9D9;
+}
 
 .top-box{
   background: #F4F4F4;
