@@ -17,14 +17,12 @@
           <div class="col-sm-12 col-md-6 col-lg-6">
             <div class="form_section d-flex justify-content-center">
               <div class="inner_container">
-                <div class="header_form">
-                  <div class="login_title text-customblack text-center mb-0">Verify Phone Number</div>
-                </div>
+               
                 <div class="form__row">
                   <form @submit.prevent="sendVerificationCode">
                     <div class="row justify-content-center">
                      
-                      <div class="col-sm-12 col-md-12 col-lg-10 pt-4 row_input" v-if="showVerification">
+                      <div class="col-sm-12 col-md-12 col-lg-10 pt-4 row_input" >
                         <label class="d-flex align-items-center text-customblack" for="verificationCode">
                           Verification Code<sup class="text-maximumred  mendratory_sign">*</sup>
                         </label>
@@ -39,7 +37,7 @@
                           required
                         />
                       </div>
-                      <div class="col-sm-12 col-md-12 col-lg-10 pt-4 text-center" v-if="showVerification">
+                      <div class="col-sm-12 col-md-12 col-lg-10 pt-4 text-center" >
                         <NuxtLink to="/">
                             <button type="submit" class="text-white bg-darkcerulean login_btn w-100">
                               Verify
