@@ -2,7 +2,7 @@
   <CModal class="api_key_modal">
     <CModalHeader class="bg-sidegrey">
       <CModalTitle class="text-customblack d-flex align-items-center justify-content-between w-100"
-        >Your API Keys
+        >API Key
         <div class="cross_icon" style="cursor: pointer" @click="closemodal">
           <img src="../assets/image/cross_icon.svg" /></div
       ></CModalTitle>
@@ -12,7 +12,7 @@
         API key has been generated successfully. Please copy this key and save it
         somewhere safe. For security reason, we cannot show it to you again.
       </p>
-      <input type="text" class="bg-white w-100" placeholder="Enter your api key" />
+      <input type="text" class="bg-white w-100" placeholder=" Your API key" />
     </CModalBody>
     <CModalFooter class="pb-5 align-items-center d-flex justify-content-center px-1 bg-sidegrey">
       <CButton

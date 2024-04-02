@@ -101,7 +101,7 @@ export default {
   display:flex;
   flex-direction: row;
     position: relative;
-    right: 293px;
+    right: 275px;
   
   
 } 
@@ -116,4 +116,6 @@ export default {
 .generate_btn:hover{
   color:rgba(255, 255, 255, 0.602);
 }
+
+
 </style>
