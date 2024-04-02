@@ -1,0 +1,104 @@
+/* colors */
+@import 'variables';
+
+.bg {
+    &-customblack {
+        background-color: $customblack;
+    }
+    &-white {
+        background-color: $white;
+    }
+    &-darkcerulean{
+        background-color: $darkcerulean;
+    }
+    &-aliceblue{
+        background-color: $aliceblue;
+    }
+    &-antiflashwhite{
+        background-color: $antiflashwhite;
+    }
+    &-lavenderblush{
+        background-color: $lavenderblush;
+    }
+    &-magentadye{
+        background-color:$magentadye;
+    }
+    &-darkblue{
+        background-color:$darkblue;
+    }
+    &-darkgrey{
+        background-color: $darkgrey;
+    }
+    &-sidegrey{
+        background-color: $sidegrey;
+    }
+    &-nickel{
+        background-color:$nickel;
+    }
+    &-lightgrey{
+        background-color: $lightgrey;
+    }
+    &-gainsboro{
+        background-color: $gainsboro;
+    }
+   
+}
+
+.bg-linear{
+    &-bluegreen{
+        background: $bluegreen;
+    }
+}
+// text Colors Class
+.text {
+    &-white {
+        color: $white;
+    }
+    &-customblack{
+        color: $customblack;
+    }
+    &-maximumred {
+        color: $maximumred;
+    }
+    &-darkcerulean{
+        color:$darkcerulean;
+    }
+    &-nickel{
+        color:$nickel;
+    }
+    &-darkblue{
+        color:$darkblue;
+    }
+    &-aliceblue{
+        color: $aliceblue;
+    }
+    &-darkgrey{
+        color: $darkgrey;
+    }
+    &-bluegreen{
+          color: $bluegreen;
+    }
+}
+
+// border Color
+.border {}
+
+
+
+// =============================================================================
+// Color classes
+// =============================================================================
+
+// @each $name, $hex in $colors {
+//     .has-background-#{"" + $name} {
+//         background-color: $hex;
+//     }
+//     .has-text-#{"" + $name} {
+//         color: $hex;
+//     }
+//     .has-text-#{"" + $name}-hover {
+//         &:hover {
+//             color: $hex;
+//         }
+//     }
+// }
