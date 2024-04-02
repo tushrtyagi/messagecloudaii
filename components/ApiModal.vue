@@ -18,16 +18,16 @@
                       /> </CModalBody>
         <CModalFooter class="pb-5">
           <div class="row">
-            <div class="col-lg-12  align-items-center button-nav align-item-center justify-content-between">
+            <div class="col-lg-6  align-items-center button-nav align-item-center justify-content-between">
           <div class="buttons">
 
             <button
-              class="text-customblack bg-white cancel_btn"
+              class="text-customblack bg-white login_btn"
                @click="closemodal"
             >
               Cancel
             </button>
-            <button class="bg-aliceblue  text-white  generate_btn ms-4" @click="
+            <button class="bg-aliceblue  text-white  login_btn ms-4" @click="
                           () => {
                             visibleLiveDemo = true;
                           }
@@ -98,9 +98,11 @@ export default {
 }
 .buttons{
 
-  
+  display:flex;
+  flex-direction: row;
     position: relative;
     right: 293px;
+  
   
 } 
 .generate_btn {
