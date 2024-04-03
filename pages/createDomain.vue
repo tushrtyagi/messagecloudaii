@@ -5,30 +5,18 @@
         <Sidebar />
         <div :class="`${store.isSidebarExpanded ? 'shrink_screen' : ''}`" class="right_panel">
           <Header />
-          <div class="sub_container sending_domain_container  ">
-            <div class="sub_section sending_domain_section bg-white ">
+          <div class="sub_container sending_domain_container ">
+            <div class="sub_section sending_domain_section bg-white">
               <div class="row">
                 <div class="col-lg-12">
                   <div class="breadcrumbs">
                     <CBreadcrumb style="--cui-breadcrumb-divider: '/'">
                       <CBreadcrumbItem href="/"><img src="../assets/image/home_icon (1).svg" alt="configuration" /></CBreadcrumbItem>
                       <CBreadcrumbItem href="#">Configuration</CBreadcrumbItem>
-           
                         <!-- <CBreadcrumbItem href="/domain"> Add Domain </CBreadcrumbItem> -->
                       
-                      <CBreadcrumbItem active> Domain List </CBreadcrumbItem>
+                      <CBreadcrumbItem active> Domain </CBreadcrumbItem>
                     </CBreadcrumb>
-
-                    <!-- CBreadcrumbItem>
-      <NuxtLink :to="{ name: 'index' }">
-        <img src="../assets/image/home_icon (1).svg" alt="configuration" />
-      </NuxtLink>
-    </CBreadcrumbItem>
-    <CBreadcrumbItem>
-      <NuxtLink :to="{ name: 'domain' }">Configuration</NuxtLink>
-    </CBreadcrumbItem>
-    <CBreadcrumbItem active>Add Domain</CBreadcrumbItem>
-  </CBreadcrumb> -->
                   </div>
                 </div>
               </div>
@@ -38,7 +26,7 @@
                     <div
                       class="domain_flex bg-white d-flex align-items-baseline justify-content-between"
                     >
-                      <h2 class="text-customblack">Domain List</h2>
+                      <!-- <h2 class="text-customblack">Domain List</h2> -->
                       <!-- <div class="searc_domain_container">
                         <img src="../assets/image/gray_search.svg" alt="search" /><input
                           type="text"
@@ -47,14 +35,14 @@
                       </div> -->
                     </div>
                     <!-- <Tabs class="domain_tabs" @changeTab="changeTab" :tabs="['Sending Domain ', 'Bounce ', 'Tracking ']"  /> -->
-                     <div class="tab-content domain_content">
+                     <div class="tab-content domain_content mb-4">
         <h3 class="text-customblack">{{arr[activeTab].heading }}</h3>
         <p class="text-customblack mt-3">
         {{arr[activeTab].subtext }}
         </p>
 
         <div class="btn_conatiner d-flex">
-        <button class="sending_doc_btn bg-white text-black ms-4">
+        <button class="sending_doc_btn bg-white text-black mt-3 ms-4">
           {{arr[activeTab].heading }} Documentation
           </button>
           </div>
@@ -62,7 +50,7 @@
                       </div> 
                   </div>
                 </div>
-                <FirstDomainTable :heading="arr[activeTab].heading"/>
+                <DomainTable :heading="arr[activeTab].heading"/>
                 
               </div>
 
@@ -145,7 +133,7 @@ export default defineComponent({
         border: none;
         border-radius: 0px 7px 7px 0px;
         border-left: 1px solid #7E7E7E;
-        padding: 8px 24px;
+        padding: 10px 20px;
         font-size:17px;
         font-weight: 400;
       }
@@ -164,7 +152,7 @@ export default defineComponent({
 }
 
 .tab-content {
-  padding-top: 40px;
+  padding-top: 0px;
   label {
     font-size: 17px;
     font-weight: 600;

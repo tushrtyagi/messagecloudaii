@@ -66,8 +66,8 @@ export default {
 
           <ol class="dropdowncustom" v-show="store.isDropdownExpanded">
             <li >
-              <NuxtLink class="text-customblack" to="/createdomain" @click.stop>
-                <label>Domain</label>
+              <NuxtLink class="text-customblack" to="/firstdomain" @click.stop>
+                <label> Domain</label>
               </NuxtLink>
             </li>
             <li>

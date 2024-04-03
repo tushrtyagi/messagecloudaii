@@ -1,40 +1,38 @@
 <template>
   <div class="domain_list">
     <div class="row">
-      <div class="domain-field bg-darkgrey mt-5 mb-4 mx-3 px-4">
-        <div class="col-lg-12">
-          <h4 class="mt-4 pl-3 text-customblack mb-4">Adding your {{ heading }}</h4>
-        </div>
-        <div class="col-lg-12 mb-3 ">
-          <div class="create_domain mt-4 my-3 p-0 pr-4">
-            <input
-              class="text-black bg-white"
-              type="text"
-              placeholder="eg. sub.domain.com"
-            />
-            <!-- <router-link :to="{ path: '/verifydomain', query: { heading: heading } }">
-              <button class="login_btn  bg-aliceblue ms-5 text-white ">+ ADD</button>
-            </router-link>         -->
-            <NuxtLink to ="/verifydomain">
-              <button class="login_btn  bg-aliceblue ms-5 text-white ">+ ADD</button>
+      <div class="domain-field bg-darkgrey mt-2 mb-4 mx-3 px-4">
+          <div class="col-lg-12 ">
+            <h4 class="mt-4 pl-3 text-customblack mb-4">Adding your {{heading}}</h4>
+          </div>
+          <div class="col-lg-12 mb-3 ">
+            <div class="create_domain mt-4 my-4 p-0 pr-4">
+              <input
+                class="text-black bg-white"
+                type="text"
+                placeholder="eg. sub.domain.com"
+              />
+              <NuxtLink to ="/verifydomain">
+              <button class="add_btn  bg-aliceblue ms-4 px-4  text-white ">+ ADD</button>
             </NuxtLink>
+          
+          </div>
           </div>
         </div>
-      </div>
 
       <div class="col-lg-12">
         <div class="filter mt-1">
           <div class="d-inline-block">
-            <h2>Filter Domains</h2>
+          
             <div class="search-wrapper">
               <img class="search-icon" src="../assets/image/searchgrey.svg" alt="Search icon" />
-              <input type="text" class="form-control" placeholder="e.g. test.codalien.com">
+              <input type="text" class="form-control" placeholder="Search Domain">
             </div>
           </div>
           <div class="d-inline-block ms-5">
-            <h2> Domain Status</h2>
-            <select class="form-select " placeholder="Verified,Bounce,Unverified">
-              <option value="" disabled selected>All</option>
+         
+            <select class="form-select " >
+              <option value="" disabled selected>Domain Status</option>
               <option value="Verified">All</option>
               <option value="Verified">Verified</option>
               <option value="Unverified">Unverified</option>
@@ -173,6 +171,15 @@ export default {
 
 <style lang="scss">
 .domain_list {
+  .domain-field {
+  width: 98%;
+  height: 100%;
+
+  border-radius: 14px;
+  margin-left: 4px;
+  
+ 
+}
   .create_domain {
     border-radius: 7px;
     border: 0px solid;
@@ -181,7 +188,7 @@ export default {
       border-radius: 7px;
     border: 1px solid rgba(2, 72, 123, 0.99);
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.19);
-    padding: 15px 17px;
+    padding: 12px 14px;
     margin-left: -2px;
     margin-top: -2px;
       &::placeholder {
@@ -191,9 +198,9 @@ export default {
       }
     }
     button {
-      font-size: 17px;
+      font-size: 15px;
       font-weight: 400;
-      padding-left: 16px;
+      padding-left: 0px;
     }
   }
 
@@ -242,19 +249,7 @@ export default {
       margin:auto;
       padding:0 0;
     }
-  .domain-field {
-  width: 100%;
-  height: 100%;
-  background-color: #bcbcbc;
-  border-radius: 14px;
-  margin-left: 4px;
   
-  h4{
-    position: relative;
-    left:20px;
-    padding: 10px;
-  }
-}
 }
 
 .form-control{
@@ -293,5 +288,18 @@ export default {
   border: 0.2px lightgrey;
   border-radius: 5px;
 
+}
+
+.add_btn {
+  padding: 13px 35px;
+  font-size: 1.2rem;
+  border-radius: 7px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.27);
+  font-weight: 600;
+ 
+}
+.add_btn:hover{
+  background-color: #6eb9e1 !important;
+  color:white;
 }
 </style>

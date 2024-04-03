@@ -65,7 +65,7 @@
               <CFormCheck label="The TXT and  CNAME record has been added to the DNS provider." class="formcheck text-muted" />
             </div>
             <div class="mb-3 mt-4">
-              <NuxtLink to="/firstdomain">
+              <NuxtLink to="/createDomain">
                 <button type="submit" class="submit-btn bg-aliceblue text-white btn-sm">Verify Domain</button>
               </NuxtLink>
             </div>

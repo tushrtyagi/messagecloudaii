@@ -13,7 +13,7 @@
                     <CBreadcrumb style="--cui-breadcrumb-divider: '/'">
                       <CBreadcrumbItem href="/"><img src="../assets/image/home_icon (1).svg" alt="configuration" /></CBreadcrumbItem>
                       <CBreadcrumbItem href="#">Configuration</CBreadcrumbItem>
-                      <CBreadcrumbItem href="/createdomain">  Domain List</CBreadcrumbItem>
+                      <CBreadcrumbItem href="/createdomain">  Domain </CBreadcrumbItem>
 
                       <CBreadcrumbItem active>  Domain Details</CBreadcrumbItem>
                     </CBreadcrumb>
@@ -24,7 +24,7 @@
                 <div class="row">
                   <div class="col-lg-12 ">
                     <div class="domain_flex bg-white d-flex align-items-baseline justify-content-between mt-3">
-                      <h3 class="text-customblack m-0">Domain Details</h3>
+                      <h3 class="text-customblack mb-5">Domain Details</h3>
                     </div>
                     
                     <div class="tab-content domain_content  ">

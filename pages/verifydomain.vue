@@ -13,7 +13,7 @@
                       <CBreadcrumb style="--cui-breadcrumb-divider: '/'">
                       <CBreadcrumbItem href="/"><img src="../assets/image/home_icon (1).svg" alt="configuration" /></CBreadcrumbItem>
                         <CBreadcrumbItem href="/domain">Configuration</CBreadcrumbItem>
-                        <CBreadcrumbItem href="/createdomain">Domain List</CBreadcrumbItem>
+                        <CBreadcrumbItem href="/createdomain">Domain </CBreadcrumbItem>
                         <CBreadcrumbItem active> Verify Domain</CBreadcrumbItem>
                       </CBreadcrumb>
                     </div>
@@ -26,12 +26,12 @@
                         <h3 class="text-customblack">Verify Domain </h3>
                       </div>
                      
-                      <div class="tab-content domain_content mt-3">
+                      <div class="tab-content domain_content mt-4">
                         <h2 class="text-customblack">DNS Verification</h2>
                         <p class="text-customblack mt-3">
                             Strict alignment is when the sending and bounce domain being the same value (e.g. sending domain = messagecloud.com, and bounce domain = messagecloud.com)
                         </p>
-                        <div class="btn_conatiner d-flex">
+                        <div class="btn_conatiner d-flex mt-2">
                           <button class="sending_doc_btn bg-white text-black ms-4">
                             Domain Documentation
                           </button>
