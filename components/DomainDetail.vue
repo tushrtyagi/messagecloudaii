@@ -21,7 +21,6 @@
                     <div class=" ml-5 my-1">
   <h3 class="ml-3 text-aliceblue my-3 domain-head" >codalien.com</h3>
 
-  <CIcon :icon="cilClipboard" />
 
   </div>
   <CFormCheck label="Use as default domain" class="formcheck text-muted" />
@@ -49,10 +48,12 @@
                 </td>
                 <td><div class="input-group d-flex align-items-center">
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="HOST NAME">
+                  <img src="../assets/image/tabler_copy.svg" alt="copy_icon" class="mr-3" />
                 </div></td>
                 <td>
                     <div class="input-group d-flex align-items-center">
                   <input type="text" class="form-control" id="exampleInputPassword1" placeholder="VALUE">
+                  <img src="../assets/image/tabler_copy.svg" alt="copy_icon" class="mr-5" />
                 </div>
                 </td>
                 
