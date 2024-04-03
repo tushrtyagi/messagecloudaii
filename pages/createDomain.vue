@@ -5,8 +5,8 @@
         <Sidebar />
         <div :class="`${store.isSidebarExpanded ? 'shrink_screen' : ''}`" class="right_panel">
           <Header />
-          <div class="sub_container sending_domain_container bg-white">
-            <div class="sub_section sending_domain_section bg-white">
+          <div class="sub_container sending_domain_container  ">
+            <div class="sub_section sending_domain_section bg-white ">
               <div class="row">
                 <div class="col-lg-12">
                   <div class="breadcrumbs">
