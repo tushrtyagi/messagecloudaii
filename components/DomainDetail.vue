@@ -47,13 +47,15 @@
                     <p><strong>CNAME</strong></p> 
                 </td>
                 <td><div class="input-group d-flex align-items-center">
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="HOST NAME">
-                  <img src="../assets/image/tabler_copy.svg" alt="copy_icon" class="mr-3" />
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="HOST NAME" > 
+                  <img src="../assets/image/copy_link.svg" alt="copy_icon" class="ms-1 copy-icon" />
+                
+                
                 </div></td>
                 <td>
                     <div class="input-group d-flex align-items-center">
                   <input type="text" class="form-control" id="exampleInputPassword1" placeholder="VALUE">
-                  <img src="../assets/image/tabler_copy.svg" alt="copy_icon" class="mr-5" />
+                  <img src="../assets/image/copy_link.svg" alt="copy_icon" class="ms-1 copy_icon" />
                 </div>
                 </td>
                 
@@ -137,11 +139,7 @@
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.27);
   }
     
-  .form-control {
-    padding: 5px 135px;
-    text-align: left;
-    margin-right: 300px;
-}
+
     .form-label{
       font-size: 15px;
       font-weight: bold;
@@ -160,11 +158,22 @@
     }
     .input-group {
       display: flex;
+    
       align-items: center;
+      .form-control {
+        flex:1;
+    padding: 5px 200px;
+    text-align: left;
+    margin-right: 320px;
+  }
+  .copy_icon{
+
+position: relative;
+left: 10px;
+}
+
     }
-    .input-group .form-control {
-      flex: 1;
-    }
+    
     button{
       display: inline;
       position:relative;
@@ -173,6 +182,7 @@
 
    .table_data td {
     border: none;
+  
     span{
       display:block;
       margin:auto;
@@ -194,5 +204,7 @@
    
   }
    }
+
+  
   </style>
   

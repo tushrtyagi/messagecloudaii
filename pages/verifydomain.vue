@@ -29,11 +29,11 @@
                       <div class="tab-content domain_content mt-3">
                         <h2 class="text-customblack">DNS Verification</h2>
                         <p class="text-customblack mt-3">
-                            Strict alignment is when the sending and bounce domain being the same value (e.g. sending domain = sparkpost.com, and bounce domain = sparkpost.com)
+                            Strict alignment is when the sending and bounce domain being the same value (e.g. sending domain = messagecloud.com, and bounce domain = messagecloud.com)
                         </p>
                         <div class="btn_conatiner d-flex">
                           <button class="sending_doc_btn bg-white text-black ms-4">
-                            {{ arr[activeTab].heading }} Documentation
+                            Domain Documentation
                           </button>
                         </div>
                       </div>
