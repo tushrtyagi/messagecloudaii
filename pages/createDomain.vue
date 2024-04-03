@@ -13,10 +13,22 @@
                     <CBreadcrumb style="--cui-breadcrumb-divider: '/'">
                       <CBreadcrumbItem href="/"><img src="../assets/image/home_icon (1).svg" alt="configuration" /></CBreadcrumbItem>
                       <CBreadcrumbItem href="#">Configuration</CBreadcrumbItem>
+           
                         <!-- <CBreadcrumbItem href="/domain"> Add Domain </CBreadcrumbItem> -->
                       
                       <CBreadcrumbItem active> Domain List </CBreadcrumbItem>
                     </CBreadcrumb>
+
+                    <!-- CBreadcrumbItem>
+      <NuxtLink :to="{ name: 'index' }">
+        <img src="../assets/image/home_icon (1).svg" alt="configuration" />
+      </NuxtLink>
+    </CBreadcrumbItem>
+    <CBreadcrumbItem>
+      <NuxtLink :to="{ name: 'domain' }">Configuration</NuxtLink>
+    </CBreadcrumbItem>
+    <CBreadcrumbItem active>Add Domain</CBreadcrumbItem>
+  </CBreadcrumb> -->
                   </div>
                 </div>
               </div>

@@ -11,14 +11,18 @@
                 <div class="col-lg-12">
                   <div class="breadcrumbs">
                     <CBreadcrumb style="--cui-breadcrumb-divider: '/'">
-                      <CBreadcrumbItem href="/"><img src="../assets/image/home_icon (1).svg" alt="configuration" /></CBreadcrumbItem>
-                      <CBreadcrumbItem href="/domain">Configuration</CBreadcrumbItem>
+                      <CBreadcrumbItem  to="/">
+                       
+                          <img src="../assets/image/home_icon (1).svg" alt="configuration" />
+                        
+                        </CBreadcrumbItem>
+                      
+                      <CBreadcrumbItem href="/createdomain">Configuration</CBreadcrumbItem>
                       <CBreadcrumbItem active>API key</CBreadcrumbItem>
                     </CBreadcrumb>
                   </div>
                 </div>
               </div>
-
               <div class="right_panel_global_section bg-white">
                 <div class="row mb-5">
                   <div class="col-lg-12">
