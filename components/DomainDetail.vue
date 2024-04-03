@@ -4,7 +4,7 @@
         <div class="row g-0">
           <div class="col-lg-12 col-md-7 d-flex justify-content-between align-items-center tabs_border">
             <div class="head-text">
-              <p class="text-white m-0  p-3 ">You will need to install the following records to complete the process..</p>
+              <p class="text-white m-0 p-3 ">You will need to install the following records to complete the process.</p>
             </div>
             <NuxtLink to ="/coworker">
               <button class="text-customeblack activetab"><strong>Forward To Colleague</strong></button>
@@ -106,14 +106,16 @@
       color: white;
     }
      .head-text{
+      width: 79%;
       p{
-        width:90%;
+        width:56%;
+     
       }
      }
     button.activetab {
       background: white;
       color: black;
-      padding: 10px 26px; /* Adjusted padding */
+      padding: 16px 27px; /* Adjusted padding */
       border-radius: 7px;
       box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.27);
     }
@@ -122,7 +124,7 @@
   .btn{
     position: relative;
     right:270px;
-    padding: 7px 30px;
+    padding: 7px 22px;
     font-size: 0.8rem;
     border-radius: 7px;
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.27);
