@@ -19,7 +19,7 @@
                 </div>
               </div>
 
-              <div class="right_panel_global_section">
+              <div class="right_panel_global_section bg-white">
                 <div class="row mb-5">
                   <div class="col-lg-12">
                     <div class="user_api d-flex align-items-center justify-content-between bg-white">

@@ -32,7 +32,9 @@
                 </div>
               <!-- placeholder="Hi , i'm trying to authenticate our domain with MessageCloud , but i don't have the ability to modify our DNS records. Can you help me add these records , so that i can complete the process ?" -->
                 <div class="mb-3 mt-4">
-                  <button type="submit" class="submit-btn bg-aliceblue text-white btn-sm">Send</button>
+                  <NuxtLink to="/domainlist">
+                    <button type="submit" class="submit-btn bg-aliceblue text-white btn-sm">Send</button>
+                  </NuxtLink>
                 </div>
               </form>
             </div>
