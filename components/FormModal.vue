@@ -19,14 +19,14 @@
                 <div class="mb-3 ">
                   <label for="exampleInputEmail1" class="form-label mb-2 me-3">To</label>
                   <div class="input-group d-flex ">
-                    <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="email" class="form-control " placeholder="Email Address" id="exampleInputEmail1" aria-describedby="emailHelp">
                  
                   </div>
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label mb-2 me-3">Message</label>
                   <div class="input-group d-flex ">
-                    <textarea type="text" class="form-control text-muted  " id="exampleInputmessage" />
+                    <textarea type="text" class="form-control text-muted pb-5  " placeholder="Hello, I'm attempting to verify our domain with Messagecloud, but I lack the capability to edit our DNS records. Could you assist me in adding these records so that I can finalize the authentication process?" id="exampleInputmessage" />
                    
                   </div>
                 </div>
@@ -106,16 +106,12 @@
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.27);
   }
     
-    // .form-control{
-    //  margin-right:300px;
+    .form-control{
+     
    
      
-    // }
-    .form-control[placeholder] {
-      position: relative;
-      left: 0;
-      
     }
+    
     .form-label{
       font-size: 15px;
       font-weight: bold;
@@ -134,9 +130,15 @@
     .input-group {
       display: flex;
       align-items: left;
+      justify-content:flex-start;
     }
     .input-group .form-control {
       flex: 1;
+      &::placeholder{
+        position: relative;
+        right: 0px;
+       
+      }
     }
     button{
       display: inline;
@@ -154,9 +156,6 @@
    }
 
 
-
-    
-     
 
 
 
