@@ -6,9 +6,9 @@
             <div class="head-text">
               <p class="text-white m-0 mr-3 p-3 ">Add the TXT and CNAME records, Hostnames, and Values for this domain in the settings section of your DNS provider.</p>
             </div>
-           <NuxtLink to="/coworker" >
+           <!-- <NuxtLink to="/coworker" >
              <button class="text-customeblack activetab">Forward To Colleague</button>
-           </NuxtLink>
+           </NuxtLink> -->
           </div>
         </div>
       </div>
@@ -17,48 +17,61 @@
           <div class="row">
             <div class="col-lg-12 col-md-6 col-sm-12 col-12 m-0">
               <form>
-                <div class="mb-3 ">
-                  <h4 for="head1" class=" head mb-5 me-3">Add DKIM Record</h4>
+                <div class="mb-4 ">
+                  <h4 for="head1" class=" head ">Add DKIM Record</h4>
                   
                 </div>
-                <div class="mb-3 ">
-                  <label for="exampleInputEmail1" class="form-label mb-2 me-3">Type</label>
+                <div class="mb-3 d-inline-block  ">
+                  <label for="exampleInputEmail1" class="form-label mb-2 ">Type</label>
                   <p><strong>TXT</strong></p>
                 </div>
-                <div class="mb-3 ">
+                <div class="mb-3  d-inline-block mx-3">
                   <label for="exampleInputEmail1" class="form-label mb-2 me-3">Hostname</label>
                   <div class="input-group d-flex align-items-center">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <button type="button" class="btn  btn-sm">Copy</button>
+                    <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> -->
+                    <!-- <button type="button" class="btn  btn-sm">Copy</button> -->
+                    <p>_dmarc.test.codalien.com</p>
+
+                    <img src="../assets/image/copy_link.svg" alt="copy_icon" class= "copy-icon ms-2 mb-3" />
+
                   </div>
-                </div>
-                <div class="mb-3">
+                </div> 
+                <div class="mb-3 d-inline-block mx-3">
                   <label for="exampleInputPassword1" class="form-label mb-2 me-3">Value</label>
                   <div class="input-group d-flex align-items-center">
-                    <input type="text" class="form-control" id="exampleInputPassword1">
-                    <button type="button" class="btn  btn-sm">Copy</button>
+                    <!-- <input type="text" class="form-control" id="exampleInputPassword1"> -->
+                    <!-- <button type="button" class="btn  btn-sm">Copy</button> -->
+                    <p>v=DMARC1; p=none;</p>
+                    <img src="../assets/image/copy_link.svg" alt="copy_icon" class="copy-icon ms-2 mb-3" />
+
                   </div>
                 </div>
-                <hr class="m-5">
-                <div class="mb-3 ">
-                  <h4 for="head1" class=" head mb-5 me-3">Add Bounce Record</h4>
+                <hr class="my-4">
+                <div class="mb-4 ">
+                  <h4 for="head1" class=" head ">Add Bounce Record</h4>
                 </div>
-            <div class="mb-3 ">
+            <div class="mb-3 d-inline-block ">
               <label for="exampleInputEmail1" class="form-label mb-2 me-3">Type</label>
               <p><strong>CNAME</strong></p>
             </div>
-            <div class="mb-3 ">
+            <div class="mb-3 d-inline-block mx-3">
               <label for="exampleInputEmail1" class="form-label mb-2 me-3">Hostname</label>
               <div class="input-group d-flex align-items-center">
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <button type="button" class="btn  btn-sm">Copy</button>
+                <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> -->
+                <!-- <button type="button" class="btn  btn-sm">Copy</button> -->
+                <p>s2._domainkey.test.codalien.com</p>
+                <img src="../assets/image/copy_link.svg" alt="copy_icon" class="copy-icon  ms-2 mb-3" />
+
               </div>
             </div>
-            <div class="mb-3">
+            <div class="mb-3 d-inline-block mx-3">
               <label for="exampleInputPassword1" class="form-label mb-2 me-3">Value</label>
               <div class="input-group d-flex align-items-center">
-                <input type="text" class="form-control" id="exampleInputPassword1">
-                <button type="button" class="btn  btn-sm">Copy</button>
+                <!-- <input type="text" class="form-control" id="exampleInputPassword1"> -->
+                <!-- <button type="button" class="btn  btn-sm">Copy</button> -->
+                <p>u43392630.wl131.sendgrid.net</p>
+                <img src="../assets/image/copy_link.svg" alt="copy_icon" class="copy-icon  ms-2 mb-3" />
+
               </div>
             </div>
             <div class="mb-3  ">
@@ -66,8 +79,12 @@
             </div>
             <div class="mb-3 mt-4">
               <NuxtLink to="/createDomain">
-                <button type="submit" class="submit-btn bg-aliceblue text-white btn-sm">Verify Domain</button>
+                <button type="submit" class="submit-btn bg-aliceblue text-white btn-sm">Save</button>
               </NuxtLink>
+              <NuxtLink to="/coworker">
+                <button type="submit" class="submit-btn bg-aliceblue text-white btn-sm ms-5">Forward to Colleague</button>
+              </NuxtLink>
+              
             </div>
                
               </form>
@@ -148,6 +165,7 @@
      
      .head{
         font-weight: 900;
+        margin-bottom: 15px;
      }
   .submit-btn{
     padding: 7px 30px;
@@ -160,6 +178,8 @@
   color:white;
     }
     .form-control{
+
+    
      margin-right:300px;
    
      
@@ -182,6 +202,7 @@
     .input-group {
       display: flex;
       align-items: center;
+      flex-direction: row;
     }
     .input-group .form-control {
       flex: 1;

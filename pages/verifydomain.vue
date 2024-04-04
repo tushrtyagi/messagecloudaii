@@ -22,17 +22,17 @@
                 <div class="right_panel_global_section bg-white">
                   <div class="row">
                     <div class="col-lg-12 ">
-                      <div class="domain_flex bg-white d-flex align-items-baseline justify-content-between mt-3">
+                      <div class="domain_flex bg-white d-flex align-items-baseline justify-content-between mt-0">
                         <h3 class="text-customblack">Verify Domain </h3>
                       </div>
                      
-                      <div class="tab-content domain_content mt-4">
+                      <div class="tab-content domain_content mt-4 mx-1">
                         <h2 class="text-customblack">DNS Verification</h2>
                         <p class="text-customblack mt-3">
                             Strict alignment is when the sending and bounce domain being the same value (e.g. sending domain = messagecloud.com, and bounce domain = messagecloud.com)
                         </p>
                         <div class="btn_conatiner d-flex mt-2">
-                          <button class="sending_doc_btn bg-white text-black ms-4">
+                          <button class="sending_doc_btn  bg-white text-black ms-4">
                             Domain Documentation
                           </button>
                         </div>

@@ -35,14 +35,14 @@
                       </div> -->
                     </div>
                     <!-- <Tabs class="domain_tabs" @changeTab="changeTab" :tabs="['Sending Domain ', 'Bounce ', 'Tracking ']"  /> -->
-                     <div class="tab-content domain_content mb-4">
-        <h3 class="text-customblack">{{arr[activeTab].heading }}</h3>
+                     <div class="tab-content domain_content mb-3">
+        <h3 class="text-customblack m">{{arr[activeTab].heading }}</h3>
         <p class="text-customblack mt-3">
         {{arr[activeTab].subtext }}
         </p>
 
         <div class="btn_conatiner d-flex">
-        <button class="sending_doc_btn bg-white text-black mt-3 ms-4">
+        <button class="sending_doc_btn bg-white text-black mt-1 ms-4">
           {{arr[activeTab].heading }} Documentation
           </button>
           </div>
