@@ -1,5 +1,5 @@
 <template>
-  <CModal class="api_key_modal">
+  <CModal class="api_key_modal mt-4">
     <CModalHeader class="bg-sidegrey">
       <CModalTitle class="text-customblack d-flex align-items-center justify-content-between w-100"
         >API Key
@@ -12,20 +12,14 @@
         API key has been generated successfully. Please copy this key and save it
         somewhere safe. For security reason, we cannot show it to you again.
       </p>
-      <input type="text" class="bg-white w-100" placeholder=" Your API key" />
+      
     </CModalBody>
     <CModalFooter class="pb-5 align-items-center d-flex justify-content-center px-1 bg-sidegrey ">
-      <CButton
-        class="text-black bg-white   " 
-        @click="
-          () => {
-            visibleLiveDemo = false;
-          }
-        "
-      >
-        <img src="../assets/image/tabler_copy.svg" alt="copy_icon" class="mr-3 " /> Copy 
-      </CButton>
-      <CButton class="bg-darkcerulean login_btn text-white "  @click="closemodal">OK</CButton>
+      <p class="key">{{ apiKey }}</p>
+      
+        <img src="../assets/image/tabler_copy.svg" alt="copy_icon" class="mr-3 " />
+    
+      <CButton class="bg-darkcerulean login_btn text-white mx-4"  @click="closemodal">OK</CButton>
     </CModalFooter>
   </CModal>
 </template>
@@ -34,13 +28,19 @@
 import { CModal } from "@coreui/vue";
 export default {
   components: { CModal },
+  props: {
+   apiKey : {
+      
+      default: "api key"
+    },},
   data() {
     return {};
   },
    methods: {
         closemodal() {
           this.$emit('closemodal' , false)
-      }
+      },
+    
   },
 };
 </script>
@@ -48,7 +48,7 @@ export default {
 <style lang="scss">
 .modal.fade.api_key_modal.show {
   .modal-dialog {
-    max-width: 50%;
+    max-width: 30%;
   }
 }
 
@@ -72,11 +72,11 @@ export default {
     padding: 9px 30px;
     margin: 0 10px;
     position: relative;
-    left:8px;
-
-    &:hover{
-      background: black;
-    }
-    
+    left:8px;  
 }
+.key{
+  font-size: 26px;
+  font-weight: 600;
+}
+
 </style>

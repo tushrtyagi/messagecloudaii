@@ -15,6 +15,7 @@
                         placeholder="Enter your key name"
                         class="bg-white"
                         type="text"
+                        v-model="apiKeyName" 
                       /> </CModalBody>
         <CModalFooter class="pb-5">
           <div class="row">
@@ -27,14 +28,11 @@
             >
               Cancel
             </button>
-            <button class="bg-aliceblue  text-white  login_btn ms-4" @click="
-                          () => {
-                            visibleLiveDemo = true;
-                          }
-                        " >Generate</button>
+            <button class="bg-aliceblue  text-white  login_btn ms-4" @click="generateApiKey" >Generate</button>
                          <ApiKeyModal
               :backdrop="true"
               :keyboard="false"
+              :apiKey="generatedApiKey"
               :visible="visibleLiveDemo"
               @closemodal="close"
             />
@@ -51,18 +49,26 @@
 
 <script>
 import { CModal,CButton } from "@coreui/vue";
+
 export default {
   components: { CModal,CButton },
   data() {
     return {
-      visibleLiveDemo:false
+      visibleLiveDemo: false,
+      apiKeyName: "",
+      generatedApiKey: "",
     };
   },
     methods: {
        closemodal() {
           this.$emit('closemodal' , false)
       },
-
+      generateApiKey() {
+     
+      this.generatedApiKey =  Math.random().toString(36).substring(2,16);
+     
+      this.visibleLiveDemo = true;
+    },
       close() {
         this.visibleLiveDemo = false;
       },

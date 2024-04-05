@@ -11,7 +11,7 @@
                 <div class="col-lg-12">
                   <div class="breadcrumbs">
                     <CBreadcrumb style="--cui-breadcrumb-divider: '/'">
-                      <CBreadcrumbItem  to="/">
+                      <CBreadcrumbItem href="/">
                        
                           <img src="../assets/image/home_icon (1).svg" alt="configuration" />
                         
@@ -42,7 +42,7 @@
                             <th>Name</th>
                             <th>Created on</th>
                           
-                            <th>Delete</th>
+                            <th></th>
                           </tr>
                         </thead>
                         <tbody>

@@ -12,7 +12,7 @@
                   <div class="breadcrumbs">
                     <CBreadcrumb style="--cui-breadcrumb-divider: '/'">
                       <CBreadcrumbItem href="/"><img src="../assets/image/home_icon (1).svg" alt="configuration" /></CBreadcrumbItem>
-                      <CBreadcrumbItem href="/domain">Configuration</CBreadcrumbItem>
+                      <CBreadcrumbItem href="/createdomain">Configuration</CBreadcrumbItem>
                       <CBreadcrumbItem active>SMTP</CBreadcrumbItem>
                     </CBreadcrumb>
                   </div>
@@ -73,7 +73,7 @@
                               <th>SMTP key value</th>
                               <th >Status</th>
                               <th>Created on</th>
-                              <th >Delete</th>
+                              <th > </th>
                             </tr>
                           </thead>
                           <tbody>
