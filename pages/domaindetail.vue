@@ -161,7 +161,9 @@ export default {
 
 .tab-content {
   .domain_content {
- 
+ h2{
+  font-weight: 900;
+ }
     .btn_conatiner button:hover {
       background-color: $darkcerulean;
     }
@@ -193,9 +195,18 @@ export default {
 .detail-record-modal {
   display: inline-block;
 }
+.formcheck input[type="checkbox"] {
+      border-color: $aliceblue; 
+      box-shadow: none;
+    }
+    .formcheck label {
+      font-weight:400;
+      font-size: 14px;
+    
+    }
 
 .domain-head{
-  font-size: 30px;
+  font-size: 33px;
   font-weight: 600;
 }
 

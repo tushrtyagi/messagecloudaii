@@ -14,7 +14,7 @@
       </p>
       <input type="text" class="bg-white w-100" placeholder=" Your API key" />
     </CModalBody>
-    <CModalFooter class="pb-5 align-items-center d-flex justify-content-center px-1 bg-sidegrey">
+    <CModalFooter class="pb-5 align-items-center d-flex justify-content-center px-1 bg-sidegrey ">
       <CButton
         class="text-black bg-white   " 
         @click="
@@ -23,7 +23,7 @@
           }
         "
       >
-        <img src="../assets/image/tabler_copy.svg" alt="copy_icon" class="mr-3" /> Copy link
+        <img src="../assets/image/tabler_copy.svg" alt="copy_icon" class="mr-3 " /> Copy 
       </CButton>
       <CButton class="bg-darkcerulean login_btn text-white "  @click="closemodal">OK</CButton>
     </CModalFooter>
@@ -68,9 +68,15 @@ export default {
     font-size: 17px;
     border: 1px solid #0394E3;
     background-color: #0394E3;
+
     padding: 9px 30px;
     margin: 0 10px;
     position: relative;
     left:8px;
+
+    &:hover{
+      background: black;
+    }
+    
 }
 </style>

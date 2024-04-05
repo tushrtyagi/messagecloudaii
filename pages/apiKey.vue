@@ -71,7 +71,7 @@
                     </div>
                   </div>
                   <div class="col-lg-12 btn_container d-flex mt-3">
-                    <button class=" sending_doc_btn bg-white text-black ms-4">
+                    <button class=" sending_doc_btn bg-white text-black mx-4 ">
                      Read API key Documentation
                     </button>
                     <NuxtLink ><button class="login_btn bg-aliceblue text-white"  @click="
@@ -241,11 +241,12 @@ export default defineComponent({
     }
     .sending_doc_btn {
       font-weight: 400;
-      font-size: 1.063rem;
+      font-size: 1rem;
       border: 1px solid black;
-      margin:0 20px;
+      margin:0 12px;
       border-radius: 10px;
-      background-color: #F4F4F4
+      background-color: #F4F4F4;
+      padding: 0 10px;
 
     }
     .sending_doc_btn:hover{

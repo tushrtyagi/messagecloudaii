@@ -123,7 +123,7 @@
             </tbody>
           </table>
         </div>
-        <div class=" btns d-inline-block">
+        <div class=" btns d-inline-block mt-2">
         <NuxtLink to="/createDomain">
   <button type="submit" class="login_btn  bg-aliceblue text-white btn-sm mt-4 ms-1 ">Verify </button>
 </NuxtLink>
@@ -215,15 +215,7 @@
       font-size: 15px;
       font-weight: bold;
     }
-    .formcheck input[type="checkbox"] {
-      border-color: $aliceblue; 
-      box-shadow: none;
-    }
-    .formcheck label {
-      font-weight:400;
-      font-size: 14px;
-    
-    }
+   
     .position-relative {
       position: relative;
     }
