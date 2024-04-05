@@ -36,10 +36,11 @@ export default {
   <div
     class="sidebar"
     id="sidemenu"
+  
     :class="`${!store.isSidebarExpanded ? 'shrink bg-sidegrey' : 'shrink expend bg-sidegrey'}`"
   >
  
-    <div class="toggle_menu_wrap">
+    <div class="toggle_menu_wrap " >
       <ul class="sidebar-nav ">
         <li> 
           <NuxtLink class="text-customblack " to="/">
@@ -196,8 +197,8 @@ export default {
 }
 
 .sidebar.shrink {
-  width: 60px;
-  padding: 20px 0px 15px 0px;
+    width: 60px;
+    padding: 0px 0px 8px 0px;
 }
 
 .shrink {
@@ -232,6 +233,7 @@ ul.sidebar-nav {
   flex: none;
   flex-direction: unset;
   overflow: unset ;
+  margin-bottom: 1px;
   // overflow-x: hidden;
   li {
     display: flex;

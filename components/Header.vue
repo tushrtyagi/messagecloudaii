@@ -257,22 +257,21 @@ a.router-link-active.router-link-exact-active.company_logo {
 }
 a.router-link-active.router-link-exact-active.company_logo .full_icon img{
   background: transparent;
-    height: 31px;
-    width: 179px;
+    height: 34px;
+    width: 186px;
     position: fixed;
-    top: 20px;
-    left: 16px;
+    top: 17px;
+    left: 6px;
     
   }
   
   a.router-link-active.router-link-exact-active.company_logo .logo_icon img{
-  background: transparent;
-    height: 23px;
-    width: 40px;
+    background: transparent;
+    height: 12px;
+    width: 33px;
     position: fixed;
-    top: 24px;
-    left: 16px;
-    
+    top: 29px;
+    left: 18px;
   }
   
   // .dropdown-icon{

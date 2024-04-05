@@ -21,11 +21,11 @@
                   <h4 for="head1" class=" head ">Add DKIM Record</h4>
                   
                 </div>
-                <div class="mb-3 d-inline-block  ">
+                <div class="mb-3 d-inline-block mr-4  ">
                   <label for="exampleInputEmail1" class="form-label mb-2 ">Type</label>
-                  <p><strong>TXT</strong></p>
+                  <p class="text-muted"><strong>TXT</strong></p>
                 </div>
-                <div class="mb-3  d-inline-block mx-3">
+                <div class="mb-3  d-inline-block mx-5">
                   <label for="exampleInputEmail1" class="form-label mb-2 me-3">Hostname</label>
                   <div class="input-group d-flex align-items-center">
                     <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> -->
@@ -36,7 +36,7 @@
 
                   </div>
                 </div> 
-                <div class="mb-3 d-inline-block mx-3">
+                <div class="mb-3 d-inline-block mx-4">
                   <label for="exampleInputPassword1" class="form-label mb-2 me-3">Value</label>
                   <div class="input-group d-flex align-items-center">
                     <!-- <input type="text" class="form-control" id="exampleInputPassword1"> -->
@@ -48,13 +48,13 @@
                 </div>
                 <hr class="my-4">
                 <div class="mb-4 ">
-                  <h4 for="head1" class=" head ">Add Bounce Record</h4>
+                  <h4 for="head1" class=" head ">Add SPF Record</h4>
                 </div>
-            <div class="mb-3 d-inline-block ">
+            <div class="mb-3 d-inline-block  mr-3">
               <label for="exampleInputEmail1" class="form-label mb-2 me-3">Type</label>
-              <p><strong>CNAME</strong></p>
+              <p class="text-muted"><strong>CNAME</strong></p>
             </div>
-            <div class="mb-3 d-inline-block mx-3">
+            <div class="mb-3 d-inline-block mx-5">
               <label for="exampleInputEmail1" class="form-label mb-2 me-3">Hostname</label>
               <div class="input-group d-flex align-items-center">
                 <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> -->
@@ -64,7 +64,7 @@
 
               </div>
             </div>
-            <div class="mb-3 d-inline-block mx-3">
+            <div class="mb-3 d-inline-block mx-4">
               <label for="exampleInputPassword1" class="form-label mb-2 me-3">Value</label>
               <div class="input-group d-flex align-items-center">
                 <!-- <input type="text" class="form-control" id="exampleInputPassword1"> -->
@@ -74,10 +74,10 @@
 
               </div>
             </div>
-            <div class="mb-3  ">
-              <CFormCheck label="The TXT and  CNAME record has been added to the DNS provider." class="formcheck text-muted" />
+            <div class="mb-1  ">
+              <CFormCheck label="The TXT and  CNAME record has been added to the DNS provider." class="formcheck text-muted mt-2" />
             </div>
-            <div class="mb-3 mt-4">
+            <div class="mb-2 mt-4">
               <NuxtLink to="/createDomain">
                 <button type="submit" class="submit-btn bg-aliceblue text-white btn-sm">Save</button>
               </NuxtLink>

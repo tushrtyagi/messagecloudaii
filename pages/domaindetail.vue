@@ -1,5 +1,5 @@
 <template>
-  <div class="home_page bg-sidegrey pb-5 h-100">
+  <div class="home_page bg-sidegrey pb-1 h-100">
     <div class="container-fluid p-0">
       <div class="d-flex justify-content-between w-100 vh-100">
         <Sidebar />
@@ -23,46 +23,49 @@
               <div class="right_panel_global_section bg-white">
                 <div class="row">
                   <div class="col-lg-12 ">
-                    <div class="domain_flex bg-white d-flex align-items-baseline justify-content-between mt-3">
-                      <h3 class="text-customblack mb-5">Domain Details</h3>
-                    </div>
-                    
-                    <div class="tab-content domain_content  ">
-                      <h2 class="text-customblack">Domain Status</h2>
-                      <p class="text-customblack mt-3">
-                        This domain failed authentication. It can take 24 to 48 hours for the DNS record to propagate.
-                      </p>
+                    <!-- <div class="domain_flex bg-white d-flex align-items-baseline justify-content-between mt-1">
+                      <h3 class="text-customblack ">Domain Details</h3>
+                    </div> -->
+
+                    <div class="d-flex align-items-center justify-content-between ">
+                    <div class=" ml-5 ">
+  <h3 class="ml-3  mb-5 
+  domain-head" >codalien.com</h3>
+
+
+  </div>
+  <CFormCheck label="Use as default domain" class="formcheck text-muted mb-5" />
+</div>
+<div class="tab-content domain_content  ">
+  <h2 class="text-customblack">DNS Records</h2>
+  <p class="text-customblack mt-3">
+    You will need to install the following records to complete the process.
+  </p>
+</div>
+<!--                     
+ 
                       <div class="btn_conatiner d-flex">
                         <button class="sending_doc_btn bg-white text-black ms-4 ">
                           Domain Documentation
                         </button>
                       </div>
-                    </div>
+                    </div> --> 
                    
                     <div class="row g-0 ">
-                      <div class="col-md-12 mt-5">
+                      <div class="col-md-12 mt-1">
+                     <!-- <Tabs class="domain_tabs" @changeTab="changeTab" :tabs="['Manual install ', 'Send to Coworker']"  /> -->
+
                         <DomainDetail :type="CNAME"  />
                       </div>
-                     
+    
+
                     </div>
                     
                   </div>
                 </div>
-                <div class="tab-content domain_content mt-3 ">
-                  <h2 class="text-customblack">Sender Verification</h2>
-                  <p class="text-customblack mt-3">
-                    Single Sender Verification
-Verify ownership of a single email address to use as a sender
-                  </p>
-                  <div class="btn_conatiner d-flex">
-                  <NuxtLink to="/senderverify">
+                
 
-                    <button class="sending_doc_btn bg-aliceblue text-white ms-4 mt-2">
-                      Verify Sender
-                    </button>
-                  </NuxtLink>
-                  </div>
-                </div>
+
               </div>
             </div>
           </div>
@@ -158,7 +161,7 @@ export default {
 
 .tab-content {
   .domain_content {
-   
+ 
     .btn_conatiner button:hover {
       background-color: $darkcerulean;
     }
@@ -190,4 +193,10 @@ export default {
 .detail-record-modal {
   display: inline-block;
 }
+
+.domain-head{
+  font-size: 30px;
+  font-weight: 600;
+}
+
 </style>

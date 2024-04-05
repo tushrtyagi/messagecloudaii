@@ -2,7 +2,7 @@
   <div>
     <div class="tabs">
       <div class="row g-0">
-        <div class="d-flex justify-content-between tabs_border">
+        <div class="d-flex justify-content-between  tabs_border">
           <button
              v-for="(tab, index) in tabs"
               :key="index"

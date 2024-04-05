@@ -25,7 +25,7 @@
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label mb-2 me-3">Message</label>
-                  <div class="input-group d-flex align-items-left justify-content-between">
+                  <div class="input-group">
                     <textarea type="text" class="form-control text-muted pb-5  " placeholder="Hello, I'm attempting to verify our domain with Messagecloud, but I lack the capability to edit our DNS records. Could you assist me in adding these records so that I can finalize the authentication process?" id="exampleInputmessage" />
                    
                   </div>
@@ -127,18 +127,11 @@
     .position-relative {
       position: relative;
     }
-    .input-group {
-      display: flex;
-      align-items: left;
-      justify-content:flex-start;
-    }
+   
     .input-group .form-control {
+  
       flex: 1;
-      &::placeholder{
-        position: relative;
-        right: 0px;
-       
-      }
+    padding: 7px 12px;
     }
     button{
       display: inline;

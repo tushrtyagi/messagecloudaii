@@ -68,7 +68,7 @@
                   <th>Domain</th>
                   <th> Domain Status</th>
                   <th>Date</th>
-                  <th>Delete</th>
+                  <th>  </th>
                 </tr>
               </thead>
               <tbody>

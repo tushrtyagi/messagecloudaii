@@ -1,12 +1,12 @@
 <template>
-  <div class="home_page bg-sidegrey h-100 pb-5">
+  <div class="home_page bg-sidegrey h-100 ">
     <div class="container-fluid p-0">
       <div class="d-flex justify-content-between w-100">
         <Sidebar />
         <div :class="`${store.isSidebarExpanded ? 'shrink_screen' : ''}`" class="right_panel">
           <Header />
           <div class="dashboard_section">
-            <div class="dashboard_page bg-white mb-5 pb-5">
+            <div class="dashboard_page bg-white mb-2 ">
               <div class="container-fluid p-0">
                 <div class="row g-0 ">
                   <div class="col-lg-5 col-md-6 col-sm-12 col-12  ">
@@ -95,7 +95,7 @@ export default defineComponent({
 }
 
 .figures_section {
-  padding: 30px 30px;
+  padding: 0px 30px;
   .donut_chart {
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
@@ -118,6 +118,7 @@ export default defineComponent({
       .recent-heading {
         position: relative;
         right: 30px;
+        top:9px;
         font-weight: 500;
         font-size: 25px;
         font-family: Poppins;

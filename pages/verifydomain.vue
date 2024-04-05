@@ -160,15 +160,17 @@
         font-size: 1.063rem;
       }
       .sending_doc_btn {
-        border: none;
-        border-radius: 10px;
-        padding: 13px;
-        background: $aliceblue;
-        border: 1px solid;
-        position: relative;
-        right: 25px;
-        top: -6px;
-      }
+
+    border: none;
+    border-radius: 10px;
+    padding: 13px;
+    background: #0394E3;
+    border: 1px solid;
+    position: relative;
+    right: 28px;
+    top: 0px;
+}
+      
     }
   }
   

@@ -1,32 +1,14 @@
 <template>
     <div>
-      <div class="api_tabs bg-aliceblue">
-        <div class="row g-0">
-          <div class="col-lg-12 col-md-7 d-flex justify-content-between align-items-center tabs_border">
-            <div class="head-text">
-              <p class="text-white m-0 p-3 ">You will need to install the following records to complete the process.</p>
-            </div>
-            <NuxtLink to ="/coworker">
-              <button class="text-customeblack activetab"><strong>Forward To Colleague</strong></button>
-            </NuxtLink>
-          </div>
-        </div>
-      </div>
-      <div class="api-tab-content mb-4 ">
+      
+      
       
           <div class="row">
             <div class="col-lg-12 col-md-6 col-sm-12 col-12 m-0">
                
-                <div class="d-flex align-items-center justify-content-between ">
-                    <div class=" ml-5 my-1">
-  <h3 class="ml-3 text-aliceblue my-3 domain-head" >codalien.com</h3>
+               
 
-
-  </div>
-  <CFormCheck label="Use as default domain" class="formcheck text-muted" />
-</div>
-
-                <div class="table_data mt-4 bg-white">
+                <div class="table_data mt-4">
           <table class="table">
             <thead>
               <tr>
@@ -39,36 +21,123 @@
             <tbody>
               <tr >
                 <td>
-                    <p>
-                        FAILED
-                    </p>
+                  
+                    <img src="../assets/image/pass.svg" alt="" class="mx-3">
+                  
                  </td>
                 <td>
-                    <p><strong>CNAME</strong></p> 
+                    <p>CNAME</p> 
                 </td>
                 <td><div class="input-group d-flex align-items-center">
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="HOST NAME" > 
-                  <img src="../assets/image/copy_link.svg" alt="copy_icon" class="ms-1 copy-icon" />
+                  <p>em3178.test.codalien.com</p>
+                  <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="HOST NAME" >  -->
+                  <img src="../assets/image/copy_link.svg" alt="copy_icon" class="ms-5 mb-3 copy-icon" />
                 
                 
                 </div></td>
                 <td>
                     <div class="input-group d-flex align-items-center">
-                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="VALUE">
-                  <img src="../assets/image/copy_link.svg" alt="copy_icon" class="ms-1 copy_icon" />
+                      <p>_dmarc.test.codalien.com</p>
+                  <!-- <input type="text" class="form-control" id="exampleInputPassword1" placeholder="VALUE"> -->
+                  <img src="../assets/image/copy_link.svg" alt="copy_icon" class="ms-2 mb-3 copy_icon" />
                 </div>
                 </td>
                 
               </tr>
+              <tr >
+                <td>
+                    <p>
+                      <img src="../assets/image/pass.svg" alt="" class="mx-3">
+                    </p>
+                 </td>
+                <td>
+                    <p>CNAME</p> 
+                </td>
+                <td><div class="input-group d-flex align-items-center">
+                  <p>s1._domainkey.test.codalien.com</p>
+                  <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="HOST NAME" >  -->
+                  <img src="../assets/image/copy_link.svg" alt="copy_icon" class="ms-2 mb-3 copy-icon" />
+                
+                
+                </div></td>
+                <td>
+                    <div class="input-group d-flex align-items-center">
+                      <p>_dmarc.test.codalien.com</p>
+                  <!-- <input type="text" class="form-control" id="exampleInputPassword1" placeholder="VALUE"> -->
+                  <img src="../assets/image/copy_link.svg" alt="copy_icon" class="ms-2 mb-3 copy_icon" />
+                </div>
+                </td>
+                
+              </tr>
+              <tr >
+                <td>
+                    <p>
+                      <img src="../assets/image/pass.svg" alt="" class="mx-3">
+                    </p>
+                 </td>
+                <td>
+                    <p>CNAME</p> 
+                </td>
+                <td><div class="input-group d-flex align-items-center">
+                  <p>s2._domainkey.test.codalien.com</p>
+                  <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="HOST NAME" >  -->
+                  <img src="../assets/image/copy_link.svg" alt="copy_icon" class="ms-2 mb-3 copy-icon" />
+                
+                
+                </div></td>
+                <td>
+                    <div class="input-group d-flex align-items-center">
+                      <p>_dmarc.test.codalien.com</p>
+                  <!-- <input type="text" class="form-control" id="exampleInputPassword1" placeholder="VALUE"> -->
+                  <img src="../assets/image/copy_link.svg" alt="copy_icon" class="ms-2 mb-3 copy_icon" />
+                </div>
+                </td>
+                
+              </tr>
+              <tr >
+                <td>
+                    <p>
+                      <img src="../assets/image/failed.svg" alt="" class="mx-3">
+                    </p>
+                 </td>
+                <td>
+                    <p>TXT</p> 
+                </td>
+                <td><div class="input-group d-flex align-items-center">
+                  <p>s3.domainkey.test.codalien.com</p>
+                  <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="HOST NAME" >  -->
+                  <img src="../assets/image/copy_link.svg" alt="copy_icon" class="ms-3 mb-3 copy-icon" />
+                
+                
+                </div></td>
+                <td>
+                    <div class="input-group d-flex align-items-center">
+                      <p>_dmarc.test.codalien.com</p>
+                  <!-- <input type="text" class="form-control" id="exampleInputPassword1" placeholder="VALUE"> -->
+                  <img src="../assets/image/copy_link.svg" alt="copy_icon" class="ms-2 mb-3 copy_icon" />
+                </div>
+                </td>
+                
+              </tr>
+
             </tbody>
           </table>
         </div>
-              
+        <div class=" btns d-inline-block">
+        <NuxtLink to="/createDomain">
+  <button type="submit" class="login_btn  bg-aliceblue text-white btn-sm mt-4 ms-1 ">Verify </button>
+</NuxtLink>
+<NuxtLink to="/coworker">
+  <button type="submit" class="login_btn bg-aliceblue text-white btn-sm mb-3 ms-5">Forward to Colleague</button>
+</NuxtLink>
+       
+      </div>
             </div>
        
         </div>
       </div>
-    </div>
+      
+   
   </template>
   
   <script>
@@ -108,7 +177,7 @@
      .head-text{
       width: 79%;
       p{
-        width:56%;
+        width:100%;
      
       }
      }
@@ -168,11 +237,7 @@
     text-align: left;
     margin-right: 320px;
   }
-  .copy_icon{
-
-position: relative;
-left: 10px;
-}
+ 
 
     }
     
@@ -191,8 +256,7 @@ left: 10px;
       padding:0 0;
     }}
    .api-tab-content{
-    border-radius: 4px;
-    border: 0.1px solid #D9D9D9;
+
     padding: 35px;
     .formcheck input[type=checkbox] {
     box-shadow: none;
@@ -206,6 +270,9 @@ left: 10px;
    
   }
    }
+   .btns button{
+  font-size: 15px;
+}
 
   
   </style>
