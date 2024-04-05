@@ -187,8 +187,8 @@ export default {
   top: 60px;
   left: 0;
   width: 60px;
-  padding-top: -10px;
-  margin-top: -50px;
+ 
+  margin-top: -30px;
   min-height: 10vh;
   overflow-x: hidden;
   overflow-y: hidden;
