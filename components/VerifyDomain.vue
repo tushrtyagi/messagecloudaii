@@ -75,7 +75,8 @@
               </div>
             </div>
             <div class="mb-1  ">
-              <CFormCheck label="The TXT and  CNAME record has been added to the DNS provider." class="formcheck text-muted mt-2" />
+              <CFormCheck label="The TXT and  CNAME record has been added to the DNS provider."  v-model="checked" class="formcheck text-muted mt-2" />
+              <p v-if="!checked" class="text-danger">Please confirm you have added the records to your DNS provider.</p>
             </div>
             <div class="mb-2 mt-4">
               <NuxtLink to="/createDomain">
@@ -113,7 +114,9 @@
     },
     components: {CFormCheck},
     data() {
-      return {};
+      return {
+        checked: false ,
+      };
     },
   };
   </script>

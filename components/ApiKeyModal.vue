@@ -19,7 +19,7 @@
       
         <img src="../assets/image/tabler_copy.svg" alt="copy_icon" class="mr-3 " />
     
-      <button class="bg-darkcerulean login_btn text-white mx-4"  @click="closemodal">OK</button>
+      <button class="bg-darkcerulean ok_btn text-white mx-4"  @click="closemodal">OK</button>
     </CModalFooter>
   </CModal>
 </template>
@@ -84,5 +84,18 @@ export default {
   position: relative;
   left:200px;
 }
+.ok_btn{
+  padding: 12px 27px;
+  font-size: 1.2rem;
+  border-radius: 7px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.27);
+  font-weight: 600;
+  &:hover{
+    background-color: #6eb9e1 !important;
+  color:white;
+  }
+}
+
+
 
 </style>
