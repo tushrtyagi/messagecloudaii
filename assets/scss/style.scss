@@ -184,6 +184,8 @@ p {
 }
 
 
+
+
 // modal css
 .modal.fade.api_key_modal.show {
   .modal-dialog {
@@ -194,7 +196,10 @@ p {
 .api_key_modal {
   .cross_icon {
       img {
-        filter: invert(1) !important;
+     
+  cursor: pointer;
+  position: relative;
+  right:200px;
       }
     }
   .modal_content {

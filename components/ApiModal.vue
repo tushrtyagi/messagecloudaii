@@ -122,6 +122,12 @@ export default {
 .generate_btn:hover{
   color:rgba(255, 255, 255, 0.602);
 }
+.cross_icon {
+  filter: invert(100%);
+  cursor: pointer;
+  position: relative;
+  left:200px;
+}
 
 
 </style>

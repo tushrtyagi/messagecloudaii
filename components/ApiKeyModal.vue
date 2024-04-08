@@ -78,5 +78,11 @@ export default {
   font-size: 26px;
   font-weight: 600;
 }
+.cross_icon {
+  filter: invert(100%);
+  cursor: pointer;
+  position: relative;
+  left:200px;
+}
 
 </style>

@@ -1,8 +1,8 @@
 <template>
   <CModal class="deletemodal">
     <CModalHeader class="bg-sidegrey">
-      <CModalTitle class="text-customblack d-flex justify-content-between align-items-center">
-        <span>Delete Confirmation</span>
+      <CModalTitle class="text-customblack d-flex head-pop justify-content-between align-items-center">
+        <span class="mb-0">Delete Confirmation</span>
         <div class="cross_icon" style="cursor: pointer" @click="close">
           <img src="../assets/image/cross_icon.svg" />
         </div>
@@ -11,7 +11,7 @@
     <CModalBody class="bg-sidegrey px-5 pt-4">
       Are you sure you want to delete this item?
     </CModalBody>
-    <CModalFooter class="bg-sidegrey py-3 px-3">
+    <CModalFooter class="bg-sidegrey py-3 px-5">
       <button class="cancel_btn  ms-5" @click="close">Cancel</button>
       <button class="delete_btn text-white bg-red ms-5"  @click="confirmDelete">Delete</button>
     </CModalFooter>
@@ -41,7 +41,7 @@ display: block;
 margin: auto;
 width:50%;
 margin-left:25%;
-padding: 32px ;
+padding: 30px ;
 }
 .modal.fade.api_key_modal.show {
   .modal-dialog {
@@ -49,6 +49,9 @@ padding: 32px ;
   }
 }
 
+.head-pop span {
+     
+}
 .home_page.api_key_modal.modal-footer {
   justify-content: center;
   align-items: center;
@@ -63,11 +66,12 @@ padding: 32px ;
 }
 
 .delete_btn {
-  font-size: 17px;
-  border: 1px solid black;
-  border-radius: 5px;
+  padding: 9px 16px;
+    font-size: 1.1rem;
+    border-radius: 7px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.27);
+    font-weight: 600;
 
-  padding: 9px 27px;
   &:hover {
     background-color: rgb(222, 138, 161);
     color: white !important;
@@ -75,11 +79,12 @@ padding: 32px ;
 }
 
 .cancel_btn {
-  font-size: 17px;
-  border: 1px solid black;
-  border-radius: 4px;
+  padding: 9px 16px;
+    font-size: 1.1rem;
+    border-radius: 7px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.27);
+    font-weight: 600;
   background-color: white;
-  padding: 9px 27px;
   &:hover {
     background-color: rgb(218, 230, 235);
     color: white !important;
