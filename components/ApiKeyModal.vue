@@ -85,7 +85,7 @@ export default {
   left:200px;
 }
 .ok_btn{
-  padding: 12px 27px;
+  padding: 5px 27px;
   font-size: 1.2rem;
   border-radius: 7px;
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.27);
