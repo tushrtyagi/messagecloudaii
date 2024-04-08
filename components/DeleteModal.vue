@@ -1,19 +1,20 @@
 <template>
   <CModal class="deletemodal">
     <CModalHeader class="bg-sidegrey">
-      <CModalTitle class="text-customblack d-flex head-pop justify-content-between align-items-center">
-        <span class="mb-0">Delete Confirmation</span>
+      <CModalTitle class="text-customblack d-flex head-pop justify-content-center align-items-center">
+        <span class="mb-0 mt">Delete Confirmation</span>
         <div class="cross_icon" style="cursor: pointer" @click="close">
           <img src="../assets/image/cross_icon.svg" />
         </div>
       </CModalTitle>
     </CModalHeader>
     <CModalBody class="bg-sidegrey px-5 pt-4">
-      Are you sure you want to delete this item?
+      <p class=" head-q mt-2 ms-3">Are you sure you want to delete this item?</p>
+      
     </CModalBody>
-    <CModalFooter class="bg-sidegrey py-3 px-5">
-      <button class="cancel_btn bg-white text-customeblack ms-5" @click="close">Cancel</button>
-      <button class="delete_btn text-white bg-red ms-5"  @click="confirmDelete">Delete</button>
+    <CModalFooter class="bg-sidegrey py-3 px-4 ">
+      <button class="cancel_btn bg-white text-customeblack " @click="close">Cancel</button>
+      <button class="delete_btn text-white bg-red ms-3"  @click="confirmDelete">Delete</button>
     </CModalFooter>
   </CModal>
 </template>
@@ -36,6 +37,14 @@ export default {
 </script>
 
 <style>
+.modal-body.bg-sidegrey.px-5.pt-4 {
+    margin: -9px 0px;
+   
+  
+}
+.head-q{
+ font-size: 12px;
+}
 .deletemodal{
 display: block;
 margin: auto;
