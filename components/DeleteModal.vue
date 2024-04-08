@@ -12,7 +12,7 @@
       Are you sure you want to delete this item?
     </CModalBody>
     <CModalFooter class="bg-sidegrey py-3 px-5">
-      <button class="cancel_btn  ms-5" @click="close">Cancel</button>
+      <button class="cancel_btn bg-white text-customeblack ms-5" @click="close">Cancel</button>
       <button class="delete_btn text-white bg-red ms-5"  @click="confirmDelete">Delete</button>
     </CModalFooter>
   </CModal>
@@ -79,17 +79,17 @@ padding: 30px ;
 }
 
 .cancel_btn {
-  padding: 9px 16px;
+  padding: 8px 15px;
     font-size: 1.1rem;
     border-radius: 7px;
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.27);
     font-weight: 600;
-  background-color: white;
-  &:hover {
-    background-color: rgb(218, 230, 235);
-    color: white !important;
-  }
+ 
 }
+.cancel_btn:hover {
+    background-color: rgb(218, 230, 235);
+    color: black !important;
+  }
 
 .key {
   font-size: 26px;

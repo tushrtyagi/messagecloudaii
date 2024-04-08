@@ -219,12 +219,12 @@
         display: inline-block;
         .search-icon {
           position: absolute;
-          top: 50%;
-          left: 20px;
-          transform: translateY(-50%);
-          width: 20px;
-          height: 20px;
-          fill: #808080; 
+        top: 50%;
+        left: 19px;
+        transform: translateY(-50%);
+        width: 18px;
+        height: 18px;
+        fill: #808080;
       
         }
       }
@@ -267,7 +267,7 @@
   
   .form-control::placeholder {
     position: relative;
-    right:105px;
+    left: 1px;
   }
   
   .verified-domain {
