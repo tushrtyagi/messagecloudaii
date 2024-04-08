@@ -19,7 +19,7 @@
       
         <img src="../assets/image/tabler_copy.svg" alt="copy_icon" class="mr-3 " />
     
-      <CButton class="bg-darkcerulean login_btn text-white mx-4"  @click="closemodal">OK</CButton>
+      <button class="bg-darkcerulean login_btn text-white mx-4"  @click="closemodal">OK</button>
     </CModalFooter>
   </CModal>
 </template>
