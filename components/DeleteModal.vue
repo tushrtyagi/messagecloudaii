@@ -9,7 +9,7 @@
       </CModalTitle>
     </CModalHeader>
     <CModalBody class="bg-sidegrey px-5 pt-4">
-      <p class=" head-q mt-2 ms-3">Are you sure you want to delete this item?</p>
+      <p class=" head-q mt-2 ms-5">Are you sure you want to delete this item?</p>
       
     </CModalBody>
     <CModalFooter class="bg-sidegrey py-3 px-4 ">
@@ -43,7 +43,7 @@ export default {
   
 }
 .head-q{
- font-size: 12px;
+ font-size: 15px;
 }
 .deletemodal{
 display: block;
