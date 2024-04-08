@@ -79,17 +79,17 @@ padding: 30px ;
 }
 
 .cancel_btn {
-  padding: 8px 15px;
+  padding: 9px 15px;
     font-size: 1.1rem;
     border-radius: 7px;
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.27);
-    font-weight: 600;
+    font-weight: 700;
  
+    &:hover {
+        background-color: rgb(164, 170, 173);
+        color: black !important;
+      }
 }
-.cancel_btn:hover {
-    background-color: rgb(218, 230, 235);
-    color: black !important;
-  }
 
 .key {
   font-size: 26px;

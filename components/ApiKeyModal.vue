@@ -75,8 +75,8 @@ export default {
     left:8px;  
 }
 .key{
-  font-size: 26px;
-  font-weight: 600;
+  font-size: 20px;
+    font-weight: 600;
 }
 .cross_icon {
   filter: invert(100%);

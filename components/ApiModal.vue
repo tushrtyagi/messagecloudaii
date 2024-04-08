@@ -64,10 +64,25 @@ export default {
           this.$emit('closemodal' , false)
       },
       generateApiKey() {
+        const randomString = () => Math.random().toString(36).substring(2);
+  const apiKey = `xkeysib-${randomString()}-${randomString()}-fuo`;
+  this.generatedApiKey = apiKey;
+  this.visibleLiveDemo = true;
+  this.$emit("apikeygenerated", this.generatedApiKey);
      
-      this.generatedApiKey =  Math.random().toString(36).substring(2,16);
-     
-      this.visibleLiveDemo = true;
+  //       const keyLength = 36; 
+  // const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  // let apiKey = '';
+
+  // for (let i = 0; i < keyLength; i++) {
+  //   apiKey += characters.charAt(Math.floor(Math.random() * characters.length));
+  // }
+
+  // this.generatedApiKey = apiKey;
+  // this.visibleLiveDemo = true;
+
+
+  // this.$emit('apikeygenerated', this.generatedApiKey);
     },
       close() {
         this.visibleLiveDemo = false;
@@ -85,17 +100,7 @@ export default {
   
   
 }
-.cancel_btn {
-  padding: 12px 27px;
-  font-size: 1.2rem;
-  border-radius: 7px;
-  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.27);
-  font-weight: 600;
- 
-}
-.cancel_btn:hover{
-  color:rgba(255, 255, 255, 0.602);
-}
+
 .header{
   height:100%;
   width:100%;
