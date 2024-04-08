@@ -53,11 +53,20 @@
                             <td>{{ item.Label }}</td>
                             <td>{{ item['API key'] }}</td>
                        
-                            <td><img src="../assets/image/delete.svg" alt="Delete Icon" @click="deleteItem(index)" /></td>
+                            <td> 
+                              <img src="../assets/image/delete.svg" alt="Delete Icon"  @click="() => { visibleStaticBackdropDemo = true }" />
+                            </td>
                          
                           </tr>
                         </tbody>
                       </table>
+                      <DeleteModal
+                      :backdrop="true"
+              :keyboard="false"
+    :visible="visibleStaticBackdropDemo"
+    @close="close" 
+    aria-labelledby="StaticBackdropExampleLabel"
+                />
                     </div>
                   </div>
                 </div>
@@ -123,6 +132,7 @@ export default defineComponent({
   data() {
     return {
       visibleLiveDemo: false,
+      visibleStaticBackdropDemo: false,
    
       items: [
         {
@@ -170,6 +180,9 @@ export default defineComponent({
   
     closemodal(value) {
       this.visibleLiveDemo = value;
+    },
+    close(value) {
+      this. visibleStaticBackdropDemo = value;
     },
   }
 });

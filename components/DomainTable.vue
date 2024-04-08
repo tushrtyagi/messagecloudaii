@@ -74,8 +74,9 @@
             </tbody>
           </table>
                 <DeleteModal
-                backdrop="static"
-    :visible="visibleStaticBackdropDemo"
+                :backdrop="true"
+              :keyboard="false"
+                    :visible="visibleStaticBackdropDemo"
     @close="() => { visibleStaticBackdropDemo = false }" 
     aria-labelledby="StaticBackdropExampleLabel"
                 />
