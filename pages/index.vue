@@ -127,11 +127,11 @@ export default defineComponent({
       }
     }
     .pills_tab {
-      border: 1px solid $aliceblue;
+      border: 1px solid white;
       border-radius: 0px;
       font-size: 14px;
       font-weight: 500;
-      padding: 5px 15px;
+      padding: 5px 16px;
       // margin-right: 5px;
       transition: background-color 0.3s;
     }
