@@ -260,8 +260,8 @@
     }
   
         
-  .form-control{
-    padding : 5px 155px;
+    .form-control {
+    padding: 5px 43px;
     text-align: left;
   }
   
