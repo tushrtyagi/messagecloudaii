@@ -279,9 +279,10 @@ ul.sidebar-nav {
 }
 .sidebar.shrink .config-icon img, .sidebar.shrink .dash-icon img, .sidebar.shrink .icon-wrapper img {
   width: 20px;
-  height: 15px;
-  position: relative;
-  right: 1.5px;
+    height: 15px;
+    position: relative;
+    right: 0.8px;
+    box-shadow:none;
 }
 
 
@@ -354,7 +355,7 @@ div.toggle_menu_wrap ul.sidebar-nav li a {
   display: flex;
   justify-content: left;
   align-items: center;
-  width: 92%;
+  width: 95%;
 }
 
 .shrink.expend .logo_hemburger_container {

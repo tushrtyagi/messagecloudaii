@@ -12,7 +12,7 @@
                     <div class="breadcrumbs">
                       <CBreadcrumb style="--cui-breadcrumb-divider: '/'">
                         <CBreadcrumbItem href="/"><img src="../assets/image/home_icon (1).svg" alt="configuration" /></CBreadcrumbItem>
-                        <CBreadcrumbItem href="#">Configuration</CBreadcrumbItem>
+                        <CBreadcrumbItem href="/">Configuration</CBreadcrumbItem>
                           <!-- <CBreadcrumbItem href="/domain"> Add Domain </CBreadcrumbItem> -->
                         
                         <CBreadcrumbItem active> Domain </CBreadcrumbItem>

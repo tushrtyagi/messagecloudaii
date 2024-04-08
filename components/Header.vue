@@ -148,6 +148,7 @@ word-wrap: break-word;
     position: fixed;
     left:10px;
   display: inline-block; 
+  width:auto;
   margin-right: 20px;
   .full_icon img{
   background: transparent;
