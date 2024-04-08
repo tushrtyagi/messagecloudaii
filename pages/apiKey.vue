@@ -10,6 +10,7 @@
               <div class="row">
                 <div class="col-lg-12">
                   <div class="breadcrumbs">
+                    
                     <CBreadcrumb style="--cui-breadcrumb-divider: '/'">
                       <CBreadcrumbItem href="/">
                        
@@ -53,6 +54,7 @@
                             <td>{{ item['API key'] }}</td>
                        
                             <td><img src="../assets/image/delete.svg" alt="Delete Icon" @click="deleteItem(index)" /></td>
+                         
                           </tr>
                         </tbody>
                       </table>
@@ -74,7 +76,7 @@
                     <button class=" sending_doc_btn bg-white text-black mx-4 ">
                      Read API key Documentation
                     </button>
-                    <NuxtLink ><button class="login_btn bg-aliceblue text-white"  @click="
+                    <button class="login_btn bg-aliceblue text-white"  @click="
                         () => {
                           visibleLiveDemo = true;
                         }
@@ -90,7 +92,7 @@
                       :visible="visibleLiveDemo"
                     />
 
-                    </NuxtLink>
+                  
                   </div>
                 </div>
                 <div class="api_documentation bg-white mt-5">
@@ -121,6 +123,7 @@ export default defineComponent({
   data() {
     return {
       visibleLiveDemo: false,
+   
       items: [
         {
           Domain: "rhecenter.com",
@@ -162,7 +165,9 @@ export default defineComponent({
     deleteItem(index) {
       
       console.log("Delete item at index", index);
+    
     },
+  
     closemodal(value) {
       this.visibleLiveDemo = value;
     },

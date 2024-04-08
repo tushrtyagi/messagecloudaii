@@ -10,8 +10,8 @@
               <div class="row">
                 <div class="col-lg-12">
                   <div class="breadcrumbs">
-                    <CBreadcrumb style="--cui-breadcrumb-divider: '>'">
-                      <CBreadcrumbItem href="/domain">Configuration</CBreadcrumbItem>
+                    <CBreadcrumb style="--cui-breadcrumb-divider: '/'">
+                      <CBreadcrumbItem href="/createdomain">Configuration</CBreadcrumbItem>
                       <CBreadcrumbItem  active>Domain</CBreadcrumbItem>
                     </CBreadcrumb>
                   </div>

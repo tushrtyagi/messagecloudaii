@@ -27,6 +27,7 @@ export default ({
       ]
     }
   },
+
   
     css: [
       'bootstrap/dist/css/bootstrap.min.css',
@@ -38,6 +39,7 @@ export default ({
     ],
     plugins: [
       { src: '~/plugins/coreui', mode: 'client' },
+
       
   ],
   },

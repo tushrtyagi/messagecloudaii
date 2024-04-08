@@ -8,14 +8,14 @@
           <div class="sub_container sending_domain_container ">
             <div class="sub_section sending_domain_section bg-white">
               <div class="row">
+             
                 <div class="col-lg-12">
                   <div class="breadcrumbs">
                     <CBreadcrumb style="--cui-breadcrumb-divider: '/'">
                       <CBreadcrumbItem href="/"><img src="../assets/image/home_icon (1).svg" alt="configuration" /></CBreadcrumbItem>
-                      <CBreadcrumbItem href="#">Configuration</CBreadcrumbItem>
-                        <!-- <CBreadcrumbItem href="/domain"> Add Domain </CBreadcrumbItem> -->
+                      <CBreadcrumbItem href="/">Configuration</CBreadcrumbItem>
                       
-                      <CBreadcrumbItem active> Domain </CBreadcrumbItem>
+                       <CBreadcrumbItem active> Domain </CBreadcrumbItem>
                     </CBreadcrumb>
                   </div>
                 </div>
