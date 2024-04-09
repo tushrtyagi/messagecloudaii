@@ -1,6 +1,3 @@
-
-
-
 <template>
   <div class="home_page bg-sidegrey pb-5 h-100">
     <div class="container-fluid p-0">
@@ -15,7 +12,6 @@
                   <div class="breadcrumbs">
                     <CBreadcrumb style="--cui-breadcrumb-divider: '/'">
                       <CBreadcrumbItem href="/"><img src="../assets/image/home_icon (1).svg" alt="configuration" /></CBreadcrumbItem>
-
                       <CBreadcrumbItem active>Suppressions</CBreadcrumbItem>
                     </CBreadcrumb>
                   </div>
@@ -26,24 +22,19 @@
                   <div class="col-lg-12">
                     <div class="suppression_box bg-white">
                       <h2 class="text-customblack w-100 d-block">Suppressions</h2>
-                      <!-- <input
-                        type="text"
-                        class="w-100 mt-3 bg-white d-block"
-                        placeholder="filters"
-                      /> -->
-                      <div class="d-inline-block">
-            <div class="search-wrapper  ">
-              <img class="search-icon mt-2" src="../assets/image/searchgrey.svg" alt="Search icon" />
-              <input type="text" class="control-type mt-3 ms-1" placeholder="Search Type" />
-            </div>
-          </div>
-                      <!-- <select class="form-select mt-5" >
-              <option value="" disabled selected> Filters</option>
-              <option value="Bounce">Bounce</option>
-              <option value="Spam Report">Spam Report</option>
-              <option value="Invalid">Invalid</option>
-              <option value="Blocks">Blocks</option>
-            </select> -->
+                      <div class="d-flex align-items-center">
+                        <div class="search-wrapper">
+                          <img class="search-icon mt-3" src="../assets/image/searchgrey.svg" alt="Search icon" />
+                          <input type="text" class="control-type mt-4 ms-1" placeholder="Search Type" />
+                        </div>
+                        <select class="form-select mt-4 ms-4">
+                          <option value="" disabled selected>Filters</option>
+                          <option value="Bounce">Bounce</option>
+                          <option value="Spam Report">Spam Report</option>
+                          <option value="Invalid">Invalid</option>
+                          <option value="Blocks">Blocks</option>
+                        </select>
+                      </div>
                     </div>
                     <div class="table_data mt-4 mb-3 bg-white">
                       <table class="table table-striped" style="width: 100%">
@@ -69,12 +60,12 @@
                         </tbody>
                       </table>
                       <DeleteModal
-                      :backdrop="true"
-              :keyboard="false"
-    :visible="visibleStaticBackdropDemo"
-    @close="close" 
-    aria-labelledby="StaticBackdropExampleLabel"
-                />
+                        :backdrop="true"
+                        :keyboard="false"
+                        :visible="visibleStaticBackdropDemo"
+                        @close="close" 
+                        aria-labelledby="StaticBackdropExampleLabel"
+                      />
                     </div>
                   </div>
                 </div>
@@ -129,16 +120,13 @@ export default {
       ],
     };
   },
-   methods:{
+  methods: {
     close(value) {
-      this. visibleStaticBackdropDemo = value;
+      this.visibleStaticBackdropDemo = value;
     },
-   }
+  },
 };
 </script>
-
-
-
 
 <style lang="scss">
 @import "../assets/scss/colors.scss";
@@ -156,30 +144,30 @@ export default {
   padding: 0px 31px 0px;
   .sending_domain_section {
     .suppression_box {
-     .form-select{
-
-     }
+      .form-select {
+        // Additional styling for select if needed
+      }
     }
   }
-
 }
-.search-wrapper {
-      position: relative;
-      display: inline-block;
-      .search-icon {
-        position: absolute;
-        top: 50%;
-        left: 19px;
-        transform: translateY(-50%);
-        width: 18px;
-        height: 18px;
-        fill: #808080;
-      }}
 
-      input.control-type {
-    border: 1px solid darkgrey;
-    border-radius: 7px;
-    padding: 4px 50px;
-   
+.search-wrapper {
+  position: relative;
+  display: inline-block;
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 19px;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    fill: #808080;
+  }
+}
+
+input.control-type {
+  border: 1px solid darkgrey;
+  border-radius: 7px;
+  padding: 4px 50px;
 }
 </style>

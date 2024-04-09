@@ -37,7 +37,7 @@ export default {
             position: 'left', 
             labels: {
               boxWidth: 12, 
-              padding: 15, 
+              padding: 30, 
             },
           },
         },
