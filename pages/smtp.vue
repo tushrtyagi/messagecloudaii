@@ -87,13 +87,21 @@
         </td>
         <td>{{ item['Created on'] }}</td>
         <td>
-          <img src="../assets/image/delete.svg" alt="Delete Icon" />
+          <img src="../assets/image/delete.svg" alt="Delete Icon"   @click="() => { visibledeletemodal = true }" />
         
         </td>
        
       </tr>
     </tbody>
                         </table>
+
+                        <DeleteModal
+                      :backdrop="true"
+              :keyboard="false"
+    :visible="visibledeletemodal"
+    @close="close" 
+    aria-labelledby="StaticBackdropExampleLabel"
+                />
                       </div>
                     </div>
                   </div>
@@ -123,6 +131,7 @@ export default {
   setup() {
     const expanded = useExpanded();
     return {
+      visibleStaticBackdropDemo: false,
       expanded,
       store,
       visibleLiveDemo: false,
