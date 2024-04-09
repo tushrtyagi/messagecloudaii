@@ -112,7 +112,7 @@ export default {
   display:flex;
   flex-direction: row;
     position: relative;
-    right: 260px;
+    right: 160px;
   
   
 } 
