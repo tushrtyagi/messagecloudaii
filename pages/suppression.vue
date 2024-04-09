@@ -34,7 +34,7 @@
                       <div class="d-inline-block">
             <div class="search-wrapper  ">
               <img class="search-icon mt-2" src="../assets/image/searchgrey.svg" alt="Search icon" />
-              <input type="text" class="control-type mt-3" placeholder="Search Type" />
+              <input type="text" class="control-type mt-3 ms-1" placeholder="Search Type" />
             </div>
           </div>
                       <!-- <select class="form-select mt-5" >
@@ -179,7 +179,7 @@ export default {
       input.control-type {
     border: 1px solid darkgrey;
     border-radius: 7px;
-    padding: 4px 43px;
+    padding: 4px 50px;
    
 }
 </style>
