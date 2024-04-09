@@ -96,7 +96,7 @@ export default defineComponent({
   margin: 80px 35px;
   margin-bottom: auto;
   width: calc(100% - 70px);
-  height: 250px;
+  height: 300px;
   border-radius: 20px;
   img{
     width: 100%;
