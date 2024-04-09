@@ -35,19 +35,22 @@
                     <div class="col-lg-5 col-md-6 col-sm-12 col-12">
                       <EmailActivityScore />
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 mb-5">
                       <DonughtChart />
                     </div>
                   </div>
                 </div>
-                <div class="row g-0 ">
+                <div class="row g-0  mb-4">
                   <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                    <h2 class="text-customblack mb-0 graph-title">Graph </h2>
+                    <h2 class="text-customblack mb-3 graph-title">Graph </h2>
                   </div>
                 </div>
                 <div class="row justify-content-between ">
-                  <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                    <div class="rectangle-box"></div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-12 graph-img my-5">
+                    <img src="../assets/image/graph.png" alt="" srcset="">
+                    <!-- <div class="rectangle-box">
+                    
+                    </div> -->
                   </div>
                 </div>
               </div>
@@ -88,7 +91,20 @@ export default defineComponent({
   width: calc(100% - 60px);
   margin-left: 60px;
 }
+.graph-img{
+  position: relative;
+  margin: 80px 35px;
+  margin-bottom: auto;
+  width: calc(100% - 70px);
+  height: 250px;
+  border-radius: 20px;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 
+  }
+}
 .shrink_screen.right_panel {
   width: calc(100% - 12rem);
   margin-left: 12rem;

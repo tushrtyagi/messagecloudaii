@@ -160,7 +160,7 @@ export default {
   display: inline-block;
   .search-icon {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 19px;
     transform: translateY(-50%);
     width: 18px;
