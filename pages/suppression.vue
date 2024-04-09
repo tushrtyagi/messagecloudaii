@@ -25,7 +25,7 @@
                       <div class="d-flex align-items-center">
                         <div class="search-wrapper">
                           <img class="search-icon mt-3" src="../assets/image/searchgrey.svg" alt="Search icon" />
-                          <input type="text" class="control-type mt-4 ms-1" placeholder="Search Type" />
+                          <input type="text" class="form-control px-5 mt-4 ms-1" placeholder="Search Type" />
                         </div>
                         <select class="form-select mt-4 ms-4">
                           <option value="" disabled selected>Filters</option>
@@ -144,8 +144,12 @@ export default {
   padding: 0px 31px 0px;
   .sending_domain_section {
     .suppression_box {
-      .form-select {
-        // Additional styling for select if needed
+      .form-control {
+        padding:0 px;
+       &::placeholder{
+        position:relative;
+        left:0px;
+       }
       }
     }
   }
