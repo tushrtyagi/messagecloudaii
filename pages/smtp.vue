@@ -86,10 +86,9 @@
           </span>
         </td>
         <td>{{ item['Created on'] }}</td>
-        <td>
-          <img src="../assets/image/delete.svg" alt="Delete Icon"   @click="() => { visibledeletemodal = true }" />
-        
-        </td>
+        <td> 
+                              <img src="../assets/image/delete.svg" alt="Delete Icon"  @click="() => { visibleStaticBackdropDemo = true }" />
+                            </td>
        
       </tr>
     </tbody>
@@ -98,10 +97,11 @@
                         <DeleteModal
                       :backdrop="true"
               :keyboard="false"
-    :visible="visibledeletemodal"
+    :visible="visibleStaticBackdropDemo"
     @close="close" 
     aria-labelledby="StaticBackdropExampleLabel"
                 />
+               
                       </div>
                     </div>
                   </div>
@@ -114,12 +114,7 @@
     </div>
   </div>
 
-  <ApiModal
-                      :backdrop="true"
-                      :keyboard="false"
-                      @closemodal="close"
-                      :visible="visibledeletemodal"
-                    />
+  
 </template>
 
 <script>
@@ -135,7 +130,7 @@ export default {
       expanded,
       store,
       visibleLiveDemo: false,
-      visibledeletemodal:false,
+  
       columns: ["SMTP key name", "SMTP key value", "Status", "Created on", "Delete"],
       items: [
         {
@@ -171,8 +166,7 @@ export default {
       
     },
     close(value) {
-      this.visibledeletemodal = value;
-      
+      this. visibleStaticBackdropDemo = value;
     },
     deleteItem(index) {
       

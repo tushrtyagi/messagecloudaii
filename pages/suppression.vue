@@ -16,7 +16,7 @@
                     <CBreadcrumb style="--cui-breadcrumb-divider: '/'">
                       <CBreadcrumbItem href="/"><img src="../assets/image/home_icon (1).svg" alt="configuration" /></CBreadcrumbItem>
 
-                      <CBreadcrumbItem active>Suppression</CBreadcrumbItem>
+                      <CBreadcrumbItem active>Suppressions</CBreadcrumbItem>
                     </CBreadcrumb>
                   </div>
                 </div>
@@ -25,21 +25,27 @@
                 <div class="row">
                   <div class="col-lg-12">
                     <div class="suppression_box bg-white">
-                      <h2 class="text-customblack w-100 d-block">Suppression</h2>
+                      <h2 class="text-customblack w-100 d-block">Suppressions</h2>
                       <!-- <input
                         type="text"
                         class="w-100 mt-3 bg-white d-block"
                         placeholder="filters"
                       /> -->
-                      <select class="form-select mt-5" >
+                      <div class="d-inline-block">
+            <div class="search-wrapper  ">
+              <img class="search-icon mt-2" src="../assets/image/searchgrey.svg" alt="Search icon" />
+              <input type="text" class="control-type mt-3" placeholder="Search Type" />
+            </div>
+          </div>
+                      <!-- <select class="form-select mt-5" >
               <option value="" disabled selected> Filters</option>
               <option value="Bounce">Bounce</option>
               <option value="Spam Report">Spam Report</option>
               <option value="Invalid">Invalid</option>
               <option value="Blocks">Blocks</option>
-            </select>
+            </select> -->
                     </div>
-                    <div class="table_data mt-5 bg-white">
+                    <div class="table_data mt-4 mb-3 bg-white">
                       <table class="table table-striped" style="width: 100%">
                         <thead>
                           <tr>
@@ -47,6 +53,7 @@
                             <th>Type</th>
                             <th>Reason</th>
                             <th>Date</th>
+                            <th></th>
                           </tr>
                         </thead>
                         <tbody>
@@ -55,9 +62,19 @@
                             <td>{{ item.Type }}</td>
                             <td>{{ item.Reason }}</td>
                             <td>{{ item.Date }}</td>
+                            <td> 
+                              <img src="../assets/image/delete.svg" alt="Delete Icon"  @click="() => { visibleStaticBackdropDemo = true }" />
+                            </td>
                           </tr>
                         </tbody>
                       </table>
+                      <DeleteModal
+                      :backdrop="true"
+              :keyboard="false"
+    :visible="visibleStaticBackdropDemo"
+    @close="close" 
+    aria-labelledby="StaticBackdropExampleLabel"
+                />
                     </div>
                   </div>
                 </div>
@@ -83,34 +100,40 @@ export default {
   },
   data() {
     return {
+      visibleStaticBackdropDemo: false,
       items: [
         {
           Email: "bounce@simulator.amazonses.com",
           Type: "Hard Bounce",
           Reason: "failed to connect",
-          Date: "",
+          Date: "Feb 26, 2024",
         },
         {
           Email: "bounce@simulator.amazonses.com",
           Type: "Hard Bounce",
           Reason: "failed to connect",
-          Date: "",
+          Date: "Feb 26, 2024",
         },
         {
           Email: "bounce@simulator.amazonses.com",
           Type: "Hard Bounce",
           Reason: "failed to connect",
-          Date: "",
+          Date: "Feb 26, 2024",
         },
         {
           Email: "bounce@simulator.amazonses.com",
           Type: "Hard Bounce",
           Reason: "failed to connect",
-          Date: "",
+          Date: "Feb 26, 2024",
         },
       ],
     };
   },
+   methods:{
+    close(value) {
+      this. visibleStaticBackdropDemo = value;
+    },
+   }
 };
 </script>
 
@@ -138,5 +161,25 @@ export default {
      }
     }
   }
+
+}
+.search-wrapper {
+      position: relative;
+      display: inline-block;
+      .search-icon {
+        position: absolute;
+        top: 50%;
+        left: 19px;
+        transform: translateY(-50%);
+        width: 18px;
+        height: 18px;
+        fill: #808080;
+      }}
+
+      input.control-type {
+    border: 1px solid darkgrey;
+    border-radius: 7px;
+    padding: 4px 43px;
+   
 }
 </style>

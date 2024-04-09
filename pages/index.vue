@@ -99,7 +99,7 @@ export default defineComponent({
   .donut_chart {
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
-    padding-bottom: 35px;
+    padding-bottom: 20px;
   }
 }
 
