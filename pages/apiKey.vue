@@ -31,15 +31,14 @@
                       <h3 class="text-customblack mb-4">Your API Keys</h3>
                     </div>
                     <p class="text-customblack">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the <br />
-                      printing and typesetting industry.
+                      The API keys include a key ID, which is utilized for referencing the key when making edits or deletions via the API.
                     </p>
                     <div class="table_data mt-4 bg-white">
                       <table class="table">
                         <thead>
                           <tr>
                             <th>Version</th>
-                            <th>API key</th>
+                            <th>Key name</th>
                             <th>Name</th>
                             <th>Created on</th>
                           
