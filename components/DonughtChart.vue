@@ -62,6 +62,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: left;
+  box-shadow: 0 4px 4px #00000040;
 }
 
 canvas {

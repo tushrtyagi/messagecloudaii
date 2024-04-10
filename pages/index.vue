@@ -113,7 +113,7 @@ export default defineComponent({
 .figures_section {
   padding: 0px 30px;
   .donut_chart {
-    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
     padding-bottom: 20px;
   }
