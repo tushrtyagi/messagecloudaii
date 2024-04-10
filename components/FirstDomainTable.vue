@@ -176,7 +176,7 @@
     .domain-field {
        width: 98%;
        height: 100%;
-   
+       box-shadow: 1px 1px 1px 1px #d3d3d3;
        border-radius: 14px;
        margin-left: 4px;
       

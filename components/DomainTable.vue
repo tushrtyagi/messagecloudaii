@@ -172,6 +172,8 @@ export default {
     height: 100%;
     border-radius: 14px;
     margin-left: 4px;
+    box-shadow: 1px 1px 1px 1px #d3d3d3;
+
   }
   .create_domain {
     border-radius: 7px;
