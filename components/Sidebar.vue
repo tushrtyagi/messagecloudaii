@@ -53,27 +53,27 @@ export default {
         </li>
         <li @click="toggleDropdownmenu" class="position-relative d-block ">
           
-          <div class="configuration_nav d-flex text-customblack">
-           <!-- <NuxtLink class="text-customblack" to ="/createdomain"> -->
+          <div class="configuration_nav  d-flex text-customblack">
+           <NuxtLink class="text-customblack mb-5" to ="/createdomain">
              <span class ="config-icon" @click="togglemenu" > <img src="../assets/image/configuration_1.svg" alt="configuration" />
              </span>
-             <label class="ms-3">Configuration</label>
+             <label class="ms-4">Configuration</label>
              <span class="dropdown-icon" >
                <img src="../assets/image/dropdown.svg" alt="down-arrow" :class ="{ 'rotated': store.isDropdownExpanded } " v-if="store.isSidebarExpanded"/>
              </span>
-           <!-- </NuxtLink> -->
+           </NuxtLink>
           
           </div>
  
 
-          <ol class="dropdowncustom" v-show="store.isDropdownExpanded">
+          <ol class="dropdowncustom pb-0 mt-4 mb-0" v-show="store.isDropdownExpanded">
             <li >
-              <NuxtLink class="text-customblack" to="/firstdomain" @click.stop>
+              <NuxtLink class="text-customblack " to="/firstdomain" @click.stop>
                 <label> Domain</label>
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink class="text-customblack" to="/apiKey" @click.stop>
+              <NuxtLink class="text-customblack " to="/apiKey" @click.stop>
                 <label>API Key</label>
               </NuxtLink>
             </li>
@@ -85,7 +85,7 @@ export default {
           </ol>
         </li>
         <li>
-          <NuxtLink class="text-customblack" to="/stats">
+          <NuxtLink class="text-customblack mt-4" to="/stats">
             <span class="icon-wrapper"   @click="togglemenu"><img
                
                 src="../assets/image/nimbus_stats.svg"
@@ -94,7 +94,7 @@ export default {
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink class="text-customblack" to="/suppression">
+          <NuxtLink class="text-customblack " to="/suppression">
             <span class="icon-wrapper" @click="togglemenu"><img
              
                 src="../assets/image/suppression.svg"
@@ -126,14 +126,16 @@ export default {
   align-items: center;
 }
 .config-icon{
-  position: relative;
-  left:1.5px;
-  width: 30px;
-  height: 30px;
-  background: white;
-  box-shadow: 0px 1px 2px black ;
-  border-radius: 6px;
-  border: 1px solid white;
+  
+    position: relative;
+   
+    width: 30px;
+    height: 30px;
+    background: white;
+    box-shadow: 0px 1px 2px black;
+    border-radius: 6px;
+    border: 1px solid white;
+    right: 2px;
   img{
     width: 20px;
   height: 20px;
@@ -241,6 +243,7 @@ ul.sidebar-nav {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    padding: 1px 0px;
   }
   a{
     padding: 16px 17px 16px !important;
@@ -338,8 +341,10 @@ ul.sidebar-nav {
   cursor: pointer;
   font-weight: 400;
   line-height: 30px;
-  margin-right: 14px;
+  margin-right: 0px;
   color:black;
+  position:relative;
+  right:10px;
 }
 
 .toggle_menu_wrap ul.sidebar-nav li a {
@@ -351,6 +356,18 @@ ul.sidebar-nav {
   // 
 }
 
+.toggle_menu_wrap ul.sidebar-nav li .configuration_nav a {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 89%;
+    color: black;
+    position: absolute;
+    right: 6%;
+    top: 1%;
+    margin-bottom: 9px;
+    margin: 0px 5px;
+}
 
 div.toggle_menu_wrap ul.sidebar-nav li a {
   display: flex;
@@ -409,7 +426,7 @@ a.router-link-active.router-link-exact-active {
   border-radius: 10px;
   
 }
-a.configuration_nav.router-link-active.router-link-exact-active {
+.configuration_nav a.router-link-active.router-link-exact-active {
   background-color: $white;
   width: 182px;
   height: 55px;
@@ -417,6 +434,7 @@ a.configuration_nav.router-link-active.router-link-exact-active {
   box-shadow: 3px 5px 12px -1px rgba(0, 0, 0, 0.12);
   border-radius: 10px;
 }
+
 
 ol.dropdowncustom a.router-link-active.router-link-exact-active {
   background:none;
@@ -462,7 +480,34 @@ ol.dropdowncustom li::before {
 // }
 
 
-a.router-link-active.router-link-exact-active .dash-icon {
+.configuration_nav a.router-link-active.router-link-exact-active {
+  position: relative;
+  top:20px;
+  .config-icon {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(179deg, #18A2F0 0%, #3469EF 100%);
+    align-items:center;
+    padding-left: 2px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.19);
+    border-radius: 6px;
+    border: 1px solid none;
+    position: relative;
+    
+    right: 0px;
+    img{
+      width: 20px;
+      height: 20px;
+      position: relative;
+      right: 2.8px;
+      padding: 0 2px;
+     
+      filter: invert(100%);
+      border-radius: 6px;}
+  
+  }
+}
+  a.router-link-active.router-link-exact-active .dash-icon {
   width: 32px;
   height: 32px;
   background: linear-gradient(179deg, #18A2F0 0%, #3469EF 100%);
@@ -531,7 +576,7 @@ a.router-link-active.router-link-exact-active label {
     transition: transform 0.3s ease;
    width: 10px; 
    height: 10px; 
-   margin-left: 5px; 
+   margin-left: 10px; 
  }
  .rotated{
   transform: rotate(-90deg);
