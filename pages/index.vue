@@ -169,6 +169,7 @@ export default defineComponent({
   }
   .content {
     margin: 5px 0;
+    font-size: 15px;
   }
 
   .blue-border {

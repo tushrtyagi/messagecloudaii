@@ -54,13 +54,14 @@ export default {
         <li @click="toggleDropdownmenu" class="position-relative d-block ">
           
           <div class="configuration_nav d-flex text-customblack">
-
-            <span class ="config-icon" @click="togglemenu" > <img src="../assets/image/configuration_1.svg" alt="configuration" />
-            </span>
-            <label class="ms-3">Configuration</label>
-            <span class="dropdown-icon" >
-              <img src="../assets/image/dropdown.svg" alt="down-arrow" :class ="{ 'rotated': store.isDropdownExpanded } " v-if="store.isSidebarExpanded"/>
-            </span>
+           <!-- <NuxtLink class="text-customblack" to ="/createdomain"> -->
+             <span class ="config-icon" @click="togglemenu" > <img src="../assets/image/configuration_1.svg" alt="configuration" />
+             </span>
+             <label class="ms-3">Configuration</label>
+             <span class="dropdown-icon" >
+               <img src="../assets/image/dropdown.svg" alt="down-arrow" :class ="{ 'rotated': store.isDropdownExpanded } " v-if="store.isSidebarExpanded"/>
+             </span>
+           <!-- </NuxtLink> -->
           
           </div>
  
