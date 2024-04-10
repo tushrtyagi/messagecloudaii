@@ -81,7 +81,7 @@
                     </div>
                   </div>
                   <div class="col-lg-12 btn_container d-flex mt-3">
-                    <button class=" sending_doc_btn bg-white text-black mx-4 ">
+                    <button class=" sending_doc_btn bg-white text-black mx-2 ">
                      Read API key Documentation
                     </button>
                     <button class="login_btn bg-aliceblue text-white"  @click="
@@ -221,10 +221,11 @@ export default defineComponent({
 }
 
 .top-box{
-  background: #F4F4F4;
-   border-radius: 10px;
-   padding: 20px;
-  //  width:1000px;
+  background: #f4f4f4;
+    border-radius: 10px;
+    padding: 16px 4px;
+    
+
 }
 .api_documentation {
   border-radius: 7px;
