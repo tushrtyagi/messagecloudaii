@@ -1,7 +1,7 @@
 <template>
     <div class="domain_list">
       <div class="row">
-        <div class="domain-field bg-darkgrey mt-3 mb-4 mx-1 px-4">
+        <div class="domain-field bg-darkgrey mt-2 mb-4 mx-1 px-4">
           <div class="col-lg-12 ">
             <h4 class="mt-4 pl-3 text-customblack mb-4">Adding your First Domain</h4>
           </div>
