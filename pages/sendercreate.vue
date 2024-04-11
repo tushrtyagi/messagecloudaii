@@ -14,10 +14,10 @@
                         <CBreadcrumbItem href="/"><img src="../assets/image/home_icon (1).svg" alt="configuration" /></CBreadcrumbItem>
 
                         <CBreadcrumbItem  href="/createdomain">Configuration</CBreadcrumbItem>
-                        <CBreadcrumbItem href="/createdomain">  Domain </CBreadcrumbItem>
+                        <CBreadcrumbItem href="/senders"> Senders </CBreadcrumbItem>
   
-                        <CBreadcrumbItem  href="/domaindetail">  Domain Details</CBreadcrumbItem>
-                        <CBreadcrumbItem active> Sender Verification</CBreadcrumbItem>
+                
+                        <CBreadcrumbItem active> New Sender</CBreadcrumbItem>
 
                       </CBreadcrumb>
                     </div>

@@ -72,6 +72,11 @@ export default {
                 <label> Domain</label>
               </NuxtLink>
             </li>
+            <li >
+              <NuxtLink class="text-customblack " to="/senders" @click.stop>
+                <label> Senders</label>
+              </NuxtLink>
+            </li>
             <li>
               <NuxtLink class="text-customblack " to="/apiKey" @click.stop>
                 <label>API Key</label>
@@ -100,6 +105,15 @@ export default {
                 src="../assets/image/suppression.svg"
                 alt="analytics" /></span
             ><label class="ms-3">Suppression</label>
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink class="text-customblack " to="/singlesend">
+            <span class="icon-wrapper" @click="togglemenu"><img
+             
+                src="../assets/image/suppression.svg"
+                alt="analytics" /></span
+            ><label class="ms-3">Single Send</label>
           </NuxtLink>
         </li>
         <li>
@@ -253,7 +267,7 @@ ul.sidebar-nav {
     align-items: center;
   }
   a.settings_page {
-    margin-top: 200px !important;
+    margin-top: 0px !important;
   }
 }
 
@@ -397,7 +411,7 @@ div.toggle_menu_wrap ul.sidebar-nav li a {
 
 ol.dropdowncustom li a {
   list-style-type: disc;
-  padding: 12px 48px 12px !important;
+  padding: 7px 48px 7px !important;
 }
 
 
