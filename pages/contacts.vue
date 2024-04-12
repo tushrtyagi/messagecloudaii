@@ -13,10 +13,9 @@
                     <div class="breadcrumbs">
                       <CBreadcrumb style="--cui-breadcrumb-divider: '/'">
                         <CBreadcrumbItem href="/"><img src="../assets/image/home_icon (1).svg" alt="configuration" /></CBreadcrumbItem>
-               
-                        <CBreadcrumbItem href="#">Campaigning</CBreadcrumbItem>
-
-                         <CBreadcrumbItem active> Single Send </CBreadcrumbItem>
+                        <CBreadcrumbItem href="/singlesend">Campaigning</CBreadcrumbItem>
+                        
+                         <CBreadcrumbItem active> Contacts</CBreadcrumbItem>
                       </CBreadcrumb>
                     </div>
                   </div>
@@ -37,7 +36,7 @@
                       </div>
                       <!-- <Tabs class="domain_tabs" @changeTab="changeTab" :tabs="['Sending Domain ', 'Bounce ', 'Tracking ']"  /> -->
                        <div class="tab-content domain_content mb-3">
-          <h3 class="text-customblack m">Single Sends</h3>
+          <h3 class="text-customblack m">Contact Lists</h3>
           <!-- <p class="text-customblack mt-3">
           {{arr[activeTab].subtext }}
           </p>
@@ -52,7 +51,7 @@
                     </div>
                   </div>
             
-                  <SingleSendTable />
+                  <ContactTable  />
                 </div>
   
               </div>

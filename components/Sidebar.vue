@@ -26,6 +26,10 @@ export default {
      
       store.toggleDropdown();
     },
+    toggleDropdownsender() {
+     
+     store.toggleDropdownsender();
+   },
   }
 };
 </script>
@@ -90,7 +94,7 @@ export default {
           </ol>
         </li>
         <li>
-          <NuxtLink class="text-customblack mt-4" to="/stats">
+          <NuxtLink class="text-customblack mt-3" to="/stats">
             <span class="icon-wrapper"   @click="togglemenu"><img
                
                 src="../assets/image/nimbus_stats.svg"
@@ -107,14 +111,25 @@ export default {
             ><label class="ms-3">Suppression</label>
           </NuxtLink>
         </li>
-        <li>
-          <NuxtLink class="text-customblack " to="/singlesend">
-            <span class="icon-wrapper" @click="togglemenu"><img
-             
-                src="../assets/image/suppression.svg"
-                alt="analytics" /></span
-            ><label class="ms-3">Single Send</label>
+        <li @click="toggleDropdownsender" class="senderlist">
+          <NuxtLink class="text-customblack"  to="/send">
+            <span class="icon-wrapper" @click="togglemenu">
+              <img src="../assets/image/suppression.svg" alt="analytics" />
+            </span>
+            <label class="ms-3">Campaigning</label>
           </NuxtLink>
+          <ol class="dropdowncustom p-0 mt-2  m-0" v-show="store.isDropdownsenderExpanded">
+            <li>
+              <NuxtLink class="text-customblack" to="/singlesend" @click.stop>
+                <label> SingleSend</label>
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink class="text-customblack" to="/contacts" @click.stop>
+                <label> Contacts</label>
+              </NuxtLink>
+            </li>
+          </ol>
         </li>
         <li>
           <NuxtLink class="text-customblack settings_page" to="/profile">
@@ -197,7 +212,11 @@ export default {
   }
 }
 
-
+.senderlist{
+  display:flex;
+  flex-direction: column;
+  
+}
 
 .sidebar {
   position: fixed;

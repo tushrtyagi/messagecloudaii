@@ -1,37 +1,51 @@
 <template>
     <div class="domain_list">
       <div class="row">
-        
-         
-          <div class="d-inline-block ms-4">
+        <div class="d-inline-block ms-5 mx-5">
       <NuxtLink to="/sendercreate">
-        <button class="create_btn bg-aliceblue px-4 text-white">+ ADD </button>
+        <button class="create_btn bg-aliceblue px-4 text-white">+ ADD</button>
       </NuxtLink>
     </div>
-        
+        <!-- <div class="domain-field bg-darkgrey my-3 mx-1 px-4">
+          <div class="col-lg-12">
+            <h4 class="mt-4 pl-3 text-customblack mb-4"> </h4>
+          </div>
+          <div class="col-lg-12 mb-3">
+            <div class="mt-4 pl-3 text-customblack mb-4">
+    <h4 class="d-inline-block">Adding a new contact list </h4>
+   
+  </div>
+          </div>
+        </div> -->
   
         <div class="col-lg-12">
-          <div class="filter mt-3">
+          <div class="filter mt-1">
             <div class="d-inline-block">
               <div class="search-wrapper">
                 <img class="search-icon" src="../assets/image/searchgrey.svg" alt="Search icon" />
-                <input type="text" class="form-control" placeholder="Search Send Name" />
+                <input type="text" class="form-control" placeholder="Search by email address" />
               </div>
             </div>
-            <div class="d-inline-block ms-5">
+            <!-- <div class="d-inline-block ms-5">
               <select class="form-select">
-                <option value="" disabled selected>All</option>
-                <option value="Verified">Draft</option>
-                <option value="Verified">Scheduled</option>
-                <option value="Unverified">Sent</option>
-                <option value="">Expired</option>
+                <option value="" disabled selected>Domain Status</option>
+                <option value="Verified">All</option>
+                <option value="Verified">Verified</option>
+                <option value="Unverified">Unverified</option>
+                <option value="">Bounce</option>
               </select>
-            </div>
+            </div> -->
   
             <div class="d-inline-block sortby ms-5">
-          
-            </div>
-          </div>
+              <datepicker
+      v-model="selected"
+      :locale="locale"
+      :upperLimit="to"
+      :lowerLimit="from"
+      :clearable="true"
+    />
+            </div> 
+           </div>
         </div> 
   
         <div class="col-lg-12 pt-2">
@@ -39,29 +53,27 @@
             <table class="table">
               <thead>
                 <tr>
-                  <th>Single Send Name</th>
-                  <th>Delivered</th>
-                  <th> Opens</th>
-                  <th>Clicks</th>
-                  <th>Unsubscribes</th>
+                  <th>Type</th>
+                  <th>Name</th>
+                  <th>Segment Version</th>
+                  <th>Count</th>
                   <th></th>
                 </tr>
               </thead>
               <tbody>
                 <tr v-for="(item, index) in items" :key="index">
+                    <td>
+                        {{ item['Type'] }}
+                    </td>
                   <td>
-                    <NuxtLink to="/">{{ item['Domain'] }}</NuxtLink>
-                  </td>
-                  <td>
-                    1
-                  </td>
-                  <td>
-                    <span class="tab-val" >
-                      {{ item['Verified Domain'] }}
-                    </span>
+                    <NuxtLink to="/"> {{ item['Domain'] }}</NuxtLink>
                   </td>
                   <td>{{ item['Date'] }}</td>
-                  <td> 1</td>
+                  <td>
+                    <span class="tab-val" >
+                      {{ item['Count'] }}
+                    </span>
+                  </td>
                   <td>
                     <img src="../assets/image/delete.svg" alt="Delete Icon"  @click="() => { visibleStaticBackdropDemo = true }" />
                   </td>
@@ -102,20 +114,23 @@
         visibleLiveDemo: false,
         columns: ["Domain", "Verified Domain", "Date"],
         items: [
-          {
-            Domain: "abc.123@codalien.com",
-            "Verified Domain": "-",
-            Date: "1"
+          {  Type:"Global",
+            Domain: "All Contacts",
+            "Verified Domain": "Verified",
+            Date: "   -   ",
+            Count:"1"
           },
-          {
-            Domain: "abc.123@codalien.com",
-            "Verified Domain": "1",
-            Date: "1"
+          { Type:"List",
+            Domain: "list1",
+            "Verified Domain": "Unverified",
+            Date: "   -   ",
+            Count:"0"
           },
-          {
-            Domain: "abc.123@codalien.com",
-            "Verified Domain": "-",
-            Date: "-"
+          { Type:"List",
+            Domain: "list2",
+            "Verified Domain": "Verified",
+            Date: "   -   " ,
+            Count:"1"
           }
         ],
         selectedDate: [new Date(), new Date()],
@@ -276,6 +291,9 @@
       border-radius: 7px;
       box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.27);
       font-weight: 600;
+      position: absolute;
+      top:15%;
+      right:10%;
     }
     .create_btn:hover {
       background-color: #6eb9e1 !important;

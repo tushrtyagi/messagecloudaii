@@ -1,21 +1,11 @@
 <template>
     <div class="domain_list">
       <div class="row">
-        <div class="domain-field bg-darkgrey my-3 mx-1 px-4">
-          <div class="col-lg-12">
-            <h4 class="mt-4 pl-3 text-customblack mb-4"> </h4>
-          </div>
-          <div class="col-lg-12 mb-3">
-            <div class="mt-4 pl-3 text-customblack mb-4">
-    <!-- <h4 class="d-inline-block">Adding  new  sender</h4> -->
-    <div class="d-inline-block ms-4">
+        <div class="d-inline-block ms-5 mx-5">
       <NuxtLink to="/sendercreate">
-        <button class="create_btn bg-aliceblue px-4 text-white">+  Create a new Sender</button>
+        <button class="create_btn bg-aliceblue px-4 text-white">+ ADD</button>
       </NuxtLink>
     </div>
-  </div>
-          </div>
-        </div>
 <!--   
         <div class="col-lg-12">
           <div class="filter mt-1">
@@ -120,7 +110,7 @@
           },
           {
             Domain: "abc.123@codalien.com",
-            "Verified Domain": "Verified",
+            "Verified Domain": "Unverified",
             Date: "   -   "
           },
           {
