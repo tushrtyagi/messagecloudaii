@@ -1,11 +1,11 @@
 <template>
     <div class="domain_list">
       <div class="row">
-        <div class="d-inline-block ms-5 mx-5">
+        <!-- <div class="d-inline-block ms-5 mx-5">
       <NuxtLink to="/sendercreate">
         <button class="create_btn bg-aliceblue px-4 text-white">+ ADD</button>
       </NuxtLink>
-    </div>
+    </div> -->
         <!-- <div class="domain-field bg-darkgrey my-3 mx-1 px-4">
           <div class="col-lg-12">
             <h4 class="mt-4 pl-3 text-customblack mb-4"> </h4>
@@ -23,7 +23,7 @@
             <div class="d-inline-block">
               <div class="search-wrapper">
                 <img class="search-icon" src="../assets/image/searchgrey.svg" alt="Search icon" />
-                <input type="text" class="form-control" placeholder="Search by name" />
+                <input type="text" class="form-control" placeholder="Search by email address" />
               </div>
             </div>
             <!-- <div class="d-inline-block ms-5">
@@ -53,29 +53,20 @@
             <table class="table">
               <thead>
                 <tr>
-                  <th>Type</th>
-                  <th>Name</th>
-                  <th>Segment Version</th>
-                  <th>Count</th>
+                  <th>Contacts</th>
+                  <th>Date Added</th>
+                  <th>Date Updated</th>
                   <th></th>
                 </tr>
               </thead>
               <tbody>
                 <tr v-for="(item, index) in items" :key="index">
                     <td>
-                        {{ item['Type'] }}
+                        {{ item['Contacts'] }}
                     </td>
-                  <td>
-                    <NuxtLink :to="{ path: '/list', query: { domain: item['Domain'] } }">
-  {{ item['Domain'] }}
-</NuxtLink>
-                  </td>
+                    <td>{{ item['Date'] }}</td>
                   <td>{{ item['Date'] }}</td>
-                  <td>
-                    <span class="tab-val" >
-                      {{ item['Count'] }}
-                    </span>
-                  </td>
+                  
                   <td>
                     <img src="../assets/image/delete.svg" alt="Delete Icon"  @click="() => { visibleStaticBackdropDemo = true }" />
                   </td>
@@ -117,21 +108,21 @@
         columns: ["Domain", "Verified Domain", "Date"],
         items: [
           {  Type:"Global",
-            Domain: "All Contacts",
+            Contacts: "abc@codalien.com",
             "Verified Domain": "Verified",
-            Date: "   -   ",
+            Date: "Apr 12 ,2024",
             Count:"1"
           },
           { Type:"List",
-            Domain: "list1",
+          Contacts: "abc@codalien.com",
             "Verified Domain": "Unverified",
-            Date: "   -   ",
+            Date: "Apr 12 ,2024",
             Count:"0"
           },
           { Type:"List",
-            Domain: "list2",
+          Contacts: "abc@codalien.com",
             "Verified Domain": "Verified",
-            Date: "   -   " ,
+            Date: "Apr 12 ,2024",
             Count:"1"
           }
         ],
