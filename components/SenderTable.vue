@@ -52,7 +52,7 @@
               <tbody>
                 <tr v-for="(item, index) in items" :key="index">
                   <td>
-                    <NuxtLink to="/">{{ item['Domain'] }}</NuxtLink>
+                    <NuxtLink to="/editsender">{{ item['Domain'] }}</NuxtLink>
                   </td>
                   <td>
                     {{ item['Domain'] }}

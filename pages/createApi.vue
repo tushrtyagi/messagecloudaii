@@ -11,7 +11,7 @@
                 <div class="col-lg-12">
                   <div class="breadcrumbs">
                     <CBreadcrumb style="--cui-breadcrumb-divider: '>'">
-                      <CBreadcrumbItem href="#">Configuration</CBreadcrumbItem>
+                      <CBreadcrumbItem href="#">SenderSetup</CBreadcrumbItem>
                       <CBreadcrumbItem active>API key</CBreadcrumbItem>
                     </CBreadcrumb>
                   </div>

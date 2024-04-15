@@ -18,7 +18,7 @@
                         
                         </CBreadcrumbItem>
                       
-                      <CBreadcrumbItem href="/createdomain">Configuration</CBreadcrumbItem>
+                      <CBreadcrumbItem href="/createdomain">SenderSetup</CBreadcrumbItem>
                       <CBreadcrumbItem active>API key</CBreadcrumbItem>
                     </CBreadcrumb>
                   </div>

@@ -59,9 +59,9 @@ export default {
           
           <div class="configuration_nav  d-flex text-customblack">
            <NuxtLink class="text-customblack mb-5" to ="/createdomain">
-             <span class ="config-icon" @click="togglemenu" > <img src="../assets/image/configuration_1.svg" alt="configuration" />
+             <span class ="config-icon" @click="togglemenu" > <img src="../assets/image/Configuration.svg" alt="configuration" />
              </span>
-             <label class="ms-4">Configuration</label>
+             <label class="ms-4">SenderSetup</label>
              <!-- <span class="dropdown-icon" >
                <img src="../assets/image/dropdown.svg" alt="down-arrow" :class ="{ 'rotated': store.isDropdownExpanded } " v-if="store.isSidebarExpanded"/>
              </span> -->
@@ -97,7 +97,7 @@ export default {
           <NuxtLink class="text-customblack mt-3" to="/stats">
             <span class="icon-wrapper"   @click="togglemenu"><img
                
-                src="../assets/image/nimbus_stats.svg"
+                src="../assets/image/Statistics.svg"
                 alt="analytics" /></span
             ><label class="ms-3">Statistics</label>
           </NuxtLink>
@@ -114,7 +114,7 @@ export default {
         <li @click="toggleDropdownsender" class="senderlist">
           <NuxtLink class="text-customblack"  to="/send">
             <span class="icon-wrapper" @click="togglemenu">
-              <img src="../assets/image/suppression.svg" alt="analytics" />
+              <img src="../assets/image/campaigning.svg" alt="analytics" />
             </span>
             <label class="ms-3">Campaigning</label>
           </NuxtLink>
@@ -135,7 +135,7 @@ export default {
           <NuxtLink class="text-customblack settings_page" to="/profile">
             <span class=" icon-wrapper"   @click="togglemenu"><img
             
-                src="../assets/image/settings.svg"
+                src="../assets/image/Settings.svg"
                 alt="analytics" /></span
             ><label class="ms-3">Settings</label>
           </NuxtLink>

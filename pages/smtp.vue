@@ -12,7 +12,7 @@
                   <div class="breadcrumbs">
                     <CBreadcrumb style="--cui-breadcrumb-divider: '/'">
                       <CBreadcrumbItem href="/"><img src="../assets/image/home_icon (1).svg" alt="configuration" /></CBreadcrumbItem>
-                      <CBreadcrumbItem href="/createdomain">Configuration</CBreadcrumbItem>
+                      <CBreadcrumbItem href="/createdomain">SenderSetup</CBreadcrumbItem>
                       <CBreadcrumbItem active>SMTP</CBreadcrumbItem>
                     </CBreadcrumb>
                   </div>

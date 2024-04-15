@@ -17,7 +17,7 @@
                         <CBreadcrumbItem href="/senders"> Senders </CBreadcrumbItem>
   
                 
-                        <CBreadcrumbItem active> New Sender</CBreadcrumbItem>
+                        <CBreadcrumbItem active> Edit Sender</CBreadcrumbItem>
 
                       </CBreadcrumb>
                     </div>
@@ -29,7 +29,7 @@
                       <div class="tab_content">
     <div class="row mt-2">
       <div class="col-lg-3 mx-2 ">
-        <h2 class="text-customblack">Create Sender Details</h2>
+        <h2 class="text-customblack">Edit Sender Details</h2>
         <p class="mt-5 mx-1 text-muted">To comply with anti-spam laws such as CAN-SPAM and CASL, it's important to include your company's contact information, including a physical mailing address, in every promotional email you send. This ensures transparency and trust with recipients, as they can easily identify the sender and reach out if needed. Make sure to include your company name, email address, and physical address at the bottom of each email to meet legal requirements and build credibility with your audience.</p>
       </div>
       <div class="col-lg-7">
