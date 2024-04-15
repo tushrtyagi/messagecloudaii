@@ -61,7 +61,7 @@ export default {
            <NuxtLink class="text-customblack mb-5" to ="/createdomain">
              <span class ="config-icon" @click="togglemenu" > <img src="../assets/image/configuration.svg" alt="configuration" />
              </span>
-             <label class="ms-4">SenderSetup</label>
+             <label class="ms-4">Sender Setup</label>
              <!-- <span class="dropdown-icon" >
                <img src="../assets/image/dropdown.svg" alt="down-arrow" :class ="{ 'rotated': store.isDropdownExpanded } " v-if="store.isSidebarExpanded"/>
              </span> -->
@@ -361,7 +361,7 @@ ul.sidebar-nav {
 }
 .shrink.expend div.toggle_menu_wrap ul.sidebar-nav a.router-link-active.router-link-exact-active label {
     display: unset;
-    font-size: 15px;
+    font-size: 12px;
     cursor: pointer;
     font-family: Inter;
     font-weight: 550;
@@ -370,7 +370,7 @@ ul.sidebar-nav {
 
 .shrink.expend div.toggle_menu_wrap ul.sidebar-nav .configuration_nav label {
   display: unset;
-  font-size: 13px;
+  font-size: 12px;
   cursor: pointer;
   font-weight: 400;
   line-height: 30px;

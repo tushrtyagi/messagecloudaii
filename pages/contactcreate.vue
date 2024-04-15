@@ -166,8 +166,8 @@ The contact you're adding will not be notified. You can add additional custom fi
               <div class="col-lg-6 mt-5 ">
           <button class="login_btn bg-aliceblue text-white ">ADD</button>
           
-            <button class="bg-white text-customblack cancel-btn mx-4">Cancel</button>
-            
+              <button class="bg-white text-customblack cancel-btn mx-4">Cancel</button>
+       
           </div>
         
             </div>
