@@ -59,7 +59,7 @@ export default {
           
           <div class="configuration_nav  d-flex text-customblack">
            <NuxtLink class="text-customblack mb-5" to ="/createdomain">
-             <span class ="config-icon" @click="togglemenu" > <img src="../assets/image/Configuration.svg" alt="configuration" />
+             <span class ="config-icon" @click="togglemenu" > <img src="../assets/image/configuration.svg" alt="configuration" />
              </span>
              <label class="ms-4">SenderSetup</label>
              <!-- <span class="dropdown-icon" >
