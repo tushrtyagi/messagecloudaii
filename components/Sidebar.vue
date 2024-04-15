@@ -97,7 +97,7 @@ export default {
           <NuxtLink class="text-customblack mt-3" to="/stats">
             <span class="icon-wrapper"   @click="togglemenu"><img
                
-                src="../assets/image/Statistics.svg"
+                src="../assets/image/statistics.svg"
                 alt="analytics" /></span
             ><label class="ms-3">Statistics</label>
           </NuxtLink>
@@ -135,7 +135,7 @@ export default {
           <NuxtLink class="text-customblack settings_page" to="/profile">
             <span class=" icon-wrapper"   @click="togglemenu"><img
             
-                src="../assets/image/Settings.svg"
+                src="../assets/image/settings.svg"
                 alt="analytics" /></span
             ><label class="ms-3">Settings</label>
           </NuxtLink>
