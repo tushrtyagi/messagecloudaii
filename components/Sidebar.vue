@@ -279,7 +279,7 @@ ul.sidebar-nav {
     padding: 1px 0px;
   }
   a{
-    padding: 16px 17px 16px !important;
+    padding: 8px 17px 16px !important;
     cursor: pointer;
     width: 100%;
     display: flex;

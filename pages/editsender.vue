@@ -30,115 +30,117 @@
     <div class="row mt-2">
       <div class="col-lg-3 mx-2 ">
         <h2 class="text-customblack">Edit Sender Details</h2>
-        <p class="mt-5 mx-1 text-muted">To comply with anti-spam laws such as CAN-SPAM and CASL, it's important to include your company's contact information, including a physical mailing address, in every promotional email you send. This ensures transparency and trust with recipients, as they can easily identify the sender and reach out if needed. Make sure to include your company name, email address, and physical address at the bottom of each email to meet legal requirements and build credibility with your audience.</p>
+        <p class="mt-5 mx-1 text-muted">You are required to include your contact information, including a physical mailing address, inside every promotional email you send in order to comply with the anti-spam laws such as CAN-SPAM and CASL. You'll find replacement tags for this information in the footer of all the email designs SendGrid provides.</p>
       </div>
-      <div class="col-lg-7">
-        <div class="personal_info_tab bg-sidegrey ">
-          <div class="form">
-            <div class="row">
+   
+        <div class="col-lg-7">
+          <div class="personal_info_tab bg-sidegrey ">
+            <div class="form">
+              <div class="row">
+              
+                <div class="col-lg-6 mb-2">
+                  <label class="d-block text-customblack"
+                    >From Name<sup class="text-maximumred">*</sup></label
+                  >
+                  <input class="bg-white w-100" type="text" placeholder="Name " />
+                </div>
+                <div class="col-lg-12 mb-2">
+                  <label class="d-block text-customblack"
+                    >From Email Address<sup class="text-maximumred">*</sup></label
+                  >
+                  <input
+                    class="bg-white w-100"
+                    type="text"
+                    placeholder="Sending Email Address"
+                  />
+                </div>
+                <div class="col-lg-12 mb-2">
+                  <label class="d-block text-customblack"
+                    >Reply To<sup class="text-maximumred">*</sup></label
+                  >
+                  <input
+                    class="bg-white w-100"
+                    type="text"
+                    placeholder="Recieving Email Address"
+                  />
+                </div>
+                <div class="col-lg-12 mb-2">
+                  <label class="d-block text-customblack"
+                    >Company Address <sup class="text-maximumred">*</sup></label
+                  >
+                  <input
+                    class="bg-white w-100"
+                    type="text"
+                    placeholder=""
+                  />
+                </div>
+                <div class="col-lg-12 mb-2">
+                  <label class="d-block text-customblack"
+                    >Company Address Line 2 </label
+                  >
+                  <input
+                    class="bg-white w-100"
+                    type="text"
+                    placeholder="(Optional)"
+                  />
+                </div>
+                <div class="col-lg-6 mb-2">
+                  <label class="d-block text-customblack"
+                    >ZIP Code<sup class="text-maximumred">*</sup></label
+                  >
+                  <input
+                    class="bg-white w-100"
+                    type="text"
+                    placeholder="Enter your Zip Code"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <label class="d-block text-customblack"
+                    >City<sup class="text-maximumred">*</sup></label
+                  >
+                  <input class="bg-white w-100" type="text" placeholder="Enter Your City" />
+                </div>
+                <div class="col-lg-6">
+                  <label class="d-block text-customblack"
+                    >Country<sup class="text-maximumred">*</sup></label
+                  >
+                  <input
+                    class="bg-white w-100"
+                    type="text"
+                    placeholder="Enter Your Country"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <label class="d-block text-customblack"
+                    >State<sup class="text-maximumred">*</sup></label
+                  >
+                  <input
+                    class="bg-white w-100"
+                    type="text"
+                    placeholder="Enter Your Country"
+                  />
+                </div>
+  
+                <div class="col-lg-12 mb-2">
+                  <label class="d-block text-customblack"
+                    > Nickname<sup class="text-maximumred">*</sup></label
+                  >
+                  <input class="bg-white w-100" type="text" placeholder="" />
+                </div>
+              
+  
+                <div class="col-lg-6 mt-5 ">
+            <button class="login_btn bg-aliceblue text-white ">Create</button>
             
-              <div class="col-lg-6 mb-2">
-                <label class="d-block text-customblack"
-                  >From Name<sup class="text-maximumred">*</sup></label
-                >
-                <input class="bg-white w-100" type="text" placeholder="Name " />
-              </div>
-              <div class="col-lg-12 mb-2">
-                <label class="d-block text-customblack"
-                  >From Email Address<sup class="text-maximumred">*</sup></label
-                >
-                <input
-                  class="bg-white w-100"
-                  type="text"
-                  placeholder="Sending Email Address"
-                />
-              </div>
-              <div class="col-lg-12 mb-2">
-                <label class="d-block text-customblack"
-                  >Reply To<sup class="text-maximumred">*</sup></label
-                >
-                <input
-                  class="bg-white w-100"
-                  type="text"
-                  placeholder="Recieving Email Address"
-                />
-              </div>
-              <div class="col-lg-12 mb-2">
-                <label class="d-block text-customblack"
-                  >Company Address <sup class="text-maximumred">*</sup></label
-                >
-                <input
-                  class="bg-white w-100"
-                  type="text"
-                  placeholder=""
-                />
-              </div>
-              <div class="col-lg-12 mb-2">
-                <label class="d-block text-customblack"
-                  >Company Address Line 2 </label
-                >
-                <input
-                  class="bg-white w-100"
-                  type="text"
-                  placeholder="(Optional)"
-                />
-              </div>
-              <div class="col-lg-6 mb-2">
-                <label class="d-block text-customblack"
-                  >ZIP Code<sup class="text-maximumred">*</sup></label
-                >
-                <input
-                  class="bg-white w-100"
-                  type="text"
-                  placeholder="Enter your Zip Code"
-                />
-              </div>
-              <div class="col-lg-6">
-                <label class="d-block text-customblack"
-                  >City<sup class="text-maximumred">*</sup></label
-                >
-                <input class="bg-white w-100" type="text" placeholder="Enter Your City" />
-              </div>
-              <div class="col-lg-6">
-                <label class="d-block text-customblack"
-                  >Country<sup class="text-maximumred">*</sup></label
-                >
-                <input
-                  class="bg-white w-100"
-                  type="text"
-                  placeholder="Enter Your Country"
-                />
-              </div>
-              <div class="col-lg-6">
-                <label class="d-block text-customblack"
-                  >State<sup class="text-maximumred">*</sup></label
-                >
-                <input
-                  class="bg-white w-100"
-                  type="text"
-                  placeholder="Enter Your Country"
-                />
-              </div>
-
-              <div class="col-lg-12 mb-2">
-                <label class="d-block text-customblack"
-                  > Nickname<sup class="text-maximumred">*</sup></label
-                >
-                <input class="bg-white w-100" type="text" placeholder="" />
-              </div>
-            
-
-              <div class="col-lg-6 mt-5 ">
-          <button class="login_btn bg-aliceblue text-white ">Create</button>
+              <button class="bg-white text-customblack cancel-btn mx-4">Cancel</button>
+              
+            </div>
           
-            <button class="bg-white text-customblack cancel-btn mx-4">Cancel</button>
-            
-          </div>
-        
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      
     </div>
   
   </div>

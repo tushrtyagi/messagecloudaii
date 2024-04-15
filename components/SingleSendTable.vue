@@ -5,13 +5,13 @@
          
           <div class="d-inline-block ms-4">
       <NuxtLink to="/sendercreate">
-        <button class="create_btn bg-aliceblue px-4 text-white">+ ADD </button>
+        <button class="create_btn bg-aliceblue px-4 mt-1 text-white">+ ADD </button>
       </NuxtLink>
     </div>
         
   
         <div class="col-lg-12">
-          <div class="filter mt-3">
+          <div class="filter mt-1">
             <div class="d-inline-block">
               <div class="search-wrapper">
                 <img class="search-icon" src="../assets/image/searchgrey.svg" alt="Search icon" />
@@ -35,7 +35,7 @@
         </div> 
   
         <div class="col-lg-12 pt-2">
-          <div class="table_data mt-4 bg-white">
+          <div class="table_data mt-2 bg-white">
             <table class="table">
               <thead>
                 <tr>

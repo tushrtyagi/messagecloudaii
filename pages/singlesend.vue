@@ -37,7 +37,7 @@
                       </div>
                       <!-- <Tabs class="domain_tabs" @changeTab="changeTab" :tabs="['Sending Domain ', 'Bounce ', 'Tracking ']"  /> -->
                        <div class="tab-content domain_content mb-3">
-          <h3 class="text-customblack m">Single Sends</h3>
+          <h3 class="text-customblack ">Single Sends</h3>
           <!-- <p class="text-customblack mt-3">
           {{arr[activeTab].subtext }}
           </p>

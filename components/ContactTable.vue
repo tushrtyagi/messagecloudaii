@@ -2,7 +2,7 @@
     <div class="domain_list">
       <div class="row">
         <div class="d-inline-block ms-5 mx-5">
-      <NuxtLink to="/sendercreate">
+      <NuxtLink to="/contactcreate">
         <button class="create_btn bg-aliceblue px-4 text-white">+ ADD</button>
       </NuxtLink>
     </div>
@@ -66,8 +66,8 @@
                         {{ item['Type'] }}
                     </td>
                   <td>
-                    <NuxtLink :to="{ path: '/list', query: { domain: item['Domain'] } }">
-  {{ item['Domain'] }}
+                    <NuxtLink :to="{ path: '/list', query: { domain: item['List'] } }">
+  {{ item['List'] }}
 </NuxtLink>
                   </td>
                   <td>{{ item['Date'] }}</td>
@@ -117,19 +117,25 @@
         columns: ["Domain", "Verified Domain", "Date"],
         items: [
           {  Type:"Global",
-            Domain: "All Contacts",
+            List: "All Contacts",
             "Verified Domain": "Verified",
+            Date: "   -   ",
+            Count:"3"
+          },
+          { Type:"List",
+            List: "list1",
+            "Verified Domain": "Unverified",
             Date: "   -   ",
             Count:"1"
           },
           { Type:"List",
-            Domain: "list1",
-            "Verified Domain": "Unverified",
-            Date: "   -   ",
-            Count:"0"
+            List: "list2",
+            "Verified Domain": "Verified",
+            Date: "   -   " ,
+            Count:"1"
           },
           { Type:"List",
-            Domain: "list2",
+            List: "list3",
             "Verified Domain": "Verified",
             Date: "   -   " ,
             Count:"1"
