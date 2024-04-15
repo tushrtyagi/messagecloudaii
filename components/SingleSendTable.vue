@@ -4,7 +4,7 @@
         
          
           <div class="d-inline-block ms-4">
-      <NuxtLink to="/sendercreate">
+      <NuxtLink to="/singleSendSettingspage">
         <button class="create_btn bg-aliceblue px-4 mt-1 text-white">+ ADD </button>
       </NuxtLink>
     </div>
