@@ -24,10 +24,10 @@
               </div>
       <div class="right_panel_global_section bg-darkgrey ">
         <div class="bg-white main-page">
-          <div class="single-send-header">
-            <Header />
+          <!-- <div class="single-send-header">
+        
             <SingleSenderDetailsHeader />
-          </div>
+          </div> -->
       
           <div class="container-fluid main-content">
             <div class="row">
