@@ -129,7 +129,10 @@
             
 
               <div class="col-lg-6 mt-5 ">
-          <button class="login_btn bg-aliceblue text-white ">Create</button>
+              <NuxtLink to ="/resendverify">
+
+                <button class="login_btn bg-aliceblue text-white ">Create</button>
+              </NuxtLink>
           
             <button class="bg-white text-customblack cancel-btn mx-4">Cancel</button>
             
