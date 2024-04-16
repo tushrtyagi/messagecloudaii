@@ -164,7 +164,13 @@ The contact you're adding will not be notified. You can add additional custom fi
 
 
               <div class="col-lg-6 mt-5 ">
-          <button class="login_btn bg-aliceblue text-white ">ADD</button>
+                <button class="login_btn bg-aliceblue text-white" @click="addToast = true">ADD</button>
+                <CToast :autohide="false" color="primary" class="text-white align-items-center" v-if="addToast">
+    <div class="d-flex">
+      <CToastBody>Hello, world! This is a toast message.</CToastBody>
+      <CToastClose class="me-2 m-auto" white />
+    </div>
+  </CToast>
           
               <button class="bg-white text-customblack cancel-btn mx-4">Cancel</button>
        
@@ -186,6 +192,7 @@ The contact you're adding will not be notified. You can add additional custom fi
         </div>
       </div>
     </div>
+    
   </template>
   
   
@@ -203,6 +210,7 @@ The contact you're adding will not be notified. You can add additional custom fi
     },
     data() {
       return {
+        addToast:false,
         addContacts: true,
       addContactsAndInclude: false,
       addContactsToNewList: false,

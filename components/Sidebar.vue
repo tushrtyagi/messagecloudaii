@@ -118,7 +118,7 @@ export default {
             </span>
             <label class="ms-3">Campaigning</label>
           </NuxtLink>
-          <ol class="dropdowncustom p-0 mt-2  m-0" v-show="store.isDropdownsenderExpanded">
+          <ol class="dropdowncustom p-0   m-0" v-show="store.isDropdownsenderExpanded">
             <li>
               <NuxtLink class="text-customblack" to="/singlesend" @click.stop>
                 <label> SingleSend</label>
