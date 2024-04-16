@@ -50,6 +50,7 @@
                 <input
                   class="bg-white w-100"
                   type="text"
+                  v-model="fromEmailAddress"
                   placeholder="Sending Email Address"
                 />
               </div>
@@ -129,12 +130,25 @@
             
 
               <div class="col-lg-6 mt-5 ">
-              <NuxtLink to ="/resendverify">
+             
 
-                <button class="login_btn bg-aliceblue text-white ">Create</button>
-              </NuxtLink>
-          
-            <button class="bg-white text-customblack cancel-btn mx-4">Cancel</button>
+                <button class="login_btn bg-aliceblue text-white " @click="
+                        () => {
+                          visibleLiveDemo = true;
+                        }
+                      ">Create</button>
+      
+      <ResendsenderModal
+                      :backdrop="true"
+                      :keyboard="false"
+                      @closemodal="closesendermodal"
+                      :visible="visibleLiveDemo"
+                      :email="fromEmailAddress"
+                    />
+                   
+
+                      <button class="bg-white text-customblack cancel-btn mx-4">Cancel</button>
+                 
             
           </div>
         
@@ -171,6 +185,8 @@
     },
     data() {
       return {
+        fromEmailAddress:" ",
+        visibleLiveDemo: false,
         activeTab: 0,
         arr: [
           {
@@ -193,6 +209,9 @@
         console.log(index);
         this.activeTab = index;
       },
+      closesendermodal(value) {
+      this.visibleLiveDemo = value;
+    },
     },
   };
   </script>
