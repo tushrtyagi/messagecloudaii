@@ -245,13 +245,14 @@ export default {
   }
   .logo {
     height: 100px;
-    width: 350px;
+    // width: 350px;
     position: absolute;
     top:20px;
     left:15px;
     display: block;
     margin: auto;
     cursor: pointer;
+    width:auto;
   
   }
 }
