@@ -97,7 +97,7 @@ export default {
           <NuxtLink class="text-customblack mt-3" to="/stats">
             <span class="icon-wrapper"   @click="togglemenu"><img
                
-                src="../assets/image/statistics.svg"
+                src="../assets/image/Statistics.svg"
                 alt="analytics" /></span
             ><label class="ms-3">Statistics</label>
           </NuxtLink>
