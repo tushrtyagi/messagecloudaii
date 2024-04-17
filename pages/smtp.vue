@@ -124,10 +124,10 @@ import { store } from "../stores/store";
 export default {
   components: { CButton },
   setup() {
-    const expanded = useExpanded();
+
     return {
       visibleStaticBackdropDemo: false,
-      expanded,
+ 
       store,
       visibleLiveDemo: false,
   

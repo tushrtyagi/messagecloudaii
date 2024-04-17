@@ -69,9 +69,9 @@
     props: ['domain'],
 
     setup() {
-      const expanded = useExpanded();
+     
       return {
-        expanded,
+      
         store
       };
     },

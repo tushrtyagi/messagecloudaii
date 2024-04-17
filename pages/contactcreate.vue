@@ -219,9 +219,9 @@ The contact you're adding will not be notified. You can add additional custom fi
   export default {
     components: {},
     setup() {
-      const expanded = useExpanded();
+      
       return {
-        expanded,
+       
         store,
       };
     },

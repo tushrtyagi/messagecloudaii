@@ -82,9 +82,9 @@ import { store } from "../stores/store";
 export default {
   components: {},
   setup() {
-    const expanded = useExpanded();
+  
     return {
-      expanded,
+   
       store,
     };
   },

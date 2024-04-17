@@ -122,9 +122,9 @@ import {CButton} from "@coreui/vue";
 export default defineComponent({
   components:{CButton},
   setup() {
-    const expanded = useExpanded();
+   
     return {
-      expanded,
+   
       store
     };
   },

@@ -67,9 +67,9 @@
   export default defineComponent({
     components: {},
     setup() {
-      const expanded = useExpanded();
+     
       return {
-        expanded,
+   
         store
       };
     },
