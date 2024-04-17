@@ -39,7 +39,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-9">
+              <div class="col-lg-9 mt-4">
                 <div class="div-header">
                   <p class="mb-1"><strong>Subject: </strong>bumper Sale!</p>
                   <p><strong>Preheader: </strong>Sale</p>
@@ -88,6 +88,10 @@ export default defineComponent({
 .main-page{
   height: 100vh;
   overflow: hidden;
+  
+}
+.main-content[data-v-796b928d] {
+    padding-top: 37px;
 }
 
 span:hover {

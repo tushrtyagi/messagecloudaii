@@ -72,6 +72,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 .settings-component-class {
   overflow-y: auto;
   height: 80vh;
@@ -96,12 +97,17 @@ export default {
 }
 .tabs-class {
   position: fixed;
-  top: 140px;
-  z-index: 1;
-  background-color: #fff;
-  width: 22.3%;
+    top: 140px;
+    z-index: 1;
+    background-color: #fff;
+    width: 18.9%;
+   
 }
 .form-div {
   padding-top: 35px;
+}
+span,
+  strong{
+  font-family: "inter", "sans-serif";
 }
 </style>
