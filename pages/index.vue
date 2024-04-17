@@ -88,8 +88,8 @@ export default defineComponent({
 @import "../assets/scss/style.scss";
 
 .right_panel {
-  width: calc(100% - 60px);
-  margin-left: 60px;
+  width: calc(100% - 80px);
+  margin-left: 80px;
 }
 .graph-img{
   position: relative;
@@ -106,8 +106,8 @@ export default defineComponent({
   }
 }
 .shrink_screen.right_panel {
-  width: calc(100% - 12rem);
-  margin-left: 12rem;
+  width: calc(100% - 14rem);
+  margin-left: 14rem;
 }
 
 .figures_section {
@@ -120,7 +120,7 @@ export default defineComponent({
 }
 
 .dashboard_section {
-  padding: 0px 31px 0px;
+  padding: 0px 31px 0px 0; 
   border-radius: 1px solid;
   .dashboard_page {
     position: relative;
