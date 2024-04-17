@@ -11,72 +11,72 @@ export default {
   },
   data() {
     return {
-      
+
     };
   },
   mounted() {
-  
+
   },
   methods: {
     togglemenu() {
       store.toggleSidebar();
-     
+
     },
     toggleDropdownmenu() {
-     
+
       store.toggleDropdown();
     },
     toggleDropdownsender() {
-     
-     store.toggleDropdownsender();
-   },
+
+      store.toggleDropdownsender();
+    },
+    toggleSidebar() {
+      store.toggleSidebar();
+    }
   }
 };
 </script>
 
 <template>
-  
-  <!-- <Header @toggle-menu="togglemenu"></Header> -->
-  <div
-    class="sidebar"
-    id="sidemenu"
-  
-    :class="`${!store.isSidebarExpanded ? 'shrink bg-sidegrey' : 'shrink expend bg-sidegrey'}`"
-  >
- 
-    <div class="toggle_menu_wrap " >
+  <div class="sidebar" id="sidemenu"
+    :class="`${!store.isSidebarExpanded ? 'shrink bg-sidegrey' : 'shrink expend bg-sidegrey'}`">
+    <div v-if="store.isSidebarExpanded" class="full_icon">
+      <img  src="../assets/image/logo.svg" alt="Full Logo" @click="toggleSidebar" />
+    </div>
+    <div v-if="!store.isSidebarExpanded" class="logo_icon">
+      <img  src="../assets/image/dropdownlogo.svg" alt="Dropdown Logo"
+        @click="toggleSidebar" />
+    </div>
+    <div class="toggle_menu_wrap ">
       <ul class="sidebar-nav ">
-        <li> 
+        <li>
           <NuxtLink class="text-customblack " to="/">
-              <span class="dash-icon"    @click="togglemenu" >
-                <img src="../assets/image/home.svg" alt="search"  />
-              </span>
-              <label class="ms-3 ">Dashboard</label>
-          
-            </NuxtLink>
+            <span class="dash-icon" @click="togglemenu">
+              <img src="../assets/image/home.svg" alt="search" />
+            </span>
+            <label class="ms-3 ">Dashboard</label>
+
+          </NuxtLink>
         </li>
         <li @click="toggleDropdownmenu" class="position-relative d-block ">
-          
-          <div class="configuration_nav  d-flex text-customblack">
-           <NuxtLink class="text-customblack mb-5" to ="/createdomain">
-             <span class ="config-icon" @click="togglemenu" > <img src="../assets/image/configuration.svg" alt="configuration" />
-             </span>
-             <label class="ms-4">Sender Setup</label>
-             <!-- <span class="dropdown-icon" >
+          <!-- <div class="configuration_nav  d-flex text-customblack"> -->
+            <NuxtLink class="text-customblack" to="/createdomain">
+              <span class="dash-icon" @click="togglemenu"> <img src="../assets/image/configuration.svg"
+                  alt="configuration" />
+              </span>
+              <label class="ms-3">Sender Setup</label>
+              <!-- <span class="dropdown-icon" >
                <img src="../assets/image/dropdown.svg" alt="down-arrow" :class ="{ 'rotated': store.isDropdownExpanded } " v-if="store.isSidebarExpanded"/>
              </span> -->
-           </NuxtLink>
-          
-          </div>
- 
-
+            </NuxtLink>
+          <!-- </div> -->
           <ol class="dropdowncustom pb-0 mt-4 mb-0" v-show="store.isDropdownExpanded">
-            <li >
+            <li>
               <NuxtLink class="text-customblack " to="/firstdomain" @click.stop>
                 <label> Domain</label>
               </NuxtLink>
             </li>
-            <li >
+            <li>
               <NuxtLink class="text-customblack " to="/senders" @click.stop>
                 <label> Senders</label>
               </NuxtLink>
@@ -104,15 +104,12 @@ export default {
         </li>
         <li>
           <NuxtLink class="text-customblack " to="/suppression">
-            <span class="icon-wrapper" @click="togglemenu"><img
-             
-                src="../assets/image/suppression.svg"
-                alt="analytics" /></span
-            ><label class="ms-3">Suppression</label>
+            <span class="icon-wrapper" @click="togglemenu"><img src="../assets/image/suppression.svg"
+                alt="analytics" /></span><label class="ms-3">Suppression</label>
           </NuxtLink>
         </li>
         <li @click="toggleDropdownsender" class="senderlist">
-          <NuxtLink class="text-customblack"  to="/send">
+          <NuxtLink class="text-customblack" to="/send">
             <span class="icon-wrapper" @click="togglemenu">
               <img src="../assets/image/campaigning.svg" alt="analytics" />
             </span>
@@ -133,11 +130,8 @@ export default {
         </li>
         <li>
           <NuxtLink class="text-customblack settings_page" to="/profile">
-            <span class=" icon-wrapper"   @click="togglemenu"><img
-            
-                src="../assets/image/settings.svg"
-                alt="analytics" /></span
-            ><label class="ms-3">Settings</label>
+            <span class=" icon-wrapper" @click="togglemenu"><img src="../assets/image/settings.svg"
+                alt="analytics" /></span><label class="ms-3">Settings</label>
           </NuxtLink>
         </li>
       </ul>
@@ -154,39 +148,39 @@ export default {
   justify-content: space-between;
   align-items: center;
 }
-.config-icon{
-  
-    position: relative;
-   
-    width: 30px;
-    height: 30px;
-    background: white;
-    box-shadow: 0px 1px 2px black;
-    border-radius: 6px;
-    border: 1px solid white;
-    right: 2px;
-  img{
-    width: 20px;
-  height: 20px;
-  margin-left: 3px;
-  margin-top:3px;
-  // border: 1px ;
-  }
-}
 
-.dash-icon{
+.config-icon {
+
+  // position: relative;
   width: 30px;
   height: 30px;
   background: white;
-  box-shadow: 0px 1px 2px black ;
+  box-shadow: 0px 1px 2px black;
   border-radius: 6px;
   border: 1px solid white;
-  img{
+  // right: 2px;
+
+  img {
     width: 20px;
-  height: 20px;
-  margin-left: 3px;
-  margin-top:3px;
- 
+    height: 20px;
+    // margin-left: 3px;
+    // margin-top: 3px;
+    // border: 1px ;
+  }
+}
+
+.dash-icon {
+  width: 30px;
+  height: 30px;
+  background: white;
+  box-shadow: 0px 1px 2px black;
+  border-radius: 6px;
+  border: 1px solid white;
+
+  img {
+    width: 20px;
+    height: 20px;
+
   }
 }
 
@@ -200,30 +194,31 @@ export default {
   width: 31px;
   height: 31px;
   background: white;
-  box-shadow: 0px 1px 2px ;
+  box-shadow: 0px 1px 2px;
   border-radius: 6px;
   border: 1px solid white;
-  img{
+
+  img {
     width: 20px;
-  height: 20px;
-  margin-left: 3px;
-  margin-top:3px;
-  // border: 1px ;
+    height: 20px;
+    // margin-left: 3px;
+    // margin-top: 3px;
+    // border: 1px ;
   }
 }
 
-.senderlist{
-  display:flex;
+.senderlist {
+  display: flex;
   flex-direction: column;
-  
+
 }
 
 .sidebar {
   position: fixed;
-  top: 60px;
+  top: 0px;
   left: 0;
   width: 60px;
- 
+
   margin-top: -30px;
   min-height: 10vh;
   overflow-x: hidden;
@@ -233,59 +228,62 @@ export default {
 }
 
 .sidebar.shrink {
-    width: 60px;
-    padding: 0px 0px 8px 0px;
+  width: 80px;
+  padding: 56px 10px 8px 10px;
 }
 
 .shrink {
-  width:60px;
+  width: 60px;
   padding: 20px 0px 15px 0px;
+
   &.expend {
     width: calc(10rem + 32px);
   }
+
   .logo {
     height: 100px;
     // width: 350px;
     position: absolute;
-    top:20px;
-    left:15px;
+    top: 20px;
+    left: 15px;
     display: block;
     margin: auto;
     cursor: pointer;
-    width:auto;
-  
+    width: auto;
+
   }
 }
 
 .shrink.expend {
-  width: calc(10rem + 32px);
+  width: calc(13rem + 14px);
 }
-
+.shrink ul.sidebar-nav a{
+  padding: 1px 7px!important;
+  width: calc(100% - 10px) !important;
+}
+.shrink.expend ul.sidebar-nav a{
+  padding: 8px 16px 8px !important;
+  width: calc(90% - 10px)!important;
+}
 
 ul.sidebar-nav {
   height: calc(100vh - 60px);
-  position: relative;
   padding-bottom: 60px !important;
   display: block !important;
-  flex: none;
-  flex-direction: unset;
-  overflow: unset ;
-  margin-bottom: 1px;
+
   // overflow-x: hidden;
   li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     cursor: pointer;
-    padding: 1px 0px;
+    margin-bottom: 31px;
   }
-  a{
-    padding: 8px 17px 16px !important;
+
+  a {
     cursor: pointer;
     width: 100%;
     display: flex;
     align-items: center;
   }
+
   a.settings_page {
     margin-top: 0px !important;
   }
@@ -296,6 +294,7 @@ ul.sidebar-nav {
     width: 20px;
     display: block;
     height: 26px;
+
     img {
       width: 100%;
       height: 100%;
@@ -304,23 +303,29 @@ ul.sidebar-nav {
   }
 }
 
- .sidebar.shrink .dash-icon, .sidebar.shrink .icon-wrapper {
+.sidebar.shrink .dash-icon,
+.sidebar.shrink .icon-wrapper {
   width: 30px;
   height: 30px;
-  position: relative;
-  right: 2px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.sidebar.shrink .config-icon{
+
+.sidebar.shrink .config-icon {
   width: 30px;
   height: 30px;
-  
+  display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
-.sidebar.shrink .config-icon img, .sidebar.shrink .dash-icon img, .sidebar.shrink .icon-wrapper img {
+
+.sidebar.shrink .config-icon img,
+.sidebar.shrink .dash-icon img,
+.sidebar.shrink .icon-wrapper img {
   width: 20px;
-    height: 15px;
-    position: relative;
-    right: 0.8px;
-    box-shadow:none;
+  height: 15px;
 }
 
 
@@ -360,13 +365,14 @@ ul.sidebar-nav {
   line-height: 30px;
 
 }
+
 .shrink.expend div.toggle_menu_wrap ul.sidebar-nav a.router-link-active.router-link-exact-active label {
-    display: unset;
-    font-size: 12px;
-    cursor: pointer;
-    font-family: Inter;
-    font-weight: 550;
-    line-height: 24px;
+  display: unset;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 .shrink.expend div.toggle_menu_wrap ul.sidebar-nav .configuration_nav label {
@@ -376,9 +382,7 @@ ul.sidebar-nav {
   font-weight: 400;
   line-height: 30px;
   margin-right: 0px;
-  color:black;
-  position:relative;
-  right:10px;
+  color: black;
 }
 
 .toggle_menu_wrap ul.sidebar-nav li a {
@@ -391,23 +395,23 @@ ul.sidebar-nav {
 }
 
 .toggle_menu_wrap ul.sidebar-nav li .configuration_nav a {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    width: 89%;
-    color: black;
-    position: absolute;
-    right: 6%;
-    top: 1%;
-    margin-bottom: 9px;
-    margin: 0px 5px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 89%;
+  color: black;
+  position: absolute;
+  right: 6%;
+  top: 1%;
+  margin-bottom: 9px;
+  margin: 0px 5px;
 }
 
 div.toggle_menu_wrap ul.sidebar-nav li a {
   display: flex;
   justify-content: left;
   align-items: center;
-  width: 95%;
+  margin: 0 5px;
 }
 
 .shrink.expend .logo_hemburger_container {
@@ -458,8 +462,9 @@ a.router-link-active.router-link-exact-active {
   padding: 0 10px;
   box-shadow: 3px 5px 12px -1px rgba(0, 0, 0, 0.12);
   border-radius: 10px;
-  
+
 }
+
 .configuration_nav a.router-link-active.router-link-exact-active {
   background-color: $white;
   width: 182px;
@@ -471,9 +476,9 @@ a.router-link-active.router-link-exact-active {
 
 
 ol.dropdowncustom a.router-link-active.router-link-exact-active {
-  background:none;
-  
- 
+  background: none;
+
+
   // box-shadow: 3px 5px 12px -1px rgba(0, 0, 0, 0.12);
   // border-radius: 10px;
 }
@@ -488,12 +493,12 @@ ol.dropdowncustom li {
 }
 
 ol.dropdowncustom li::before {
-  content: "\2022"; 
+  content: "\2022";
   position: absolute;
   left: 11px;
-  top: 48%; 
+  top: 48%;
   transform: translateY(-50%);
-  color: black; 
+  color: black;
 }
 
 
@@ -501,7 +506,7 @@ ol.dropdowncustom li::before {
 // a.router-link-active.router-link-exact-active.company_logo {
 //   background: transparent;
 //   box-shadow: none;
- 
+
 // }
 // a.router-link-active.router-link-exact-active.company_logo img {
 //   background: transparent;
@@ -510,79 +515,73 @@ ol.dropdowncustom li::before {
 //     position: fixed;
 //     top: 20px;
 //     left: 16px;
- 
+
 // }
 
 
 .configuration_nav a.router-link-active.router-link-exact-active {
   position: relative;
-  top:20px;
+  top: 20px;
+
   .config-icon {
-    width: 32px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
     background: linear-gradient(179deg, #18A2F0 0%, #3469EF 100%);
-    align-items:center;
-    padding-left: 2px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    // padding-left: 2px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.19);
     border-radius: 6px;
     border: 1px solid none;
-    position: relative;
-    
-    right: 0px;
-    img{
+    // position: relative;
+
+    // right: 0px;
+
+    img {
       width: 20px;
       height: 20px;
-      position: relative;
-      right: 2.8px;
+      // position: relative;
+      // right: 2.8px;
       padding: 0 2px;
-     
+
       filter: invert(100%);
-      border-radius: 6px;}
-  
+      border-radius: 6px;
+    }
+
   }
 }
-  a.router-link-active.router-link-exact-active .dash-icon {
-  width: 32px;
-  height: 32px;
+
+a.router-link-active.router-link-exact-active .dash-icon {
+  width: 35px;
+  height: 35px;
   background: linear-gradient(179deg, #18A2F0 0%, #3469EF 100%);
-  align-items:center;
-  padding-left: 3px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.19);
   border-radius: 6px;
-  border: 1px solid none;
-  position: relative;
-  right: 5px;
-  img{
+
+  img {
     width: 20px;
     height: 20px;
-    position: relative;
-    right: 2.8px;
-    padding: 0 2px;
-   
     filter: invert(100%);
-    border-radius: 6px;}
-
+  }
 }
 
 a.router-link-active.router-link-exact-active .icon-wrapper {
-
-    width: 30px;
-    height: 30px;
-    background: linear-gradient(179deg, #18A2F0 0%, #3469EF 100%);
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.19);
-    border-radius: 6px;
-    border: 1px solid none;
-    position: relative;
-    right: 4px;
-    padding: 0 3px;
-
-
-
-  img{
-  width: 20px;
-  height: 20px;
-  filter: invert(100%);
-  border-radius: 6px;}
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(179deg, #18A2F0 0%, #3469EF 100%);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.19);
+  border-radius: 6px;
+  border: 1px solid none;
+  padding: 0 3px;
+  img {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+  }
 }
 
 
@@ -590,8 +589,6 @@ a.router-link-active.router-link-exact-active .icon-wrapper {
 a.router-link-active.router-link-exact-active label {
   color: black;
   font-weight: 700px;
-
-  
 }
 
 .configuration_nav {
@@ -604,19 +601,22 @@ a.router-link-active.router-link-exact-active label {
   cursor: pointer;
 
   .dropdown-icon {
-  display: flex;
-  align-items: center;
-  img {
-    transition: transform 0.3s ease;
-   width: 10px; 
-   height: 10px; 
-   margin-left: 10px; 
- }
- .rotated{
-  transform: rotate(-90deg);
- }
+    display: flex;
+    align-items: center;
+
+    img {
+      transition: transform 0.3s ease;
+      width: 10px;
+      height: 10px;
+      margin-left: 10px;
+    }
+
+    .rotated {
+      transform: rotate(-90deg);
+    }
+  }
 }
-}
+
 // .configuration_nav.router-link-active {
 //   display: flex;
 //   justify-content: left;
@@ -644,8 +644,29 @@ a.router-link-active.router-link-exact-active label {
   display: block;
 }
 
-.toggle_menu_wrap {
-  margin-top: 70px;
+.shrink.expend .toggle_menu_wrap {
+  margin-top: 23px;
 }
-
+.shrink .toggle_menu_wrap{
+  margin-top: 30px;
+}
+.full_icon{
+  width: 175px;
+  height: 29px;
+  img{
+    height:100%;
+    width:100%;
+    object-fit:contain;
+  }
+}
+.logo_icon{
+  width:60px;
+  height:24px;
+  img{
+    width: 100%;
+    object-fit: contain;
+    padding: 0 8px;
+    height: 100%;
+  }
+}
 </style>

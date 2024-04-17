@@ -133,15 +133,15 @@ export default {
 @import "../assets/scss/style.scss";
 
 .right_panel {
-  width: calc(100% - 60px);
-  margin-left: 60px;
+  width: calc(100% - 80px);
+  margin-left: 80px;
 }
 .shrink_screen.right_panel {
-  width: calc(100% - 12rem);
-  margin-left: 12rem;
+  width: calc(100% - 14rem);
+  margin-left: 14rem;
 }
 .sending_domain_container {
-  padding: 0px 31px 0px;
+  padding: 0px 31px 0px 0;
   .sending_domain_section {
     .suppression_box {
       .form-control {
