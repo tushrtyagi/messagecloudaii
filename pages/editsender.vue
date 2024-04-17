@@ -130,7 +130,18 @@
               
   
                 <div class="col-lg-6 mt-5 ">
-            <button class="login_btn bg-aliceblue text-white ">Create</button>
+            <button class="login_btn bg-aliceblue text-white " @click="
+                        () => {
+                          visibleLiveDemo = true;
+                        }
+                      ">Edit</button>
+             <EditSenderModal
+                      :backdrop="true"
+                      :keyboard="false"
+                      @closemodal="closedmodal"
+                      :visible="visibleLiveDemo"
+                      :email="fromEmailAddress"
+                    />          
             
               <button class="bg-white text-customblack cancel-btn mx-4">Cancel</button>
               
@@ -170,6 +181,7 @@
     },
     data() {
       return {
+        visibleLiveDemo: false,
         activeTab: 0,
         arr: [
           {
@@ -192,6 +204,10 @@
         console.log(index);
         this.activeTab = index;
       },
+      closedmodal(value) {
+      this.visibleLiveDemo = value;
+    },
+
     },
   };
   </script>

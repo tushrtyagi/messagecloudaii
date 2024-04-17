@@ -28,7 +28,7 @@
                 <div class="row mb-5">
                   <div class="col-lg-12">
                     <div class="user_api d-flex align-items-center justify-content-between bg-white">
-                      <h3 class="text-customblack mb-4">Your API Keys</h3>
+                      <h3 class="text-customblack mb-4 ">Your API Keys</h3>
                     </div>
                     <p class="text-customblack">
                       The API keys include a key ID, which is utilized for referencing the key when making edits or deletions via the API.

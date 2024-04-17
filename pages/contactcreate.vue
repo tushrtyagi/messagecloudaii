@@ -164,9 +164,21 @@ The contact you're adding will not be notified. You can add additional custom fi
 
 
               <div class="col-lg-6 mt-5 ">
-                <button class="login_btn bg-aliceblue text-white" @click="addContact">ADD</button>
+                <button class="login_btn bg-aliceblue text-white"@click="
+                        () => {
+                          visibleLiveDemo = true;
+                        }
+                      ">ADD</button>
+                      <ContactaddModal
+                      :backdrop="true"
+                      :keyboard="false"
+                      @closemodal="closeeditmodal"
+                      :visible="visibleLiveDemo"
+                      :email="fromEmailAddress"
+                    />
+                   
 
-<!-- Bootstrap toast -->
+<!-- Bootstrap toast
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" v-if="showToast">
   <div class="toast-header">
     <strong class="me-auto">Success</strong>
@@ -175,7 +187,7 @@ The contact you're adding will not be notified. You can add additional custom fi
   <div class="toast-body">
     Contact successfully added!
   </div>
-</div>
+</div> -->
           
               <button class="bg-white text-customblack cancel-btn mx-4">Cancel</button>
        
@@ -215,6 +227,7 @@ The contact you're adding will not be notified. You can add additional custom fi
     },
     data() {
       return {
+        visibleLiveDemo: false,
         showToast: false,
         addContacts: true,
       addContactsAndInclude: false,
@@ -259,7 +272,10 @@ The contact you're adding will not be notified. You can add additional custom fi
       this.addContactsToNewList = !this.addContactsToNewList;
       this.addContacts = false;
       this.addContactsAndInclude = false;
-    }
+    },
+    closeeditmodal(value) {
+      this.visibleLiveDemo = value;
+    },
     },
   };
   </script>
