@@ -22,7 +22,7 @@
                   </div>
                 </div>
               </div>
-      <div class="right_panel_global_section bg-darkgrey ">
+      <div class="right_panel_global_section  ">
         <div class="bg-white main-page">
           <!-- <div class="single-send-header">
         
@@ -112,8 +112,8 @@ span:hover {
   margin-left: 60px;
 }
 .shrink_screen.right_panel {
-  width: calc(100% - 12rem);
-  margin-left: 12rem;
+  width: calc(100% - 14rem);
+  margin-left: 14rem;
 }
 
   

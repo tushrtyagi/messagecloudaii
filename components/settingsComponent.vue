@@ -53,7 +53,7 @@
           </div>
         </div>
       </div>
-       <buildComponent/>
+       <buildComponent v-if ="!showSettings"/>
     </div>
     
   </div>
@@ -100,7 +100,7 @@ export default {
     top: 140px;
     z-index: 1;
     background-color: #fff;
-    width: 18.9%;
+    width: 22.3%;
    
 }
 .form-div {

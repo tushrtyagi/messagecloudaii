@@ -181,6 +181,8 @@ export default {
       width: 100%;
       height: 100%;
       // filter: invert(100%);
+      position:relative;
+      right:27px;
       object-fit: contain;
     }
   }

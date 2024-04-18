@@ -70,7 +70,7 @@ export default {
              </span> -->
             </NuxtLink>
           <!-- </div> -->
-          <ol class="dropdowncustom pb-0 mt-4 mb-0" v-show="store.isDropdownExpanded">
+          <ul class="dropdowncustom pb-0 mt-4 mb-0" v-show="store.isDropdownExpanded">
             <li>
               <NuxtLink class="text-customblack " to="/firstdomain" @click.stop>
                 <label> Domain</label>
@@ -91,7 +91,7 @@ export default {
                 <label>SMTP</label>
               </NuxtLink>
             </li>
-          </ol>
+          </ul>
         </li>
         <li>
           <NuxtLink class="text-customblack mt-3" to="/stats">
@@ -115,7 +115,7 @@ export default {
             </span>
             <label class="ms-3">Campaigning</label>
           </NuxtLink>
-          <ol class="dropdowncustom p-0   m-0" v-show="store.isDropdownsenderExpanded">
+          <ul class="dropdowncustom p-0  ms-4 mt-3 m-0" v-show="store.isDropdownsenderExpanded">
             <li>
               <NuxtLink class="text-customblack" to="/singlesend" @click.stop>
                 <label> SingleSend</label>
@@ -126,7 +126,7 @@ export default {
                 <label> Contacts</label>
               </NuxtLink>
             </li>
-          </ol>
+          </ul>
         </li>
         <li>
           <NuxtLink class="text-customblack settings_page" to="/profile">
@@ -363,8 +363,16 @@ ul.sidebar-nav {
   cursor: pointer;
   font-weight: 400;
   line-height: 30px;
-
 }
+
+.shrink.expend div.toggle_menu_wrap ul.sidebar-nav a ul.dropdowncustom a label {
+  display: unset;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 30px;
+}
+
 
 .shrink.expend div.toggle_menu_wrap ul.sidebar-nav a.router-link-active.router-link-exact-active label {
   display: unset;
@@ -373,6 +381,21 @@ ul.sidebar-nav {
   font-family: Inter;
   font-weight: 500;
   line-height: 24px;
+
+
+ 
+}
+
+.shrink.expend div.toggle_menu_wrap ul.sidebar-nav a ul.dropdowncustom a.router-link-active.router-link-exact-active label {
+  display: unset;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 24px;
+
+  
+ 
 }
 
 .shrink.expend div.toggle_menu_wrap ul.sidebar-nav .configuration_nav label {
@@ -433,7 +456,7 @@ div.toggle_menu_wrap ul.sidebar-nav li a {
   display: block;
 }
 
-ol.dropdowncustom li a {
+ul.dropdowncustom li a {
   list-style-type: disc;
   padding: 7px 48px 7px !important;
 }
@@ -475,31 +498,30 @@ a.router-link-active.router-link-exact-active {
 }
 
 
-ol.dropdowncustom a.router-link-active.router-link-exact-active {
+ul.dropdowncustom a.router-link-active.router-link-exact-active {
   background: none;
 
 
   // box-shadow: 3px 5px 12px -1px rgba(0, 0, 0, 0.12);
   // border-radius: 10px;
 }
-
-ol.dropdowncustom {
-  list-style-type: disc; // Remove default list style
+ul.dropdowncustom {
+  list-style-type: none; // Remove default list style
   padding-left: 20px; // Add left padding for bullets
 }
 
-ol.dropdowncustom li {
-  position: relative; // Set position relative to create space for bullets
+ul.dropdowncustom li {
+  display: flex; // Use flex to align items in the same line
+  align-items: center; // Align items vertically
+  margin-bottom: 5px; // Adjust margin between list items
 }
 
-ol.dropdowncustom li::before {
+ul.dropdowncustom li::before {
   content: "\2022";
-  position: absolute;
-  left: 11px;
-  top: 48%;
-  transform: translateY(-50%);
+  margin-right: 10px; // Adjust margin between bullet and text
   color: black;
 }
+
 
 
 
@@ -668,5 +690,8 @@ a.router-link-active.router-link-exact-active label {
     padding: 0 8px;
     height: 100%;
   }
+}
+li::marker{
+  display:none;
 }
 </style>
