@@ -98,7 +98,7 @@
                       :backdrop="true"
               :keyboard="false"
     :visible="visibleStaticBackdropDemo"
-    @close="close" 
+    @close="closedelete" 
     aria-labelledby="StaticBackdropExampleLabel"
                 />
                
@@ -165,7 +165,7 @@ export default {
       this.visibleLiveDemo = value;
       
     },
-    close(value) {
+    closedelete(value) {
       this. visibleStaticBackdropDemo = value;
     },
     deleteItem(index) {
