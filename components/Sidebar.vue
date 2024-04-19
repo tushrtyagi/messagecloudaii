@@ -118,7 +118,7 @@ export default {
           <ul class="dropdowncustom p-0  ms-4 mt-3 m-0" v-show="store.isDropdownsenderExpanded">
             <li>
               <NuxtLink class="text-customblack" to="/singlesend" @click.stop>
-                <label> SingleSend</label>
+                <label> Single Send</label>
               </NuxtLink>
             </li>
             <li>

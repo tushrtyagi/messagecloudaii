@@ -3,7 +3,7 @@
       <CModalHeader class="">
         <CModalTitle
           class="text-customblack d-flex align-items-center justify-content-between w-100"
-          >Your API Keys
+          >Your SMTP Keys
           <div class="cross_icon" style="cursor: pointer" @click="closemodal">
             <img src="../assets/image/cross_icon.svg" /></div
         ></CModalTitle>

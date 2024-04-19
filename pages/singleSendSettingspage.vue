@@ -1,15 +1,19 @@
 <template>
 
-<div class="home_page bg-sidegrey pb-5 h-100">
+<div class="home_page bg-sidegrey h-100">
   <div class="container-fluid p-0">
     <div class="d-flex justify-content-between w-100 vh-100">
-      <Sidebar />
+      <!-- <Sidebar /> -->
         <div :class="`${store.isSidebarExpanded? 'shrink_screen' : ''}`" class="right_panel">
-          <Header />
-          <div class="sub_container domain_container">
+         <div class="single-send-header">
+        
+            <SingleSenderDetailsHeader />
+          </div> 
+            
+          <div class=" domain_container">
             <div class="sub_section domain_section bg-white">
               <div class="row">
-                <div class="col-lg-12">
+                <!-- <div class="col-lg-12">
                   <div class="breadcrumbs ">
                     <CBreadcrumb style="--cui-breadcrumb-divider: '/'">
                         <CBreadcrumbItem href="/"><img src="../assets/image/home_icon (1).svg" alt="configuration" /></CBreadcrumbItem>
@@ -20,15 +24,11 @@
                          <CBreadcrumbItem active> Add manually</CBreadcrumbItem>
                       </CBreadcrumb>
                   </div>
-                </div>
+                </div> -->
               </div>
       <div class="right_panel_global_section  ">
         <div class="bg-white main-page">
-          <!-- <div class="single-send-header">
-        
-            <SingleSenderDetailsHeader />
-          </div> -->
-           
+         
       
           <div class="container-fluid main-content">
             <div class="row">
@@ -39,7 +39,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-9 mt-4">
+              <div class="col-lg-9 mt-4" v-if="showSettings">
                 <div class="div-header">
                   <p class="mb-1"><strong>Subject: </strong>bumper Sale!</p>
                   <p><strong>Preheader: </strong>Sale</p>
@@ -57,7 +57,7 @@
   </div>
 
 </div>
-'
+
 
   
   
@@ -108,12 +108,12 @@ span:hover {
   padding-top: 80px;
 }
 .right_panel {
-  width: calc(100% - 60px);
-  margin-left: 60px;
+  width: calc(100% - 0px);
+  margin-left: 0px;
 }
 .shrink_screen.right_panel {
-  width: calc(100% - 14rem);
-  margin-left: 14rem;
+  width: calc(100% - 0rem);
+  margin-left: 0rem;
 }
 
   

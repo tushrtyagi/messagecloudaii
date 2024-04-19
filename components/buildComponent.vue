@@ -1,18 +1,18 @@
 <template>
   <div class="build-component-div">
-    <div class="border-bottom">
+    <div class="border-bottom" draggable="true" @dragstart="dragStart">
       <i class="fa fa-picture-o" aria-hidden="true"></i>
       Image
     </div>
-    <div class="border-bottom">
+    <div class="border-bottom" draggable="true" @dragstart="dragStart">
       <i class="fa fa-file-text-o" aria-hidden="true"></i>
       Text
     </div>
-    <div class="border-bottom">
+    <div class="border-bottom" draggable="true" @dragstart="dragStart">
       <i class="fa fa-columns" aria-hidden="true"></i>
       Columns
     </div>
-    <div class="border-bottom">
+    <div class="border-bottom" draggable="true" @dragstart="dragStart">
       <i class="fa fa-file-image-o" aria-hidden="true"></i>
       Image & Text
     </div>
@@ -24,6 +24,11 @@ export default {
   data() {
     return {};
   },
+  methods: {
+    dragStart(event) {
+      event.dataTransfer.setData("text/plain", event.target.textContent.trim());
+    }
+  }
 };
 </script>
 
@@ -40,6 +45,7 @@ export default {
   padding: 10px;
   display: flex;
   align-items: center;
+  cursor: move;
 }
 
 .fa {

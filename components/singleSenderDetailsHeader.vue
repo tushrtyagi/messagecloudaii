@@ -6,14 +6,16 @@
       <div>
         <i class="fa fa-arrow-left" aria-hidden="true"></i>
       </div>
-      <div>
+      <!-- <div>
         <i class="fa fa-eye" aria-hidden="true"></i>
         Preview
-      </div>
+      </div> -->
     </div>
-    <div class="btn-class d-flex">
-      <button class="btn bg-aliceblue text-white">SAVE</button>
-      <button class="btn bg-aliceblue text-white">Review Details</button>
+    <div class="btn-class d-flex ms-4 ">
+      <button class="btn bg-aliceblue text-white ">Save</button>
+      <NuxtLink to="/sendReview">
+        <button class="btn bg-aliceblue text-white">Review & Send</button>
+      </NuxtLink>
     </div>
   </div>
 </template>
@@ -47,6 +49,9 @@ export default {};
   }
   .btn-class{
     gap:40px;
+    position:relative;
+    bottom:7px;
+    right:24px;
   }
 }
 </style>
