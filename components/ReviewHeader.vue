@@ -4,7 +4,9 @@
     >
       <div class="full_icon d-flex">
         <div>
-          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <NuxtLink to="/singleSendSettingspage">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </NuxtLink>
         </div>
         <!-- <div>
           <i class="fa fa-eye" aria-hidden="true"></i>
