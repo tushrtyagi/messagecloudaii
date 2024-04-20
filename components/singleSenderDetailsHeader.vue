@@ -12,6 +12,8 @@
         <i class="fa fa-eye" aria-hidden="true"></i>
         Preview
       </div> -->
+     
+      
     </div>
     <div class="btn-class d-flex ms-4 ">
       <button class="btn bg-aliceblue text-white ">Save</button>
@@ -56,4 +58,19 @@ export default {};
     right:24px;
   }
 }
+.section_name {
+    cursor: pointer;
+     font-size:17px;
+    font-weight:600;
+    color: #000000;
+    font-family: ' "Inter", sans-serif';
+  
+  }
+  .tabs-class {
+      position: fixed;
+      top: 23px;
+      z-index: 1;
+      width: 22.3%;
+      left: 41px;
+  }
 </style>

@@ -12,6 +12,16 @@
           <i class="fa fa-eye" aria-hidden="true"></i>
           Preview
         </div> -->
+        <div class="d-flex gap-4 tabs-class bg-darkgrey  px-3 mb-2">
+        <span
+          class="section_name bg-darkgrey"
+   
+        >
+          Review Details
+        </span>
+   
+
+      </div>
       </div>
       <div class="btn-class d-flex ms-4 ">
         <button class="btn bg-aliceblue text-white ">Save</button>

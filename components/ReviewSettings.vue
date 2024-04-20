@@ -1,16 +1,6 @@
 <template>
-    <div class="settings-component-class">
-      <div class="d-flex gap-4 tabs-class bg-darkgrey  px-3 mb-2">
-        <span
-          class="section_name bg-darkgrey"
-          :class="`${showSettings ? 'active' : ''}`"
-          @click="showSettings = true"
-        >
-          Review Details
-        </span>
-   
-
-      </div>
+    <div class="">
+     
 
        
       

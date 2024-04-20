@@ -19,18 +19,19 @@
           
               <div class="container-fluid main-content">
                 <div class="row">
-                  <div class="col-lg-3 border-end min-vh-100">
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <ReviewSettings v-if="showSettings" />
-                      </div>
-                    </div>
-                  </div>
+                  
                   <div class="col-lg-9 mt-4" v-if="showSettings">
-                    <div class="div-header">
+                    <div class="div-header mb-5 ">
                       <p class="mb-1"><strong>Subject: </strong>bumper Sale!</p>
                       <p><strong>Preheader: </strong>Sale</p>
                       <hr />
+                      <div class="text-center mt-3">
+                          <span>Desktop</span>
+                            <span>Mobile</span>
+                            <span>Plain Text</span>
+                          </div>
+                      
+                          <hr/>
                     </div>
                   </div>
                 </div>
@@ -90,6 +91,7 @@
       color: #000000;
       font-family: ' "Inter", sans-serif';
       font-size: 15px;
+     
     }
     .main-content {
       padding-top: 80px;
@@ -131,6 +133,17 @@
           
         }
       }
+    }
+
+    hr{  
+        width:136%;
+    }
+    .text-center {
+        padding: 10px;
+        span{
+            margin:0 40px;
+
+        }
     }
     </style>
     
