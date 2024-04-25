@@ -39,7 +39,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-9 mt-4" v-if="showSettings">
+              <div class="col-lg-9 mt-5" v-if="showSettings">
                 <div class="div-header">
                   <p class="mb-1"><strong>Subject: </strong>bumper Sale!</p>
                   <p><strong>Preheader: </strong>Sale</p>

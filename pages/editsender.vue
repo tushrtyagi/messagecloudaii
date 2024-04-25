@@ -86,7 +86,7 @@
                 </div>
                 <div class="col-lg-6 mb-2">
                   <label class="d-block text-customblack"
-                    >ZIP Code<sup class="text-maximumred">*</sup></label
+                    >Zip Code<sup class="text-maximumred">*</sup></label
                   >
                   <input
                     class="bg-white w-100"

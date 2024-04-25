@@ -13,7 +13,7 @@
                   <div class="breadcrumbs">
                     <CBreadcrumb style="--cui-breadcrumb-divider: '/'">
                       <CBreadcrumbItem href="/"><img src="../assets/image/home_icon (1).svg" alt="configuration" /></CBreadcrumbItem>
-                      <CBreadcrumbItem href="/createdomain">SenderSetup</CBreadcrumbItem>
+                      <CBreadcrumbItem href="/createdomain">Sender Identity</CBreadcrumbItem>
                       
                        <CBreadcrumbItem active> Domain </CBreadcrumbItem>
                     </CBreadcrumb>
@@ -42,7 +42,7 @@
         </p>
 
         <div class="btn_conatiner d-flex">
-        <button class="sending_doc_btn bg-white text-black mt-1 ms-4">
+        <button class="sending_doc_btn bg-white text-black mt-0 ms-4">
           {{arr[activeTab].heading }} Documentation
           </button>
           </div>

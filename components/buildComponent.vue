@@ -40,12 +40,12 @@ export default {
   grid-gap: 10px;
 }
 
-.border-bottom {
-  border: 1px solid #ccc;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  cursor: move;
+.border-bottom[data-v-1ed0a8af] {
+    border: 1px solid #ccc;
+    padding: 18px ;
+    display: flex;
+    align-items: center;
+    cursor: move;
 }
 
 .fa {

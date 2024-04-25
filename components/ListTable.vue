@@ -285,7 +285,7 @@
       box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.27);
       font-weight: 600;
       position: absolute;
-      top:25%;
+      top:19%;
       right:10%;
     }
     .create_btn:hover {

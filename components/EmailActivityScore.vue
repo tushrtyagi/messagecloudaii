@@ -80,14 +80,14 @@ export default {
     flex:1; // Take remaining space
     padding-left: 10px; // Adjust spacing between image and label
     label {
-      font-size: 13px;
+      font-size: 18px;
       font-weight: 500;
       line-height: 20px;
       align-items: center;
       padding-top: 10px;
 
       span {
-        font-size: 18px;
+        font-size: 21px;
     margin-top: 8px;
     padding: 0 30px;
       }

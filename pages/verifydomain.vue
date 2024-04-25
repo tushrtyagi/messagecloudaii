@@ -26,7 +26,7 @@
                         <h3 class="text-customblack">Verify Domain </h3>
                       </div>
                      
-                      <div class="tab-content domain_content mt-4 mx-1">
+                      <div class="tab-content domain_content mt-2 ">
                         <h2 class="text-customblack">DNS Verification</h2>
                         <p class="text-customblack mt-3">
                             Strict alignment is when the sending and bounce domain being the same value (e.g. sending domain = messagecloud.com, and bounce domain = messagecloud.com)

@@ -1,11 +1,23 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default ({
+  
   imports: {
     dirs: [
       // Scan top-level modules
       'composables',
     ]
+  },
+  layout: 'default', // Use your default layout
+
+  router: {
+    routes: [
+      {
+        path: '/login',
+        component: '~/pages/login.vue',
+      },
+      // Include other routes here
+    ],
   },
   app: {
     head: {
@@ -34,6 +46,7 @@ export default ({
       'bootstrap/dist/css/bootstrap.min.css',
       '@coreui/coreui/dist/css/coreui.min.css',
   ],
+
   styleResources: {
     scss: [
       './assets/scss/main.scss'

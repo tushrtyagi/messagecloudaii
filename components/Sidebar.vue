@@ -64,13 +64,13 @@ export default {
               <span class="dash-icon" @click="togglemenu"> <img src="../assets/image/configuration.svg"
                   alt="configuration" />
               </span>
-              <label class="ms-3">Sender Setup</label>
+              <label class="ms-3">Sender Identity</label>
               <!-- <span class="dropdown-icon" >
                <img src="../assets/image/dropdown.svg" alt="down-arrow" :class ="{ 'rotated': store.isDropdownExpanded } " v-if="store.isSidebarExpanded"/>
              </span> -->
             </NuxtLink>
           <!-- </div> -->
-          <ul class="dropdowncustom pb-0 mt-4 mb-0" v-show="store.isDropdownExpanded">
+          <ul class="dropdowncustom pb-0 mt-3 mb-0" v-show="store.isDropdownExpanded">
             <li>
               <NuxtLink class="text-customblack " to="/firstdomain" @click.stop>
                 <label> Domain</label>
@@ -115,7 +115,7 @@ export default {
             </span>
             <label class="ms-3">Campaigning</label>
           </NuxtLink>
-          <ul class="dropdowncustom p-0  ms-4 mt-3 m-0" v-show="store.isDropdownsenderExpanded">
+          <ul class="dropdowncustom p-0  ms-3 mt-3 m-0" v-show="store.isDropdownsenderExpanded">
             <li>
               <NuxtLink class="text-customblack" to="/singlesend" @click.stop>
                 <label> Single Send</label>
@@ -274,7 +274,7 @@ ul.sidebar-nav {
   // overflow-x: hidden;
   li {
     cursor: pointer;
-    margin-bottom: 31px;
+    margin-bottom: 25px;
   }
 
   a {
@@ -359,7 +359,7 @@ ul.sidebar-nav {
 
 .shrink.expend div.toggle_menu_wrap ul.sidebar-nav a label {
   display: unset;
-  font-size: 13px;
+  font-size: 12px;
   cursor: pointer;
   font-weight: 400;
   line-height: 30px;
@@ -517,9 +517,11 @@ ul.dropdowncustom li {
 }
 
 ul.dropdowncustom li::before {
-  content: "\2022";
-  margin-right: 10px; // Adjust margin between bullet and text
-  color: black;
+  content: "•";
+    margin-right: 0;
+    color: black;
+    padding: 0px 14px;
+
 }
 
 
@@ -599,6 +601,7 @@ a.router-link-active.router-link-exact-active .icon-wrapper {
   border-radius: 6px;
   border: 1px solid none;
   padding: 0 3px;
+  margin: 0 5px;
   img {
     width: 20px;
     height: 20px;
@@ -693,5 +696,8 @@ a.router-link-active.router-link-exact-active label {
 }
 li::marker{
   display:none;
+}
+a.router-link-active.router-link-exact-active.text-customblack.settings_page {
+    margin: 0 -3px;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="domain_list">
     <div class="row">
-      <div class="domain-field bg-darkgrey mt-2 mb-4 mx-1 px-4">
+      <div class="domain-field bg-darkgrey mt-2 mb-3 mx-1 px-4">
         <div class="col-lg-12">
           <h4 class="mt-4 pl-3 text-customblack mb-4">Adding your {{ heading }}</h4>
         </div>
@@ -45,8 +45,8 @@
         </div>
       </div>
 
-      <div class="col-lg-12 pt-2">
-        <div class="table_data mt-4 bg-white">
+      <div class="col-lg-12 pt-0">
+        <div class="table_data mt-3 mb-3 bg-white">
           <table class="table">
             <thead>
               <tr>
@@ -58,7 +58,7 @@
             </thead>
             <tbody>
               <tr v-for="(item, index) in items" :key="index">
-                <td>
+                <td class="px-5">
                   <NuxtLink to="/domaindetail">{{ item['Domain'] }}</NuxtLink>
                 </td>
                 <td>

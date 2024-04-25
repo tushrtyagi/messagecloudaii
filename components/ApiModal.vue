@@ -1,5 +1,5 @@
 <template>
-  <CModal class="api_key_modal ">
+  <CModal class="api_key_modal mt-1">
     <CModalHeader class="bg-sidegrey">
       <CModalTitle
         class="text-customblack d-flex align-items-center justify-content-between w-100"
@@ -92,8 +92,7 @@ export default {
 </script>
 
 <style lang="scss">
-.modal_content {
-}
+
 .button-nav{
   position: relative;
   left:250px;
@@ -106,6 +105,7 @@ export default {
   width:100%;
   position: relative;
   left: 12px;
+ border-radius:10px;
 }
 .buttons{
 

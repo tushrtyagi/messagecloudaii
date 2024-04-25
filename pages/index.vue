@@ -6,13 +6,13 @@
         <div :class="`${store.isSidebarExpanded ? 'shrink_screen' : ''}`" class="right_panel">
           <Header />
           <div class="dashboard_section">
-            <div class="dashboard_page bg-white mb-2 ">
+            <div class="dashboard_page bg-white mb-0 ">
               <div class="container-fluid p-0">
                 <div class="row g-0 ">
                   <div class="col-lg-5 col-md-6 col-sm-12 col-12  ">
                     <div class="heading">
-                      <div class="main" style="width: 100%; height: 100%; color: black; font-size: 22px; font-family: Poppins; font-weight: 600; line-height: 9px; word-wrap: break-word">Fast & Reliable Email Delivery System<br/><br/><br/><br/></div>
-                      <div class="text-customblack mb-0 content">Ensure high deliverability and make every email count with MessageCloud.AI’s Robust Email Delivery System</div>
+                      <div class="main my-0" style="width: 100%; height: 100%; color: black; font-size: 22px; font-family: Poppins; font-weight: 600; line-height: 6px; word-wrap: break-word">Fast & Reliable Email Delivery System<br/><br/><br/><br/></div>
+                      <div class="text-customblack mt-3 content">Ensure high deliverability and make every email count with MessageCloud.AI’s Robust Email Delivery System</div>
                     </div>
                    
                   </div>
@@ -65,7 +65,12 @@
 <script>
 import { defineComponent, ref } from 'vue'; // assuming you are using Vue 3
 import { store } from "../stores/store";
-
+definePageMeta({
+  middleware: function(to, from) {
+      return navigateTo('/signup');
+    }
+  },
+);
 export default defineComponent({
   setup() {
     const activeTab = ref('wk');
@@ -128,9 +133,9 @@ export default defineComponent({
     border-radius: 7px;
 
     .activity {
-      padding: 40px 30px;
-      margin-top: 110px;
-      border-top: 1px solid #d5d5d5;
+      padding: 22px 30px;
+    margin-top: 72px;
+    border-top: 1px solid #d5d5d5;
       .recent-heading {
         position: relative;
         right: 30px;
@@ -159,13 +164,14 @@ export default defineComponent({
   }
   .heading {
     position: relative;
-    top: 60px;
+    top: 41px;
     left: 35px;
   }
   .graph-title {
     position: relative;
     top: 50px;
     left: 35px;
+    font-weight:500;
   }
   .content {
     margin: 5px 0;
