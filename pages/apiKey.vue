@@ -18,7 +18,7 @@
                         
                         </CBreadcrumbItem>
                       
-                      <CBreadcrumbItem href="/createdomain">SenderSetup</CBreadcrumbItem>
+                      <CBreadcrumbItem href="/createdomain">Sender Identity</CBreadcrumbItem>
                       <CBreadcrumbItem active>API key</CBreadcrumbItem>
                     </CBreadcrumb>
                   </div>
@@ -28,7 +28,7 @@
                 <div class="row mb-5">
                   <div class="col-lg-12">
                     <div class="user_api d-flex align-items-center justify-content-between bg-white">
-                      <h3 class="text-customblack mb-4 ">Your API Keys</h3>
+                      <h3 class="text-customblack mb-4 ms-2">Your API Keys</h3>
                     </div>
                     <p class="text-customblack">
                       The API keys include a key ID, which is utilized for referencing the key when making edits or deletions via the API.
@@ -122,9 +122,9 @@ import {CButton} from "@coreui/vue";
 export default defineComponent({
   components:{CButton},
   setup() {
-    const expanded = useExpanded();
+   
     return {
-      expanded,
+   
       store
     };
   },
@@ -192,12 +192,12 @@ export default defineComponent({
 @import "../assets/scss/style.scss";
 
 .right_panel {
-  width: calc(100% - 60px);
-  margin-left: 60px;
+  width: calc(100% - 80px);
+  margin-left: 80px;
 }
 .shrink_screen.right_panel {
-  width: calc(100% - 12rem);
-  margin-left: 12rem;
+  width: calc(100% - 14rem);
+  margin-left: 14rem;
 }
 .user_api {
   width: 90%;
@@ -239,11 +239,11 @@ export default defineComponent({
 }
 
 .right_panel {
-  width: calc(100% - 60px);
-  margin-left: 60px;
+  width: calc(100% - 80px);
+  margin-left: 80px;
 }
 .shrink_screen.right_panel {
-  margin-left: 60px;
+  margin-left: 80px;
   // margin-left: min(calc(12rem - 60px), calc(100% - 12rem));
 }
 .btn_container {

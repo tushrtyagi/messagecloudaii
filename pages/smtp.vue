@@ -12,7 +12,7 @@
                   <div class="breadcrumbs">
                     <CBreadcrumb style="--cui-breadcrumb-divider: '/'">
                       <CBreadcrumbItem href="/"><img src="../assets/image/home_icon (1).svg" alt="configuration" /></CBreadcrumbItem>
-                      <CBreadcrumbItem href="/createdomain">SenderSetup</CBreadcrumbItem>
+                      <CBreadcrumbItem href="/createdomain">Sender Identity</CBreadcrumbItem>
                       <CBreadcrumbItem active>SMTP</CBreadcrumbItem>
                     </CBreadcrumb>
                   </div>
@@ -65,13 +65,13 @@
                   <div class="col-lg-12 btn_container mt-5">
                     <div class="smtp_api">
                       <h3 class="text-customblack">Your SMTP Keys</h3>
-                      <div class="table_data mt-4 bg-white">
+                      <div class="table_data mt-4 mb-4 bg-white">
                         <table id="smtpTable" class="table table-striped" style="width:100%">
                           <thead>
                             <tr>
                               <th>SMTP key name</th>
                               <th>SMTP key value</th>
-                              <th >Status</th>
+                              <th class="me-3">Status</th>
                               <th>Created on</th>
                               <th > </th>
                             </tr>
@@ -98,7 +98,7 @@
                       :backdrop="true"
               :keyboard="false"
     :visible="visibleStaticBackdropDemo"
-    @close="close" 
+    @close="closedelete" 
     aria-labelledby="StaticBackdropExampleLabel"
                 />
                
@@ -124,10 +124,10 @@ import { store } from "../stores/store";
 export default {
   components: { CButton },
   setup() {
-    const expanded = useExpanded();
+
     return {
       visibleStaticBackdropDemo: false,
-      expanded,
+ 
       store,
       visibleLiveDemo: false,
   
@@ -165,7 +165,7 @@ export default {
       this.visibleLiveDemo = value;
       
     },
-    close(value) {
+    closedelete(value) {
       this. visibleStaticBackdropDemo = value;
     },
     deleteItem(index) {
@@ -183,8 +183,7 @@ export default {
           padding: '7px', 
            'text-align': 'center',
           'line-height': '1.5em', 
-          'position':'relative',
-          'right':'20px',
+      
          
         };
       }
@@ -198,8 +197,7 @@ export default {
           padding: '7px', 
            'text-align': 'center',
           'line-height': '1.5em',
-          'position':'relative',
-          'right':'20px', 
+         
          
         };
     },
@@ -217,12 +215,12 @@ export default {
     left: -4px;
 }
 .right_panel {
-  width: calc(100% - 60px);
-  margin-left: 60px;
+  width: calc(100% - 80px);
+  margin-left: 80px;
 }
 .shrink_screen.right_panel {
-  width: calc(100% - 12rem);
-  margin-left: 12rem;
+  width: calc(100% - 14rem);
+  margin-left: 14rem;
 }
 
 

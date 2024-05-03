@@ -4,11 +4,11 @@
       <div class="row g-0 vh-100 d-flex">
         <div class="col-sm-12 col-md-6 col-lg-6 d-none d-sm-none d-md-block d-lg-block">
           <div class="logo_panel">
-            <div class="logo_text_area text-center text-white">
-              <div class="emailer_logo">
-                <img src="../assets/image/logo.svg" alt="logo" />
+            <div class="logo_text_area_signup text-center text-white">
+              <div class="emailer_logo-signup">
+                <img src="../assets/image/logo.svg" class="mx-3" alt="logo" />
               </div>
-              <div style="width: 100%; height: 100%; text-align: center; color: #070585; font-size: 35px; font-family: Poppins; font-weight: 600; line-height: 41px; word-wrap: break-word">
+              <div style="width: 100%; height: 100%; text-align: center; color: #070585; font-size: 35px; font-family: Poppins; font-weight: 600; line-height: 41px; word-wrap: break-word" class="mt-4">
     Fast & Reliable Email Delivery System<br/><br/><br/><br/>
   </div>
             </div>
@@ -125,7 +125,7 @@
                         type="submit"
                         class="custom_btn text-customblack bg-white login_btn w-100"
                       >
-                        <img src="../assets/image/microsoft.png" alt="apple_icon" />
+                        <img src="../assets/image/icon-microsoft.svg" alt="apple_icon" />
                         Sign in with Microsoft Account 
                       </button>
                     </div>
@@ -220,8 +220,8 @@ label {
       font-weight: 400;
       img {
         margin-right: 10px;
-           width: 15px;
-    height: 15px;
+           width: 20px;
+    height: 20px;
       }
     }
   }
@@ -255,13 +255,13 @@ label {
 
 .section_height {
   min-height: 100vh;
-  .logo_text_area {
+  .logo_text_area_signup {
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
     padding: 97px 60px 0;
     position: relative;
-    top:-70px;
+    top:-74px;
   }
     span {
       font-size: 1rem;
@@ -270,13 +270,7 @@ label {
     }
   }
 
-  .section_height .logo_text_area {
-    max-width: 800px;
-    width: 100%;
-    margin: auto;
-    position: relative;
-    top: -70px;
-}
+
 .logo_panel {
   background:$bluegreen;
   min-height: 100%;
@@ -284,17 +278,17 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  .emailer_logo {
+  .emailer_logo-signup {
   padding: 6px 10px;
-  width: 176px;
-  height: 175px;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
   img{
-    width: 251px;
-    height: 22px;
-    position: relative;
-    right:35px;
-    top:70px;
+    width: 62%;
+
+    // position: relative;
+    // right:35px;
+    // top:70px;
   }
 
 }

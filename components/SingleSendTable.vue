@@ -2,12 +2,12 @@
     <div class="domain_list">
       <div class="row">
         
-         
+<!--          
           <div class="d-inline-block ms-4">
       <NuxtLink to="/singleSendSettingspage">
-        <button class="create_btn bg-aliceblue px-4 mt-1 text-white">+ ADD </button>
+        <button class="add_btn bg-aliceblue px-4 mt-0 text-white">+ ADD </button>
       </NuxtLink>
-    </div>
+    </div> -->
         
   
         <div class="col-lg-12">
@@ -34,7 +34,7 @@
           </div>
         </div> 
   
-        <div class="col-lg-12 pt-2">
+        <div class="col-lg-12 mt-2 pb-4">
           <div class="table_data mt-2 bg-white">
             <table class="table">
               <thead>
@@ -47,7 +47,7 @@
                   <th></th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody >
                 <tr v-for="(item, index) in items" :key="index">
                   <td>
                     <NuxtLink to="/">{{ item['Domain'] }}</NuxtLink>
@@ -270,14 +270,14 @@
       border: 0.2px lightgrey;
       border-radius: 5px;
     }
-    .create_btn {
-      padding: 13px 35px;
+    .add_btn {
+      padding: 10px 35px;
       font-size: 1rem;
       border-radius: 7px;
       box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.27);
       font-weight: 600;
     }
-    .create_btn:hover {
+    .add_btn:hover {
       background-color: #6eb9e1 !important;
       color: white;
     }
@@ -301,5 +301,13 @@
   .d-inline-block {
   display: inline-block;
 }
+
+.table_data td {
+  border: none;
+  text-align: center; /* Align the text to the right */}
+  .table_data th {
+  border: none;
+  text-align: center; /* Align the text to the right */}
+
   </style>
   

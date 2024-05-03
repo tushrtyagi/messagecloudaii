@@ -1,5 +1,5 @@
 <template>
-  <CModal class="api_key_modal mt-4">
+  <CModal class="api_key_modal mt-1">
     <CModalHeader class="bg-sidegrey">
       <CModalTitle class="text-customblack d-flex align-items-center justify-content-between w-100"
         >API Key
@@ -14,12 +14,15 @@
       </p>
       
     </CModalBody>
-    <CModalFooter class="pb-5 align-items-center d-flex justify-content-center px-1 bg-sidegrey ">
+    <CModalFooter class="pb-5 align-items-center d-flex justify-content-center px-0 bg-sidegrey ">
       <p class="key">{{ apiKey }}</p>
-      
-        <img src="../assets/image/tabler_copy.svg" alt="copy_icon" class="mr-3 " />
-    
-      <button class="bg-darkcerulean ok_btn text-white mx-4"  @click="closemodal">OK</button>
+      <div class="d-flex me-5 d-inline">
+
+        <button class="copy_btn mt-4 mx-4 px-3 bg-white ms-2 "><img src="../assets/image/tabler_copy.svg" alt="copy_icon"  /> Copy link</button> 
+     
+       <button class="bg-darkcerulean ok_btn text-white mx-0 mt-4"  @click="closemodal">OK</button>
+      </div>
+
     </CModalFooter>
   </CModal>
 </template>
@@ -76,7 +79,10 @@ export default {
 }
 .key{
   font-size: 20px;
-    font-weight: 600;
+
+    border:1px solid grey;
+    padding: 7px 80px;
+    border-radius: 10px;
 }
 .cross_icon {
   filter: invert(100%);
@@ -85,7 +91,7 @@ export default {
   left:200px;
 }
 .ok_btn{
-  padding: 5px 27px;
+  padding: 10px 20px;
   font-size: 1.2rem;
   border-radius: 7px;
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.27);
@@ -96,6 +102,16 @@ export default {
   }
 }
 
+.copy_btn{
 
+  font-size: 1rem;
+  border-radius: 7px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.27);
+
+  &:hover{
+    background-color: white !important;
+ 
+  }
+}
 
 </style>

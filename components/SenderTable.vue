@@ -1,11 +1,11 @@
 <template>
     <div class="domain_list">
       <div class="row">
-        <div class="d-inline-block ms-5 mx-5">
+        <!-- <div class="d-inline-block ms-5 mx-5">
       <NuxtLink to="/sendercreate">
-        <button class="create_btn bg-aliceblue px-4 text-white">+ ADD</button>
+        <button class="create_btn bg-aliceblue px-4 mb-4 mt-3 text-white">+ ADD</button>
       </NuxtLink>
-    </div>
+    </div> -->
 <!--   
         <div class="col-lg-12">
           <div class="filter mt-1">
@@ -37,8 +37,8 @@
           <!-- </div>
         </div>  -->
   
-        <div class="col-lg-12 pt-2">
-          <div class="table_data mt-4 bg-white">
+        <div class="col-lg-12 mt-4 ">
+          <div class="table_data my-2  bg-white">
             <table class="table">
               <thead>
                 <tr>

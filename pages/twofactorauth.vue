@@ -123,7 +123,7 @@
     .inner_container {
       max-width: 670px;
       width: 100%;
-      margin: 69px 0px;
+      margin: 25px 0px 205px;
       .user_activity {
         a {
           font-size: 1rem;

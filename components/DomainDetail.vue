@@ -8,7 +8,7 @@
                
                
 
-                <div class="table_data mt-4">
+                <div class="table_data mt-2">
           <table class="table">
             <thead>
               <tr>
@@ -123,7 +123,7 @@
             </tbody>
           </table>
         </div>
-        <div class=" btns d-inline-block mt-2">
+        <div class=" btns d-inline-block my-2 ">
         <NuxtLink to="/createDomain">
   <button type="submit" class="login_btn  bg-aliceblue text-white btn-sm mt-4 ms-1 ">Verify </button>
 </NuxtLink>

@@ -53,9 +53,9 @@
 export default defineComponent({
   components: {},
   setup() {
-    const expanded = useExpanded();
+  
     return {
-      expanded,
+     
     };
   },
   data() {
@@ -76,12 +76,12 @@ export default defineComponent({
 @import "../assets/scss/style.scss";
 
 .right_panel {
-  width: calc(100% - 60px);
-  margin-left: 60px;
+  width: calc(100% - 80px);
+  margin-left: 80px;
 }
 .shrink_screen.right_panel {
-  width: calc(100% - 12rem);
-  margin-left: 12rem;
+  width: calc(100% - 14rem);
+  margin-left: 14rem;
 }
 .plan_tabs {
   .tabs {

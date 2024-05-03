@@ -102,7 +102,7 @@ padding: 30px ;
 
 .key {
   font-size: 26px;
-  font-weight: 600;
+
 }
 
 .cross_icon {

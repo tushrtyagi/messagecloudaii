@@ -1,5 +1,5 @@
 <template>
-  <CModal class="api_key_modal ">
+  <CModal class="api_key_modal mt-1">
     <CModalHeader class="bg-sidegrey">
       <CModalTitle
         class="text-customblack d-flex align-items-center justify-content-between w-100"
@@ -23,7 +23,7 @@
           <div class="buttons">
 
             <button
-              class="text-customblack bg-white login_btn"
+              class="text-customblack bg-white cancel_btn"
                @click="closemodal"
             >
               Cancel
@@ -92,8 +92,7 @@ export default {
 </script>
 
 <style lang="scss">
-.modal_content {
-}
+
 .button-nav{
   position: relative;
   left:250px;
@@ -106,16 +105,18 @@ export default {
   width:100%;
   position: relative;
   left: 12px;
+ border-radius:10px;
 }
 .buttons{
 
   display:flex;
   flex-direction: row;
     position: relative;
-    right: 160px;
+    right: 255px;
   
   
 } 
+.cancel_btn,
 .generate_btn {
   padding: 12px 27px;
   font-size: 1.2rem;
@@ -124,6 +125,7 @@ export default {
   font-weight: 600;
  
 }
+.cancel_btn:hover
 .generate_btn:hover{
   color:rgba(255, 255, 255, 0.602);
 }

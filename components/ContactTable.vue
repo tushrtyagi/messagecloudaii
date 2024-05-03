@@ -1,11 +1,11 @@
 <template>
     <div class="domain_list">
       <div class="row">
-        <div class="d-inline-block ms-5 mx-5">
+        <!-- <div class="d-inline-block ms-5 mx-5">
       <NuxtLink to="/contactcreate">
-        <button class="create_btn bg-aliceblue px-4 text-white">+ ADD</button>
+        <button class="create_btn bg-aliceblue px-4 mt-5 text-white">+ ADD</button>
       </NuxtLink>
-    </div>
+    </div> -->
         <!-- <div class="domain-field bg-darkgrey my-3 mx-1 px-4">
           <div class="col-lg-12">
             <h4 class="mt-4 pl-3 text-customblack mb-4"> </h4>
@@ -48,7 +48,7 @@
            </div>
         </div> 
   
-        <div class="col-lg-12 pt-2">
+        <div class="col-lg-12 pt-2 pb-4">
           <div class="table_data mt-4 bg-white">
             <table class="table">
               <thead>
@@ -300,7 +300,7 @@
       box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.27);
       font-weight: 600;
       position: absolute;
-      top:15%;
+      top: 17%;
       right:10%;
     }
     .create_btn:hover {

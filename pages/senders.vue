@@ -13,7 +13,7 @@
                     <div class="breadcrumbs">
                       <CBreadcrumb style="--cui-breadcrumb-divider: '/'">
                         <CBreadcrumbItem href="/"><img src="../assets/image/home_icon (1).svg" alt="configuration" /></CBreadcrumbItem>
-                        <CBreadcrumbItem href="/createdomain">SenderSetup</CBreadcrumbItem>
+                        <CBreadcrumbItem href="/createdomain">Sender Identity</CBreadcrumbItem>
                         
                          <CBreadcrumbItem active> Senders </CBreadcrumbItem>
                       </CBreadcrumb>
@@ -36,7 +36,12 @@
                       </div>
                       <!-- <Tabs class="domain_tabs" @changeTab="changeTab" :tabs="['Sending Domain ', 'Bounce ', 'Tracking ']"  /> -->
                        <div class="tab-content domain_content mb-3">
-          <h3 class="text-customblack m">Sender Management</h3>
+                         <h3 class="text-customblack">Sender Management</h3>
+                         <div class="d-inline-block   mx-5 ">
+      <NuxtLink to="/sendercreate">
+        <button class="addsender_btn bg-aliceblue  text-white">+ ADD</button>
+      </NuxtLink>
+    </div>
           <!-- <p class="text-customblack mt-3">
           {{arr[activeTab].subtext }}
           </p>
@@ -47,11 +52,11 @@
             </button>
             </div>
            -->
+           <SenderTable  />
                         </div> 
                     </div>
                   </div>
             
-                  <SenderTable  />
                 </div>
   
               </div>
@@ -67,9 +72,9 @@
   export default defineComponent({
     components: {},
     setup() {
-      const expanded = useExpanded();
+
       return {
-        expanded,
+    
         store
       };
     },
@@ -110,15 +115,15 @@
   @import "../assets/scss/style.scss";
   
   .right_panel {
-    width: calc(100% - 60px);
-    margin-left: 60px;
+    width: calc(100% - 80px);
+  margin-left: 80px;
   }
   .shrink_screen.right_panel {
-    width: calc(100% - 12rem);
-    margin-left: 12rem;
+    width: calc(100% - 14rem);
+  margin-left: 14rem;
   }
   .sending_domain_container {
-    padding: 0px 31px 0px;
+    padding: 0px 31px 0px 0;
     .sending_domain_section {
       .searc_domain_container {
         border-radius: 7px;
@@ -175,5 +180,17 @@
       }
     }
   }
+
+  .addsender_btn {
+      padding: 10px 35px;
+      font-size: 1rem;
+      border-radius: 7px;
+      box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.27);
+      font-weight: 600;
+    }
+    .addsender_btn:hover {
+      background-color: #6eb9e1 !important;
+      color: white;
+    }
   </style>
   

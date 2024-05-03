@@ -12,7 +12,7 @@
           </div>
         </div>
       </div>
-      <div class="api-tab-content first">
+      <div class="api-tab-content first mb-3">
       
           <div class="row">
             <div class="col-lg-12 col-md-6 col-sm-12 col-12 m-0">

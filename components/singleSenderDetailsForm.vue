@@ -1,5 +1,5 @@
 <template>
-  <div class="w-100 main-div bg-white">
+  <div class="w-100 main-div bg-white mt-4">
     <form>
       <label >Single Send Name *</label>
       <input type="text" class="input-tag w-100 " />
@@ -42,6 +42,7 @@
         <option value="" disabled selected hidden>Send immediately</option> 
         <option>test@gmail.com</option>
         <option>test2@gmail.com</option>
+        
       </select>
     </form>
   </div>
@@ -84,7 +85,7 @@ export default {};
     font-weight: 700;
     background-color: #fff;
     color: #000000;
-    font-family: ' "Inter", sans-serif';
+    font-family: 'Inter', 'sans-serif';
   }
   
 }
