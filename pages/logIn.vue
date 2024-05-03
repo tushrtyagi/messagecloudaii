@@ -31,7 +31,7 @@
                         placeholder="Email"
                         class="input w-100 bg-white"
                         autocomplete="off"
-                        type="text"
+                        type="email"
                         v-model="login.email"
                         id="email"
                         name="businessEmail"
@@ -105,7 +105,7 @@
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-10 pt-3 text-center">
                       <button type="submit" class="custom_btn text-customblack bg-white login_btn w-100">
-                        <img src="../assets/image/microsoft.png" alt="apple_icon" />
+                        <img src="../assets/image/icon-microsoft.svg" alt="apple_icon" />
                         Sign in with Microsoft
                       </button>
                     </div>
@@ -280,8 +280,8 @@ label{
         width: 100%; /* Increase image width */
         height: auto;
         position: relative;
-    right: 28px;
-    top: 35px; /* Maintain aspect ratio */
+    right: 3px;
+    top: 42px; /* Maintain aspect ratio */
       }
   }
 }

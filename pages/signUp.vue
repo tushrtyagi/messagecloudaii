@@ -261,7 +261,7 @@ label {
     margin: 0 auto;
     padding: 97px 60px 0;
     position: relative;
-    top:-136px;
+    top:-74px;
   }
     span {
       font-size: 1rem;
@@ -284,7 +284,7 @@ label {
   height: 100%;
   margin: 0 auto;
   img{
-    width: 60%;
+    width: 62%;
 
     // position: relative;
     // right:35px;

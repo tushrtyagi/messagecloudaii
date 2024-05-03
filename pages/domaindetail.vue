@@ -29,16 +29,16 @@
 
                     <div class="d-flex align-items-center justify-content-between ">
                     <div class=" ml-5 ">
-  <h3 class="ml-3  mb-5 
+  <h3 class="ml-3  mb-3 
   domain-head" >codalien.com</h3>
 
 
   </div>
-  <CFormCheck label="Use as default domain" class="formcheck text-muted mb-5" />
+  <CFormCheck label="Use as default domain" class="formcheck text-muted mb-3" />
 </div>
 <div class="tab-content domain_content  ">
   <h2 class="text-customblack">DNS Records</h2>
-  <p class="text-customblack mt-3">
+  <p class="text-customblack mt-2">
     You will need to install the following records to complete the process.
   </p>
 </div>

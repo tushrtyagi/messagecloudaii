@@ -65,12 +65,7 @@
 <script>
 import { defineComponent, ref } from 'vue'; // assuming you are using Vue 3
 import { store } from "../stores/store";
-definePageMeta({
-  middleware: function(to, from) {
-      return navigateTo('/signup');
-    }
-  },
-);
+
 export default defineComponent({
   setup() {
     const activeTab = ref('wk');
@@ -120,7 +115,7 @@ export default defineComponent({
   .donut_chart {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
   }
 }
 
@@ -169,9 +164,10 @@ export default defineComponent({
   }
   .graph-title {
     position: relative;
+    font-size:30px;
     top: 50px;
     left: 35px;
-    font-weight:500;
+   font-family:Poppins;
   }
   .content {
     margin: 5px 0;

@@ -2,12 +2,12 @@
     <div class="domain_list">
       <div class="row">
         
-         
+<!--          
           <div class="d-inline-block ms-4">
       <NuxtLink to="/singleSendSettingspage">
-        <button class="create_btn bg-aliceblue px-4 mt-4 text-white">+ ADD </button>
+        <button class="add_btn bg-aliceblue px-4 mt-0 text-white">+ ADD </button>
       </NuxtLink>
-    </div>
+    </div> -->
         
   
         <div class="col-lg-12">
@@ -270,14 +270,14 @@
       border: 0.2px lightgrey;
       border-radius: 5px;
     }
-    .create_btn {
+    .add_btn {
       padding: 10px 35px;
       font-size: 1rem;
       border-radius: 7px;
       box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.27);
       font-weight: 600;
     }
-    .create_btn:hover {
+    .add_btn:hover {
       background-color: #6eb9e1 !important;
       color: white;
     }

@@ -38,6 +38,11 @@
                       <!-- <Tabs class="domain_tabs" @changeTab="changeTab" :tabs="['Sending Domain ', 'Bounce ', 'Tracking ']"  /> -->
                        <div class="tab-content domain_content mb-3">
           <h3 class="text-customblack m">Single Sends</h3>
+          <div class="d-inline-block   mx-5 ">
+            <NuxtLink to="/singleSendSettingspage">
+          <button class="addsend_btn bg-aliceblue text-white">+ ADD </button>
+        </NuxtLink>
+          </div>
           <!-- <p class="text-customblack mt-3">
           {{arr[activeTab].subtext }}
           </p>

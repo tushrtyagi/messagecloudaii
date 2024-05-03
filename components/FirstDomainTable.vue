@@ -30,8 +30,8 @@
             </div>
             <div class="d-inline-block ms-5">
             
-              <select class="form-select " @change="handleDomainStatusChange">
-                <option v-if="!selectedDomainStatus" disabled selected>Domain Status</option>
+              <select class="form-select " >
+                <option value="" disabled selected hidden>Domain Status</option>
                 <option value="All" active>All</option>
                 <option value="Verified">Verified</option>
                 <option value="Unverified">Unverified</option>
@@ -109,7 +109,7 @@
       },},
     data() {
       return {
-        selectedDomainStatus: 'Domain Status',
+        selectedDomainStatus: true,
         visibleLiveDemo: false,
         columns: ["Domain", "Verified Domain", "Date"],
         items: [
@@ -167,10 +167,7 @@
       closemodal(value) {
         this.visibleLiveDemo = value;
       },
-      handleDomainStatusChange(event) {
-   
-      this.selectedDomainStatus = event.target.value;
-    }
+    
       
     }
   }

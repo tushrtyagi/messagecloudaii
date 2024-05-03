@@ -109,8 +109,8 @@ export default {
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.27);
 
   &:hover{
-    background-color: #6eb9e1 !important;
-  color:white;
+    background-color: white !important;
+ 
   }
 }
 

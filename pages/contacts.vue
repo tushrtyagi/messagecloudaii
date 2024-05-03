@@ -37,6 +37,11 @@
                       <!-- <Tabs class="domain_tabs" @changeTab="changeTab" :tabs="['Sending Domain ', 'Bounce ', 'Tracking ']"  /> -->
                        <div class="tab-content domain_content mb-3">
           <h3 class="text-customblack m">Contact Lists</h3>
+          <div class="d-inline-block  mx-5">
+      <NuxtLink to="/contactcreate">
+        <button class="addcontact_btn bg-aliceblue text-white">+ ADD</button>
+      </NuxtLink>
+    </div>
           <!-- <p class="text-customblack mt-3">
           {{arr[activeTab].subtext }}
           </p>
@@ -47,11 +52,11 @@
             </button>
             </div>
            -->
+           <ContactTable  />
                         </div> 
                     </div>
                   </div>
             
-                  <ContactTable  />
                 </div>
   
               </div>
@@ -175,5 +180,17 @@
       }
     }
   }
+
+  .addcontact_btn {
+      padding: 10px 35px;
+      font-size: 1rem;
+      border-radius: 7px;
+      box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.27);
+      font-weight: 600;
+    }
+    .addcontact_btn:hover {
+      background-color: #6eb9e1 !important;
+      color: white;
+    }
   </style>
   

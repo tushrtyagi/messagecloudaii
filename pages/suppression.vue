@@ -28,7 +28,7 @@
                           <input type="text" class="form-control px-5 mt-4 ms-1" placeholder="Search Type" />
                         </div>
                         <select class="form-select mt-4 ms-4">
-                          <option value="" disabled selected>Filters</option>
+                          <option value="" disabled selected hidden>Filters</option>
                           <option value="Bounce">Bounce</option>
                           <option value="Spam Report">Spam Report</option>
                           <option value="Invalid">Invalid</option>

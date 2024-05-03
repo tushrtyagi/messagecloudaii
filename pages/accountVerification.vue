@@ -25,7 +25,7 @@
                   <img src="../assets/image/verificationImage.svg" alt="verification" />
                 </div>
                 <span class="text-customblack">Click on the link in the email we sent to nisha.bhatt@codalien.com</span>
-                <span class="d-block text-customblack mt-2">Haven't received it? <NuxtLink class="text-decoration-underline ">Resend email</NuxtLink></span>
+                <span class="d-block text-customblack mt-2">Haven't received it? <NuxtLink class="text-decoration-underline resend-link">Resend email</NuxtLink></span>
               </div>
             </div>
           </div>
@@ -47,6 +47,10 @@ export default {
 <style lang="scss">
 @import "../assets/scss/colors.scss";
 @import "../assets/scss/style.scss";
+
+.resend-link{
+  cursor:pointer;
+}
 
 .account_verification_page {
   height: 100%;
@@ -73,7 +77,7 @@ export default {
     width: 100%;
     margin: auto;
     position: relative;
-    top: -70px;
+    top: -190px;
 }
 
 .logo_panel,

@@ -23,7 +23,7 @@
           <div class="buttons">
 
             <button
-              class="text-customblack bg-white login_btn"
+              class="text-customblack bg-white cancel_btn"
                @click="closemodal"
             >
               Cancel
@@ -112,10 +112,11 @@ export default {
   display:flex;
   flex-direction: row;
     position: relative;
-    right: 160px;
+    right: 255px;
   
   
 } 
+.cancel_btn,
 .generate_btn {
   padding: 12px 27px;
   font-size: 1.2rem;
@@ -124,6 +125,7 @@ export default {
   font-weight: 600;
  
 }
+.cancel_btn:hover
 .generate_btn:hover{
   color:rgba(255, 255, 255, 0.602);
 }
