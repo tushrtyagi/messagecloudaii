@@ -48,8 +48,8 @@
            </div>
         </div> 
   
-        <div class="col-lg-12 pt-2">
-          <div class="table_data mt-4 bg-white">
+        <div class="col-lg-12 my-2 ">
+          <div class="table_data my-2 bg-white">
             <table class="table">
               <thead>
                 <tr>
