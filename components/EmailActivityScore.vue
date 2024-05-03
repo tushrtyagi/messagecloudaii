@@ -78,7 +78,7 @@ export default {
 
   .score_info {
     flex:1; // Take remaining space
-    padding-left: 28px; // Adjust spacing between image and label
+    padding-left: 10px; // Adjust spacing between image and label
     label {
       font-size: 18px;
       font-weight: 500;
