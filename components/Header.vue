@@ -113,7 +113,7 @@ export default {
   }
 
   .user_greet-not {
-    font-size: 13px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
 

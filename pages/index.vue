@@ -11,7 +11,7 @@
                 <div class="row g-0 ">
                   <div class="col-lg-5 col-md-6 col-sm-12 col-12  ">
                     <div class="heading">
-                      <div class="main my-0" style="width: 100%; height: 100%; color: black; font-size: 22px; font-family: Poppins; font-weight: 600; line-height: 6px; word-wrap: break-word">Fast & Reliable Email Delivery System<br/><br/><br/><br/></div>
+                      <div class="main my-0" style="width: 150%; height: 100%; color: black; font-size: 30px; font-family: Poppins; font-weight: 600; line-height: 6px; word-wrap: break-word">Fast & Reliable Email Delivery System<br/><br/><br/><br/></div>
                       <div class="text-customblack mt-3 content">Ensure high deliverability and make every email count with MessageCloud.AI’s Robust Email Delivery System</div>
                     </div>
                    
@@ -136,7 +136,7 @@ export default defineComponent({
         right: 30px;
         top:9px;
         font-weight: 500;
-        font-size: 25px;
+        font-size: 30px;
         font-family: Poppins;
         line-height: 25px;
         word-wrap: break-word;
@@ -171,7 +171,7 @@ export default defineComponent({
   }
   .content {
     margin: 5px 0;
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .blue-border {
