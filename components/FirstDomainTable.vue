@@ -335,7 +335,7 @@ export default {
 }
 
 .add_btn {
-  padding: 13px 35px;
+  padding: 14px 35px !important;
   font-size: 1.2rem;
   border-radius: 7px;
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.27);
@@ -347,11 +347,11 @@ export default {
 }
 
 .dropdown-daterange {
-  padding: 11px 15px;
+  padding: 7px 15px;
   width: 300px;
   border: 1px solid #ccc;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 400;
   box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.05);
   border-radius: 0.5rem;
   color: black;

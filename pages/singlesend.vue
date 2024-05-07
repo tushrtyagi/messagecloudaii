@@ -36,7 +36,7 @@
                         </div> -->
                       </div>
                       <!-- <Tabs class="domain_tabs" @changeTab="changeTab" :tabs="['Sending Domain ', 'Bounce ', 'Tracking ']"  /> -->
-                       <div class="tab-content domain_content mb-3 ">
+                       <div class="tab-content d-flex flex-wrap justify-content-between  domain_content mb-3 ">
           <h3 class="text-customblack ">Single Sends</h3>
           <div class="d-inline-block   mx-5 ">
             <NuxtLink to="/singleSendSettingspage">
