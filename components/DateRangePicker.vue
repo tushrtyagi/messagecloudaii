@@ -767,12 +767,10 @@
   z-index: 1000;
   padding: 0px 10px;
   color: rgb(42, 184, 232);
-  
-
 }
 .date_option{
    display: flex;
-   margin: 10px;
+   margin: 0px;
    background-color: #dfeeff;
    cursor: pointer;
    border: 1px solid #0471d8;

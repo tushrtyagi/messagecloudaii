@@ -64,10 +64,12 @@
                 :first-month="picker.firstDt"
                 :last-month="picker.todayDt"
                 :enable-second-calendar="true"
-                :next-prev-icon="true"
+                :next-prev-icon="false"
                 @onSelect="showCalendar"
+                @onCancel="showCalendar"
               />
             </div>
+          
           </div>
         </div>
       </div>
@@ -210,6 +212,7 @@ export default {
       //   this.openDropdown = null;
       // }
     },
+   
   },
 };
 </script>

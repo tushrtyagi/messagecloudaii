@@ -1,7 +1,10 @@
 .g-calendar {
+     hr{
+      margin-top: 0;
+     }
     .calendar-container {
       display: flex;
-  
+       
       .current-calendar,
       .next-calendar {
         flex: 1;

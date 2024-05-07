@@ -23,13 +23,15 @@
                   v-if="nextPrevIcon"
                   :class="{ disabled: isPrevMonthDisabled }"
                 >
+                
                 </span>
                 <span @click="movePrevMonth()" class="prev-text" v-else>
-                  PREV
+                  <!-- PREV -->
+                  <i class="fa fa-long-arrow-left fa-2x" aria-hidden="true"></i>
                 </span>
               </template>
   
-              <span class="month-text"> {{ data.monthName }} </span>
+              <span class="month-text"> {{ `${data.monthName} ${data.yearName}`}} </span>
               <template
                 v-if="(!enableSecondCalendar && dataIdx == 0) || dataIdx == 1"
               >
@@ -41,7 +43,8 @@
                 >
                 </span>
                 <span @click="moveNextMonth()" class="next-text" v-else>
-                  NEXT
+                  <!-- NEXT -->
+                  <i class="fa fa-long-arrow-right fa-2x" aria-hidden="true"></i>
                 </span>
               </template>
             </div>
@@ -106,7 +109,7 @@
             {{ btnCancelText || "Cancel" }}
           </button>
           <button
-            class="btn  btn-cancel"
+            class=" btn btn-cancel"
             :class="btnClearClass"
             @click="clickClear"
           >
@@ -144,7 +147,11 @@
       },
       monthFormat: {
         type: String,
-        default: "MMM",
+        default: "MMMM",
+      },
+      yearFormat: {
+        type: String,
+        default: "YYYY",
       },
       givenDays: {
         type: Array,
@@ -252,8 +259,12 @@
     computed: {
       currentMonth() {
         return moment(this.current_date)
-          .subtract(1, "M")
+          .subtract(1, "month")
           .format(this.monthFormat || "MMMM");
+      },
+      currentYear() {
+        return moment(this.current_date)
+          .format(this.yearFormat || "YYYY");
       },
       nextMonth() {
         return moment(this.current_date).format(this.monthFormat || "MMMM");
@@ -350,6 +361,7 @@
         let months = [
           {
             monthName: this.currentMonth,
+            yearName:this.currentYear,
             calendarRows: this.totalCalendarRows,
             dates: this.dates,
             classes: this.currentCalendarClass,
@@ -359,6 +371,7 @@
         if (this.enableSecondCalendar) {
           months.push({
             monthName: this.nextMonth,
+            yearName:this.currentYear,
             calendarRows: this.nextCalendarRows,
             dates: this.nextMonthDates,
             classes: this.nextCalendarClass,
@@ -368,6 +381,7 @@
           months = [
             {
               monthName: this.nextMonth,
+              yearName:this.currentYear,
               calendarRows: this.nextCalendarRows,
               dates: this.nextMonthDates,
               classes: this.nextCalendarClass,
@@ -761,7 +775,6 @@
   .menu_div {
   position: relative;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   left: 0;
   z-index: 1000;
@@ -789,6 +802,9 @@
 .date_option:hover {
     background-color:#0471d8;
     color: white
+}
+.btn.btn-cancel{
+  right: 0px !important
 }
 .btn-cancel{
   padding: 0.5rem 2.75rem;
