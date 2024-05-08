@@ -23,13 +23,15 @@
                   v-if="nextPrevIcon"
                   :class="{ disabled: isPrevMonthDisabled }"
                 >
+                
                 </span>
                 <span @click="movePrevMonth()" class="prev-text" v-else>
-                  PREV
+                  <!-- PREV -->
+                  <i class="fa fa-long-arrow-left fa-2x" aria-hidden="true"></i>
                 </span>
               </template>
   
-              <span class="month-text"> {{ data.monthName }} </span>
+              <span class="month-text"> {{ `${data.monthName} ${data.yearName}`}} </span>
               <template
                 v-if="(!enableSecondCalendar && dataIdx == 0) || dataIdx == 1"
               >
@@ -41,7 +43,8 @@
                 >
                 </span>
                 <span @click="moveNextMonth()" class="next-text" v-else>
-                  NEXT
+                  <!-- NEXT -->
+                  <i class="fa fa-long-arrow-right fa-2x" aria-hidden="true"></i>
                 </span>
               </template>
             </div>
@@ -106,7 +109,7 @@
             {{ btnCancelText || "Cancel" }}
           </button>
           <button
-            class="btn  btn-cancel"
+            class=" btn btn-cancel"
             :class="btnClearClass"
             @click="clickClear"
           >
@@ -118,7 +121,7 @@
   </template>
     <script>
   import moment from "moment/moment";
- 
+  import "./datepicker.scss";
   
   export default {
     props: {
@@ -144,7 +147,11 @@
       },
       monthFormat: {
         type: String,
-        default: "MMM",
+        default: "MMMM",
+      },
+      yearFormat: {
+        type: String,
+        default: "YYYY",
       },
       givenDays: {
         type: Array,
@@ -252,8 +259,12 @@
     computed: {
       currentMonth() {
         return moment(this.current_date)
-          .subtract(1, "M")
+          .subtract(1, "month")
           .format(this.monthFormat || "MMMM");
+      },
+      currentYear() {
+        return moment(this.current_date)
+          .format(this.yearFormat || "YYYY");
       },
       nextMonth() {
         return moment(this.current_date).format(this.monthFormat || "MMMM");
@@ -350,6 +361,7 @@
         let months = [
           {
             monthName: this.currentMonth,
+            yearName:this.currentYear,
             calendarRows: this.totalCalendarRows,
             dates: this.dates,
             classes: this.currentCalendarClass,
@@ -359,6 +371,7 @@
         if (this.enableSecondCalendar) {
           months.push({
             monthName: this.nextMonth,
+            yearName:this.currentYear,
             calendarRows: this.nextCalendarRows,
             dates: this.nextMonthDates,
             classes: this.nextCalendarClass,
@@ -368,6 +381,7 @@
           months = [
             {
               monthName: this.nextMonth,
+              yearName:this.currentYear,
               calendarRows: this.nextCalendarRows,
               dates: this.nextMonthDates,
               classes: this.nextCalendarClass,
@@ -761,16 +775,17 @@
   .menu_div {
   position: relative;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   left: 0;
   z-index: 1000;
   padding: 0px 10px;
   color: rgb(42, 184, 232);
+  
+
 }
 .date_option{
    display: flex;
-   margin: 0px;
+   margin: 10px;
    background-color: #dfeeff;
    cursor: pointer;
    border: 1px solid #0471d8;
@@ -788,114 +803,12 @@
     background-color:#0471d8;
     color: white
 }
+.btn.btn-cancel{
+  right: 0px !important
+}
 .btn-cancel{
   padding: 0.5rem 2.75rem;
   margin: 10px 5px
 }
-.g-calendar {
-    .calendar-container {
-      display: flex;
-  
-      .current-calendar,
-      .next-calendar {
-        flex: 1;
-      }
-      .current-calendar {
-        padding-right: 5px;
-        border-right: #999 1px solid;
-      }
-      .next-calendar {
-        margin-left: 2px;
-        padding-left: 2px;
-      }
-      .next-icon {
-        width: 0; 
-        height: 0; 
-        border-top: 12px solid transparent;
-        border-bottom: 12px solid transparent;
-        
-        border-left: 12px solid grey;
-      }
-      .prev-icon {
-        width: 0; 
-        height: 0; 
-        border-top: 12px solid transparent;
-        border-bottom: 12px solid transparent; 
-        
-        border-right:12px solid grey;
-      }
-      .next-icon,
-      .prev-icon{
-        &.disabled{
-          border-right-color: #a7a4a46b;
-          border-left-color: #a7a4a46b;
-        }
-      }
-      // width: 50%;
-      .day-name {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 2px;
-        padding-bottom: 2px;
-        span {
-          width: 100%;
-          text-align: center;
-          font-weight: 550;
-        }
-      }
-      .month-name {
-        display: flex;
-        // justify-content: space-evenly;
-        padding: 5px;
-        font-size: 22px;
-        font-weight: 480;
-  
-        .prev-icon{
-          padding-left: 7px;
-        } 
-        .month-text {
-          margin: auto;
-          color: black;
-        }
-      }
-      .calendar-dates .date-row {
-        display: flex;
-        // justify-content: space-between;
-  
-        .blank-day,
-        .date {
-          width: 14.28%;
-          text-align: center;
-          padding: 7px;
-  
-          &.date-selected-start {
-            border-top-left-radius: 50px;
-            border-bottom-left-radius: 50px;
-          }
-          &.date-selected-end {
-            border-top-right-radius: 50px;
-            border-bottom-right-radius: 50px;
-          }
-          &.date-disabled {
-            background: #7a7575 ;
-            color: #a19c9cf0 ;
-          }
-          &.date-today{
-            background: #0471D8 ;
-            color: rgb(45, 45,45) ;
-            
-          }
-          &.date-highlighted {
-            background: #DFEEFF !important;
-            color: #0471D8 ;
-          }
-          &.date-selected {
-            background: #0471D8 !important;
-            color: #FFF;
-          }
-        }
-      }
-    }
-  }
   </style>
   
