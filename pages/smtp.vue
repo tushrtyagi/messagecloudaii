@@ -259,12 +259,12 @@ export default {
     border: 0.5 solid #d9d9d9;
     .settings_title {
       font-size: 15px;
-      font-weight: 500;
+      font-weight: 600;
       padding: 9px 35px;
       border-radius: 7px 7px 0 0;
     }
     .smtp_content {
-      padding: 18px 35px 10px;
+      padding: 0px 35px 10px;
       li {
         font-size: 15px;
         font-weight: 400;

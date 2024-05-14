@@ -7,8 +7,21 @@
 </template>
 
 <script>
+import { store } from "../stores/store";
 const layout = "custom";
 export default {
+  setup() {
+   return {
+     store
+   };
+ },
+  beforeMount() {
+    if (!store.isLoggedIn) {
+      this.$router.push('/login');
+    }
+
+    
+  },
   components: {
   }
 };

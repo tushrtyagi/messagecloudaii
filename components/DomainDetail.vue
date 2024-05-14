@@ -225,8 +225,7 @@
       align-items: center;
       .form-control {
         flex:1;
-    padding: 5px 200px;
-    text-align: left;
+    // text-align: left;
     margin-right: 320px;
   }
  

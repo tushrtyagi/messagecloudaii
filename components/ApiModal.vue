@@ -10,7 +10,7 @@
     </CModalHeader>
     <div class="row header d-flex justify-content-center p-0 bg-sidegrey">
       <div class="col-lg-6 ms-5 ">
-        <CModalBody> <h4 class="text-customblack mb-4">API Key name : </h4>
+        <CModalBody> <h4 class="text-customblack mb-4">Name your API key </h4>
                       <input
                         placeholder="Enter your key name"
                         class="bg-white"

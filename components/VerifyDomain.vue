@@ -25,7 +25,7 @@
                   <label for="exampleInputEmail1" class="form-label mb-2 ">Type</label>
                   <p class="text-muted"><strong>TXT</strong></p>
                 </div>
-                <div class="mb-3  d-inline-block mx-5">
+                <div class="mb-3  d-inline-block mx-4">
                   <label for="exampleInputEmail1" class="form-label mb-2 me-3">Hostname</label>
                   <div class="input-group d-flex align-items-center">
                     <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> -->
@@ -36,7 +36,7 @@
 
                   </div>
                 </div> 
-                <div class="mb-3 d-inline-block mx-4">
+                <div class="mb-3 d-inline-block mx-2">
                   <label for="exampleInputPassword1" class="form-label mb-2 me-3">Value</label>
                   <div class="input-group d-flex align-items-center">
                     <!-- <input type="text" class="form-control" id="exampleInputPassword1"> -->
@@ -54,7 +54,7 @@
               <label for="exampleInputEmail1" class="form-label mb-2 me-3">Type</label>
               <p class="text-muted"><strong>CNAME</strong></p>
             </div>
-            <div class="mb-3 d-inline-block mx-5">
+            <div class="mb-3 d-inline-block mx-4">
               <label for="exampleInputEmail1" class="form-label mb-2 me-3">Hostname</label>
               <div class="input-group d-flex align-items-center">
                 <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> -->
@@ -64,7 +64,7 @@
 
               </div>
             </div>
-            <div class="mb-3 d-inline-block mx-4">
+            <div class="mb-3 d-inline-block mx-2">
               <label for="exampleInputPassword1" class="form-label mb-2 me-3">Value</label>
               <div class="input-group d-flex align-items-center">
                 <!-- <input type="text" class="form-control" id="exampleInputPassword1"> -->

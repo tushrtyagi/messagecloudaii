@@ -138,7 +138,7 @@ export default defineComponent({
         font-weight: 500;
         font-size: 30px;
         font-family: Poppins;
-        line-height: 25px;
+        line-height: 30px;
         word-wrap: break-word;
       }
     }

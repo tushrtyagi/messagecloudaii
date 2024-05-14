@@ -121,32 +121,49 @@
   </div>
 </template>
 <script>
+
 import { CSpinner } from "@coreui/vue";
+import { store } from "../stores/store";
+
+
 export default {
   components: { CSpinner },
+  setup() {
+   
+   return {
+  
+     store
+   }},
   data() {
     return {
       loading: false,
       email: "",
       password: "",
-      toggleImage:false
+      toggleImage:false,
+ 
     };
   },
   methods: {
-    async login() {
-      this.loading = true;
-      //   try {
-      //     let response = await this.$auth.loginWith("local", { data: this.login });
-      //     console.log(response);
-      //   } catch (err) {
-      //     console.log(err);
-      //   }
-      setTimeout(async () => {
-        this.loading = false;
-        //redirect to other page
-        await navigateTo({ path: "/twofactorauth" });
-      }, 300);
-    },
+     login() {
+  this.loading = true;
+  // Assuming you receive a token from the server upon successful login
+  const token = 'USER';
+
+  // Simulating async operation with setTimeout
+  setTimeout(() => {
+    // Store the token locally for authentication
+    localStorage.setItem('token', token);
+    
+    // Set the isLoggedIn state to true
+    this.store.isLoggedIn = true;
+
+    // Redirect to other page or perform any necessary actions
+    // For example:
+    this.$router.push('/');
+
+    this.loading = false;
+  }, 3000); // Change 3000 to your actual delay
+},
     showPassword(){
         var InputType = document.getElementById("password");
         if(InputType.type == "password"){

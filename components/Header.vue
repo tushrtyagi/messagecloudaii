@@ -178,8 +178,8 @@ export default {
 
     //  background-color: $aliceblue;
     img {
-      width: 100%;
-      height: 100%;
+      width: 30px;
+      height:30px;
       // filter: invert(100%);
       position:relative;
       right:27px;
@@ -194,8 +194,8 @@ export default {
     height: 30px;
 
     img {
-      width: 100%;
-      height: 100%;
+      width: 30px;
+      height: 30px;
       object-fit: contain;
     }
   }

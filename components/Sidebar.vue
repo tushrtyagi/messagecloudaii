@@ -359,13 +359,20 @@ ul.sidebar-nav {
 
 .shrink.expend div.toggle_menu_wrap ul.sidebar-nav a label {
   display: unset;
-  font-size: 12px;
+  font-size: 15px;
   cursor: pointer;
   font-weight: 400;
   line-height: 30px;
 }
 
-.shrink.expend div.toggle_menu_wrap ul.sidebar-nav a ul.dropdowncustom a label {
+.shrink.expend div.toggle_menu_wrap ul.sidebar-nav .dropdowncustom a label {
+  display: unset;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 30px;
+}
+.shrink.expend div.toggle_menu_wrap ul.sidebar-nav .dropdowncustom a.router-link-active.router-link-exact-active label {
   display: unset;
   font-size: 13px;
   cursor: pointer;
@@ -374,9 +381,10 @@ ul.sidebar-nav {
 }
 
 
+
 .shrink.expend div.toggle_menu_wrap ul.sidebar-nav a.router-link-active.router-link-exact-active label {
   display: unset;
-  font-size: 12px;
+  font-size: 15px;
   cursor: pointer;
   font-family: Inter;
   font-weight: 500;
@@ -386,9 +394,12 @@ ul.sidebar-nav {
  
 }
 
+
+
+
 .shrink.expend div.toggle_menu_wrap ul.sidebar-nav a ul.dropdowncustom a.router-link-active.router-link-exact-active label {
   display: unset;
-  font-size: 12px;
+  font-size: 13px;
   cursor: pointer;
   font-family: Inter;
   font-weight: 500;
@@ -680,7 +691,7 @@ a.router-link-active.router-link-exact-active label {
   height: 29px;
   img{
     height:100%;
-    width:100%;
+    width:116%;
     object-fit:contain;
   }
 }

@@ -1,0 +1,10 @@
+const loggedIn=false;
+
+export default defineNuxtRouteMiddleware((to, from) => {
+
+  if (.path !== '/login' && !loggedIn) {
+    return navigateTo('/login')
+  }
+})
+
+

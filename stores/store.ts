@@ -4,12 +4,14 @@ interface Store {
   isSidebarExpanded: boolean;
   isDropdownExpanded: boolean;
   isDropdownsenderExpanded: boolean;
+  isLoggedIn:boolean;
   toggleSidebar(): void;
   toggleDropdown(): void;
   toggleDropdownsender():void;
 }
 
 export const store = reactive<Store>({
+  isLoggedIn:false,
   isSidebarExpanded: false,
   isDropdownExpanded: false,
   isDropdownsenderExpanded: false,

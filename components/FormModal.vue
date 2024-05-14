@@ -13,7 +13,7 @@
       <div class="api-tab-content mb-4 ">
       
           <div class="row">
-            <div class="col-lg-12 col-md-6 col-sm-12 col-12 m-0">
+            <div class="col-lg-12 col-md-6 col-sm-12 col-12 mx-3">
               <form>
                
                 <div class="mb-3 ">
@@ -26,7 +26,7 @@
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label mb-2 me-3">Message</label>
                   <div class="input-group">
-                    <textarea type="text" class="form-control text-muted pb-5  " placeholder="Hello, I'm attempting to verify our domain with Messagecloud, but I lack the capability to edit our DNS records. Could you assist me in adding these records so that I can finalize the authentication process?" id="exampleInputmessage" />
+                    <input type="text" class="form-control text-muted  " placeholder="Hello, I'm attempting to verify our domain with Messagecloud." id="exampleInputmessage" />
                    
                   </div>
                 </div>
@@ -129,10 +129,14 @@
     }
    
     .input-group .form-control {
-  
-      flex: 1;
-    padding: 7px 12px;
-    }
+  width: 100%; // Make input fields full width
+// Adjust padding as needed
+text-wrap:inherit;
+  white-space:inherit // Allow long text to wrap
+  // word-wrap: break-word; // Ensure long words are broken if necessary
+}
+
+
     button{
       display: inline;
       position:relative;

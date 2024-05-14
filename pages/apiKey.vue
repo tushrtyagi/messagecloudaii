@@ -19,7 +19,7 @@
                         </CBreadcrumbItem>
                       
                       <CBreadcrumbItem href="/createdomain">Sender Identity</CBreadcrumbItem>
-                      <CBreadcrumbItem active>API key</CBreadcrumbItem>
+                      <CBreadcrumbItem active>API Key</CBreadcrumbItem>
                     </CBreadcrumb>
                   </div>
                 </div>
@@ -28,7 +28,7 @@
                 <div class="row mb-5">
                   <div class="col-lg-12">
                     <div class="user_api d-flex align-items-center justify-content-between bg-white">
-                      <h3 class="text-customblack mb-4 ms-2">Your API Keys</h3>
+                      <h3 class="text-customblack mb-4 ms-5">Your API Keys</h3>
                     </div>
                     <p class="text-customblack">
                       The API keys include a key ID, which is utilized for referencing the key when making edits or deletions via the API.
@@ -74,7 +74,7 @@
                     <div
                       class="domain_flex "
                     >
-                      <h2 class="text-customblack">API Key</h2>
+                      <h2 class="text-customblack"> About API </h2>
                       <p class="text-customblack mt-4">
                         The MessageCloud.ai API makes it easy for programmers to integrate many of MessageCloud.ai features into other applications. Interested in learning more?
                       </p>

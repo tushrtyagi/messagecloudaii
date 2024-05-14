@@ -85,7 +85,7 @@ export default {
       line-height: 20px;
       align-items: center;
       padding-top: 10px;
-
+     
       span {
         font-size: 21px;
     margin-top: 8px;

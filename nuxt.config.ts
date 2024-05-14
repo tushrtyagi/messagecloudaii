@@ -8,17 +8,12 @@ export default ({
       'composables',
     ]
   },
-  layout: 'default', // Use your default layout
+  // layout: 'default', // Use your default layout
 
-  router: {
-    routes: [
-      {
-        path: '/login',
-        component: '~/pages/login.vue',
-      },
-      // Include other routes here
-    ],
-  },
+  // router: {
+  //   middleware: ['login'] // Set up route middleware
+  // },
+ 
   app: {
     head: {
       title: "Email Dev",

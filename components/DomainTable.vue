@@ -223,6 +223,8 @@ export default {
         color: #bcbcbc;
         font-size: 13px;
         font-weight: 400;
+        text-align:center;
+
       }
     }
     button {
